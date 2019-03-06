@@ -309,12 +309,9 @@ Penyelesaian Tugas Harian 3 ( No. 1-7 )
 \end{enumerate}
 
 \section{Lusia Violita Aprilian}
-
 \subsection{binary classification dilengkapi ilustrasi gambar}
 
-\begin{enumerate}
-
-\item Binary classification yaitu berupa kelas positif dan kelas negatif. Klasifikasi biner adalah dikotomisasi yang diterapkan untuk tujuan praktis, dan dalam banyak masalah klasifikasi biner praktis, kedua kelompok tidak simetris - daripada akurasi keseluruhan, proporsi relatif dari berbagai jenis kesalahan yang menarik. Misalnya, dalam pengujian medis, false positive (mendeteksi penyakit ketika tidak ada) dianggap berbeda dari false negative (tidak mendeteksi penyakit ketika hadir).
+\par Binary classification yaitu berupa kelas positif dan kelas negatif. Klasifikasi biner adalah dikotomisasi yang diterapkan untuk tujuan praktis, dan dalam banyak masalah klasifikasi biner praktis, kedua kelompok tidak simetris - daripada akurasi keseluruhan, proporsi relatif dari berbagai jenis kesalahan yang menarik. Misalnya, dalam pengujian medis, false positive (mendeteksi penyakit ketika tidak ada) dianggap berbeda dari false negative (tidak mendeteksi penyakit ketika hadir).
 
 \begin{figure}[ht]
 \centering
@@ -324,6 +321,8 @@ Penyelesaian Tugas Harian 3 ( No. 1-7 )
 \end{figure}
 
 \subsection{supervised learning dan unsupervised learning dan clustering\\ dengan ilustrasi gambar}
+
+\begin{enumerate}
 
 \item Supervised learning adalah tugas pembelajaran mesin untuk mempelajari suatu fungsi yang memetakan input ke output berdasarkan contoh pasangan input-output. Ini menyimpulkan fungsi dari data pelatihan berlabel yang terdiri dari serangkaian contoh pelatihan. Dalam pembelajaran yang diawasi, setiap contoh adalah pasangan yang terdiri dari objek input (biasanya vektor) dan nilai output yang diinginkan (juga disebut sinyal pengawas). Algoritma pembelajaran yang diawasi menganalisis data pelatihan dan menghasilkan fungsi yang disimpulkan, yang dapat digunakan untuk memetakan contoh-contoh baru. Skenario optimal akan memungkinkan algoritma menentukan label kelas dengan benar untuk instance yang tidak terlihat. Ini membutuhkan algoritma pembelajaran untuk menggeneralisasi dari data pelatihan untuk situasi yang tidak terlihat dengan cara yang "masuk akal" (lihat bias induktif). Tugas paralel dalam psikologi manusia dan hewan sering disebut sebagai pembelajaran konsep.
 
@@ -352,10 +351,12 @@ Penyelesaian Tugas Harian 3 ( No. 1-7 )
 \label{contoh}
 \end{figure}
 
+\end{enumerate}
+
 \subsection{evaluasi dan akurasi dari buku dan disertai ilustrasi contoh
 dengan gambar}
 
-\item Evaluasi adalah tentang bagaimana kita dapat mengevaluasi seberapa baik model bekerja dengan mengukur akurasinya. Dan akurasi akan didefinisikan sebagai persentase kasus yang diklasifikasikan dengan benar. Kita dapat menganalisis kesalahan yang dibuat oleh model, atau tingkat kebingungannya, menggunakan matriks kebingungan. Matriks kebingungan mengacu pada kebingungan dalam model, tetapi matriks kebingungan ini bisa menjadi sedikit sulit untuk dipahami ketika mereka menjadi sangat besar.
+\par Evaluasi adalah tentang bagaimana kita dapat mengevaluasi seberapa baik model bekerja dengan mengukur akurasinya. Dan akurasi akan didefinisikan sebagai persentase kasus yang diklasifikasikan dengan benar. Kita dapat menganalisis kesalahan yang dibuat oleh model, atau tingkat kebingungannya, menggunakan matriks kebingungan. Matriks kebingungan mengacu pada kebingungan dalam model, tetapi matriks kebingungan ini bisa menjadi sedikit sulit untuk dipahami ketika mereka menjadi sangat besar.
 
 \begin{figure}[ht]
 \centering
@@ -365,15 +366,16 @@ dengan gambar}
 \end{figure}
 
 \subsection{ bagaimana cara membuat dan membaca confusion matrix, buat confusion matrix }
-
+\begin{enumerate}
 \item Cara membuat dan membaca confusion matrix :
-\begin{itemize}
-\item 1) Tentukan pokok permasalahan dan atributanya, misal gaji dan listik.
-\item 2) Buat pohon keputusan
-\item 3) Lalu data testingnya
-\item 4) Lalu mencari nilai a, b, c, dan d. Semisal a = 5, b = 1, c = 1, dan d = 3.
-\item 5) Selanjutnya mencari nilai recall, precision, accuracy, serta dan error rate.
-\end{itemize}
+\begin{enumerate}
+\item Tentukan pokok permasalahan dan atributanya, misal gaji dan listik.
+\item Buat pohon keputusan
+\item Lalu data testingnya
+\item Lalu mencari nilai a, b, c, dan d. Semisal a = 5, b = 1, c = 1, dan d = 3.
+\item Selanjutnya mencari nilai recall, precision, accuracy, serta dan error rate.
+\end{enumerate}
+
 \item Berikut adalah contoh dari confusion matrix :
 \begin{itemize}
 \item Recall =3/(1+3) = 0,75
@@ -381,19 +383,23 @@ dengan gambar}
 \item Accuracy =(5+3)/(5+1+1+3) = 0,8
 \item Error Rate =(1+1)/(5+1+1+3) = 0,2
 \end{itemize}
+\end{enumerate}
+
 
 \subsection{bagaimana K-fold cross validation bekerja dengan gambar ilustrasi}
 
-\item Cara kerja K-fold cross validation :
-\begin{itemize}
-\item 1) Total instance dibagi menjadi N bagian.
-\item 2) Fold yang pertama adalah bagian pertama menjadi data uji (testing data) dan sisanya menjadi training data.
-\item 3) Lalu hitung akurasi berdasarkan porsi data tersebut dengan menggunakan persamaan.
-\item 4) Fold yang ke dua adalah bagian ke dua menjadi data uji (testing data) dan sisanya training data. 
-\item 5) Kemudian hitung akurasi berdasarkan porsi data tersebut.
-\item 6) Dan seterusnya hingga habis mencapai fold ke-K.
-\item 7) Terakhir hitung rata-rata akurasi K buah.
-\end{itemize}
+\par Cara kerja K-fold cross validation :
+\begin{enumerate}
+\item Total instance dibagi menjadi N bagian.
+\item Fold yang pertama adalah bagian pertama menjadi data uji (testing data) dan sisanya menjadi training data.
+\item Lalu hitung akurasi berdasarkan porsi data tersebut dengan menggunakan persamaan.
+\item Fold yang ke dua adalah bagian ke dua menjadi data uji (testing data) dan sisanya training data. 
+\item Kemudian hitung akurasi berdasarkan porsi data tersebut.
+\item Dan seterusnya hingga habis mencapai fold ke-K.
+\item Terakhir hitung rata-rata akurasi K buah.
+\end{enumerate}
+
+
 
 \begin{figure}[ht]
 \centering
@@ -404,7 +410,7 @@ dengan gambar}
 
 \subsection{decision tree dengan gambar ilustrasi}
 
-Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gambar dijelaskan secara rinci nanti dalam artikel ini. Untuk saat ini, amati bahwa ia tumbuh dari kiri ke kanan, dimulai dengan simpul keputusan root (kuadrat, juga disebut simpul pilihan) yang cabang-cabangnya mewakili dua atau lebih opsi bersaing yang tersedia bagi para pembuat keputusan. Pada akhir cabang awal ini, ada simpul akhir (segitiga, juga disebut simpul nilai) atau simpul ketidakpastian (lingkaran, juga disebut simpul peluang). Node akhir mewakili nilai tetap. Cabang lingkaran mewakili hasil yang mungkin bersama dengan probabilitasnya masing-masing (yang berjumlah 1,0). Di luar cabang-cabang node ketidakpastian awal ini, mungkin ada lebih banyak bujur sangkar dan lebih banyak lingkaran, yang umumnya bergantian sampai setiap jalur berakhir di simpul akhir.
+\par Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gambar dijelaskan secara rinci nanti dalam artikel ini. Untuk saat ini, amati bahwa ia tumbuh dari kiri ke kanan, dimulai dengan simpul keputusan root (kuadrat, juga disebut simpul pilihan) yang cabang-cabangnya mewakili dua atau lebih opsi bersaing yang tersedia bagi para pembuat keputusan. Pada akhir cabang awal ini, ada simpul akhir (segitiga, juga disebut simpul nilai) atau simpul ketidakpastian (lingkaran, juga disebut simpul peluang). Node akhir mewakili nilai tetap. Cabang lingkaran mewakili hasil yang mungkin bersama dengan probabilitasnya masing-masing (yang berjumlah 1,0). Di luar cabang-cabang node ketidakpastian awal ini, mungkin ada lebih banyak bujur sangkar dan lebih banyak lingkaran, yang umumnya bergantian sampai setiap jalur berakhir di simpul akhir.
 
 \begin{figure}[ht]
 \centering
@@ -415,6 +421,7 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 
 \subsection{Information gain dan entropi dengan gambar ilustrasi}
 
+\begin{enumerate}
 \item Information gain (IG) mengukur seberapa banyak informasi fitur memberi kita tentang kelas. - Fitur yang sempurna mempartisi harus memberikan informasi maksimal. - Fitur yang tidak terkait seharusnya tidak memberikan informasi.
 
 \begin{figure}[ht]
@@ -432,10 +439,11 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 \caption{Entropi}
 \label{contoh}
 \end{figure}
+\end{enumerate}
 
 \subsection{binary classification dilengkapi ilustrasi gambar}
 
-\item Binary classification yaitu berupa kelas positif dan kelas negatif. Klasifikasi biner adalah dikotomisasi yang diterapkan untuk tujuan praktis, dan dalam banyak masalah klasifikasi biner praktis, kedua kelompok tidak simetris - daripada akurasi keseluruhan, proporsi relatif dari berbagai jenis kesalahan yang menarik. Misalnya, dalam pengujian medis, false positive (mendeteksi penyakit ketika tidak ada) dianggap berbeda dari false negative (tidak mendeteksi penyakit ketika hadir).
+\par Binary classification yaitu berupa kelas positif dan kelas negatif. Klasifikasi biner adalah dikotomisasi yang diterapkan untuk tujuan praktis, dan dalam banyak masalah klasifikasi biner praktis, kedua kelompok tidak simetris - daripada akurasi keseluruhan, proporsi relatif dari berbagai jenis kesalahan yang menarik. Misalnya, dalam pengujian medis, false positive (mendeteksi penyakit ketika tidak ada) dianggap berbeda dari false negative (tidak mendeteksi penyakit ketika hadir).
 
 \begin{figure}[ht]
 \centering
@@ -446,6 +454,7 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 
 \subsection{supervised learning dan unsupervised learning dan clustering\\ dengan ilustrasi gambar}
 
+\begin{enumerate}
 \item Supervised learning adalah tugas pembelajaran mesin untuk mempelajari suatu fungsi yang memetakan input ke output berdasarkan contoh pasangan input-output. Ini menyimpulkan fungsi dari data pelatihan berlabel yang terdiri dari serangkaian contoh pelatihan. Dalam pembelajaran yang diawasi, setiap contoh adalah pasangan yang terdiri dari objek input (biasanya vektor) dan nilai output yang diinginkan (juga disebut sinyal pengawas). Algoritma pembelajaran yang diawasi menganalisis data pelatihan dan menghasilkan fungsi yang disimpulkan, yang dapat digunakan untuk memetakan contoh-contoh baru. Skenario optimal akan memungkinkan algoritma menentukan label kelas dengan benar untuk instance yang tidak terlihat. Ini membutuhkan algoritma pembelajaran untuk menggeneralisasi dari data pelatihan untuk situasi yang tidak terlihat dengan cara yang "masuk akal" (lihat bias induktif). Tugas paralel dalam psikologi manusia dan hewan sering disebut sebagai pembelajaran konsep.
 
 \begin{figure}[ht]
@@ -473,9 +482,11 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 \label{contoh}
 \end{figure}
 
+\end{enumerate}
+
 \subsection{evaluasi dan akurasi dari buku dan disertai ilustrasi contoh\\ dengan gambar}
 
-\item Evaluasi adalah tentang bagaimana kita dapat mengevaluasi seberapa baik model bekerja dengan mengukur akurasinya. Dan akurasi akan didefinisikan sebagai persentase kasus yang diklasifikasikan dengan benar. Kita dapat menganalisis kesalahan yang dibuat oleh model, atau tingkat kebingungannya, menggunakan matriks kebingungan. Matriks kebingungan mengacu pada kebingungan dalam model, tetapi matriks kebingungan ini bisa menjadi sedikit sulit untuk dipahami ketika mereka menjadi sangat besar.
+\par Evaluasi adalah tentang bagaimana kita dapat mengevaluasi seberapa baik model bekerja dengan mengukur akurasinya. Dan akurasi akan didefinisikan sebagai persentase kasus yang diklasifikasikan dengan benar. Kita dapat menganalisis kesalahan yang dibuat oleh model, atau tingkat kebingungannya, menggunakan matriks kebingungan. Matriks kebingungan mengacu pada kebingungan dalam model, tetapi matriks kebingungan ini bisa menjadi sedikit sulit untuk dipahami ketika mereka menjadi sangat besar.
 
 \begin{figure}[ht]
 \centering
@@ -485,15 +496,16 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 \end{figure}
 
 \subsection{ bagaimana cara membuat dan membaca confusion matrix, buat confusion matrix }
-
+\begin{enumerate}
 \item Cara membuat dan membaca confusion matrix :
-\begin{itemize}
+\begin{enumerate}
 \item 1) Tentukan pokok permasalahan dan atributanya, misal gaji dan listik.
 \item 2) Buat pohon keputusan
 \item 3) Lalu data testingnya
 \item 4) Lalu mencari nilai a, b, c, dan d. Semisal a = 5, b = 1, c = 1, dan d = 3.
 \item 5) Selanjutnya mencari nilai recall, precision, accuracy, serta dan error rate.
-\end{itemize}
+\end{enumerate}
+
 \item Berikut adalah contoh dari confusion matrix :
 \begin{itemize}
 \item Recall =3/(1+3) = 0,75
@@ -501,19 +513,22 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 \item Accuracy =(5+3)/(5+1+1+3) = 0,8
 \item Error Rate =(1+1)/(5+1+1+3) = 0,2
 \end{itemize}
+\end{enumerate}
+
 
 \subsection{bagaimana K-fold cross validation bekerja dengan gambar ilustrasi}
 
-\item Cara kerja K-fold cross validation :
-\begin{itemize}
-\item 1) Total instance dibagi menjadi N bagian.
-\item 2) Fold yang pertama adalah bagian pertama menjadi data uji (testing data) dan sisanya menjadi training data.
-\item 3) Lalu hitung akurasi berdasarkan porsi data tersebut dengan menggunakan persamaan.
-\item 4) Fold yang ke dua adalah bagian ke dua menjadi data uji (testing data) dan sisanya training data. 
-\item 5) Kemudian hitung akurasi berdasarkan porsi data tersebut.
-\item 6) Dan seterusnya hingga habis mencapai fold ke-K.
-\item 7) Terakhir hitung rata-rata akurasi K buah.
-\end{itemize}
+\par Cara kerja K-fold cross validation :
+\begin{enumerate}
+\item Total instance dibagi menjadi N bagian.
+\item Fold yang pertama adalah bagian pertama menjadi data uji (testing data) dan sisanya menjadi training data.
+\item Lalu hitung akurasi berdasarkan porsi data tersebut dengan menggunakan persamaan.
+\item Fold yang ke dua adalah bagian ke dua menjadi data uji (testing data) dan sisanya training data. 
+\item Kemudian hitung akurasi berdasarkan porsi data tersebut.
+\item Dan seterusnya hingga habis mencapai fold ke-K.
+\item Terakhir hitung rata-rata akurasi K buah.
+\end{enumerate}
+
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.5]{figures/f5.jpg}
@@ -523,7 +538,7 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 
 \subsection{decision tree dengan gambar ilustrasi}
 
-\item Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gambar dijelaskan secara rinci nanti dalam artikel ini. Untuk saat ini, amati bahwa ia tumbuh dari kiri ke kanan, dimulai dengan simpul keputusan root (kuadrat, juga disebut simpul pilihan) yang cabang-cabangnya mewakili dua atau lebih opsi bersaing yang tersedia bagi para pembuat keputusan. Pada akhir cabang awal ini, ada simpul akhir (segitiga, juga disebut simpul nilai) atau simpul ketidakpastian (lingkaran, juga disebut simpul peluang). Node akhir mewakili nilai tetap. Cabang lingkaran mewakili hasil yang mungkin bersama dengan probabilitasnya masing-masing (yang berjumlah 1,0). Di luar cabang-cabang node ketidakpastian awal ini, mungkin ada lebih banyak bujur sangkar dan lebih banyak lingkaran, yang umumnya bergantian sampai setiap jalur berakhir di simpul akhir.
+\par Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gambar dijelaskan secara rinci nanti dalam artikel ini. Untuk saat ini, amati bahwa ia tumbuh dari kiri ke kanan, dimulai dengan simpul keputusan root (kuadrat, juga disebut simpul pilihan) yang cabang-cabangnya mewakili dua atau lebih opsi bersaing yang tersedia bagi para pembuat keputusan. Pada akhir cabang awal ini, ada simpul akhir (segitiga, juga disebut simpul nilai) atau simpul ketidakpastian (lingkaran, juga disebut simpul peluang). Node akhir mewakili nilai tetap. Cabang lingkaran mewakili hasil yang mungkin bersama dengan probabilitasnya masing-masing (yang berjumlah 1,0). Di luar cabang-cabang node ketidakpastian awal ini, mungkin ada lebih banyak bujur sangkar dan lebih banyak lingkaran, yang umumnya bergantian sampai setiap jalur berakhir di simpul akhir.
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.5]{figures/f6.jpg}
@@ -532,7 +547,7 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 \end{figure}
 
 \subsection{Information gain dan entropi dengan gambar ilustrasi}
-
+\begin{enumerate}
 \item Information gain (IG) mengukur seberapa banyak "informasi" fitur memberi kita tentang kelas. - Fitur yang sempurna mempartisi harus memberikan informasi maksimal. - Fitur yang tidak terkait seharusnya tidak memberikan informasi.
 \begin{figure}[ht]
 \centering
@@ -544,11 +559,162 @@ Decision tree adalah model visual yang terdiri dari node dan cabang, seperti Gam
 \item Entropi merupakan kemurnian dalam koleksi contoh yang sewenang-wenang.
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.5]{figures/f8.jpg}
+\includegraphics[scale=0.7]{figures/f8.jpg}
 \caption{Entropi}
 \label{contoh}
 \end{figure}
+
 \end{enumerate}
+
+\subsection{scikit-learn}
+\begin{enumerate}
+
+\item load dataset 
+\begin{figure}
+\centering
+\includegraphics[scale=0.9]{figures/g1.jpg}
+\caption{load dataset}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in dengan mengimport pandas dengan diperumpamakan sebagai pd. Pada baris ke dua, dibuat variable nanas untuk memanggil pd sehingga dapat membaca file csv. Dan pada baris ke 3 variable dipanggil. Sehingga menghasilkan output 395. 
+
+\item generate binary label (pass/fail) based on G1+G2+G3 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g2.jpg}
+\caption{generate binary label}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama, dibuat variable nanas untuk memanggil nanas dengan apply lamda sehingga baris selanjutnya nanas meng-drop G1, G2, dan G3. Dan pada baris ke 3 variable dipanggil. Sehingga menghasilkan output sebuah data 5 rows x 31 columns.
+
+\item  use one-hot encoding on categorical columns 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g3.jpg}
+\caption{use one-hot encoding on categorical columns}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama, dibuat variable nanas untuk memanggil pd dengan get dummies nanas columns. Dan pada baris selanjutnya variable dipanggil. Sehingga menghasilkan output sebuah data 5 rows x 57 columns.
+
+\item shuffle rows,  split training dan testing data 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g4.jpg}
+\caption{shuffle rows, split training dan testing data}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama, dibuat variable nanas untuk memanggil nanas sebagai sample. Lalu pada baris selanjutnya dilakukan split training dan testing data. Setelah data dilakukan split training da testing, import file numpy sebagai np dan kemudian melakukan prerintah print. Sehingga menghasilkan passing: 116 out of 395.
+
+\item fit a decision tree
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g5.jpg}
+\caption{fit a decision tree}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama, import tree dari sklearn. Pada baris selanjutnya variable duku memanggil tree dengan decision tree clasisifier dengan criteria entropy dan max dept = 5. Dan pada baris terakhir, variable duku memanggil duku dengan fit nanas train att dan nanas train pass.
+
+\item visualize tree 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g6a.jpg}
+\caption{visualize tree}
+\label{contoh}
+\end{figure}
+\par Pada gambar tesebut menjelaskan import graphviz dengan variabelm dot data, class name, class name, dan graph. Sehingga menampilkan gambar sebagai berikut :
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g6b.jpeg}
+\caption{visualize tree}
+\label{contoh}
+\end{figure}
+
+
+\item save tree
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g7.jpg}
+\caption{save tree}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama, Tree export graphviz duku dengan out file student-performance.dot dan label all. pada baris selanjutnya dijelaskan featura names = list dan class name fail atau pas. Apabila bernilai true akan filled dan rounded.
+ 
+\item t.score
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g8.jpg}
+\caption{t.score}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama, parameter dengan hasilnya adalah duku.score yang dimana terdapat perhitungan nanas test at dan nana test pass.
+
+
+\item show average score and +/- two standard deviations away 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g9.jpg}
+\caption{show average score}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama memanggil cross vla score dari sklearn.model selection. Pada baris selanjutnya membuat variabel scores. Dan pada baris terakhir score akan ditampilkan.
+
+\item for max depth in range 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g10.jpg}
+\caption{for max depth in range}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama mendefinisikan range dari 1 hinga 20. Lalu, variabel duku memdefinisikan tree dengan decision tree clasification kriteria entropy. Dan variable scores mendefinisikan duku, nanas att, nanas pass dan cv = 5. Baris terakhir adalah menampilkan hasil.
+
+\item depth acc
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g11.jpg}
+\caption{depth acc}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa variabel depth acc mendefinisikan np empty dengan i = 0 dari range 1-20. Dimana pada range tersebut terdapat variabel duku dan score. Variabel duku memdefinisikan tree dengan decision tree clasification kriteria entropy. Dan variable scores mendefinisikan duku, nanas att, nanas pass dan cv = 5. Dan pada baris selanjutnya adalah pendefinisian depth acc. Sehingga didapatlah hasil berupa array.
+
+\item matplotlib
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g12.jpg}
+\caption{matplotlib}
+\label{contoh}
+\end{figure}
+\par Pada gambar tersebut dijelaskan bahwa in pada baris pertama mendefinisikan pemanggilan  matplotlib.pyplot sebagai plt. Lalu pendefinisian figure dari plt serta error bar. Dan pada baris terakhir menampilkan plt. Maka akan muncul sebuah gambar berupa giagram.
+
+\end{enumerate}
+
+\subsection{Penanganan Error}
+\begin{enumerate}
+\item Skrinsut error
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/h1.jpg}
+\caption{error}
+\label{contoh}
+\end{figure}
+
+\item Tuliskan kode eror dan jenis errornya
+\par Kode dan jenis error yang didapatkan adalah :
+\begin{itemize}
+\item Kode error = FileNotFoundError: File b'student-por.csv' does not exist
+\item Jenis error = FileNotFoundError
+\end{itemize}
+
+\item Solusi pemecahan masalah error tersebut
+\par Berikut adalah solusi dari permasalahan pada no. 1
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{figures/g1.jpg}
+\caption{penyelesaian}
+\label{contoh}
+\end{figure}
+
+\end{enumerate}
+
 
 
 \section{Rahmi Roza/1164085}
