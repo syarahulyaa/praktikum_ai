@@ -306,6 +306,310 @@ Penyelesaian Tugas Harian 3 ( No. 1-7 )
 \par
 \end{itemize}
 
+\subsection{Praktek Scikit-Learn}
+Penyelesaian Tugas Harian 4 ( No. 1-12 )
+\begin{enumerate}
+\item Pembahasan Codingan Dan Hasilnya
+\begin{enumerate}
+\item Codingan Pertama :
+\par Penjelasan : Codingan pertama ini akan meload ( menampilkan ) data pada file yang ditentukan. Untuk codingan ini file yang dieksekusi ialah " student-mat.csv " . Secara jelasnya, dalam codingan dapat dilihat bahwa variabel bakso didefinisikan untuk pembacaan csv dari " pizza " dimana untuk pemisahnya yaitu separation berupa ; . Setelah itu variabel bakso di "print" dengan perintah menampilkan "len" panjang ataupun jumlah dan hasilnya berupa angka 395 . 
+\par
+\begin{itemize}
+\par
+\item Hasil Codingan Pertama :
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/hasil1.jpg}
+\caption{codingan pertama}
+\label{contoh}
+\end{figure}
+
+\par
+\end{itemize}
+\item Codingan Kedua :
+\par Penjelasan : Codingan kedua ini secara keseluruhan menampilkan  baris  G1, G2 dan G3 ( berdasarkan kriterianya ) untuk kolom PASS pada variabel bakso. Untuk lebih jelasnya, pada codingan terdapat pendefinisian pembacaan "lamda" ( panjang gelombang ) dari baris G1, G2 dan G3. Apabila row-row tersebut bernilai lebih dari 35 maka akan terdefinisikan angka "1" apabila tidak, maka akan terdefinisikan angka "0" pada kolom PASS ( sesuai permintaan awal ). Selanjutnya variabelnya di "print" sehingga menampilkan keluaran. Tidak lupa terdapat juga jumlah dari baris dan kolom yang terubah sesuai dengan baris yang dieksekusi.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Kedua :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/hasil2.jpg}
+\caption{codingan kedua}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Ketiga :
+\par Penjelasan : Secara keseluruhan, codingan ini mendefinisikan pemanggilan get dummies dari pizza dalam variabel bakso. Di dalam get dummies sendiri akan terdefinisikan variabel bakso dengan kolom-kolom yang akan dieksekusi seperti school, address dll. Kemudian variabel tersebut di definisikan untuk mendapatkan kembalian berupa keluaran dari eksekusi perintah variabel bakso beserta dengan jumlah baris dan kolom data yang dieksekusi.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Ketiga :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/hasil3.jpg}
+\caption{codingan ketiga}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Keempat :
+\par Penjelasan : Secara keseluruhan codingan ini difungsikan untuk mendefinisikan pembagian data yang berupa training dan testing data. Secara jelasnya pertama-tama variabel bakso akan mendefinisikan sampel yang akan digunakan ( berupa shuffle row ) . Nah kemudian masing2 parameter yaitu bakso train dan bakso test akan berjumlah 500 data ( telah dibagi untuk training dan testing ). Selanjutnya dilakukan pengeksekusian untuk kolom Pass, apabila sesuai dengan "axis=1" maka eksekusi fungsi berhasil. Selain itu juga disertakan jumlah dari peserta yang lolos dari semua nilai data setnya.  
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Keempat :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/hasil4.jpg}
+\caption{codingan keempat}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Kelima :
+\par Penjelasan : Secara keseluruhan, codingan ini hanya membuktikan pengujian dari Klasifikasi Decision Tree yang ada, apakah true atau tidak dan hasilnya true. Apabila dibahas secara lengkap maka pada codingan ini di definisikan library sklearn untuk mengimpor atau menampilkan tree. Variabel sate difungsikan untuk membaca klasifikasi decision tree dari tree itu sendiri dengan 2 parameternya yaitu kriteria="entropy" dan max depth=5. Maka selanjutnya variabel sate akan masuk dan terbaca dalam module fit dengan 2 parameter yaitu bakso trai att dan bakso train pass.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Kelima :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/hasil5.jpg}
+\caption{codingan kelima}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Keenam :
+\par Penjelasan :  Codingan ini memberikan gambaran dari klasifikasi decision tree dari pengolahan parameter yang dieksekusi kedalam variabel sate. Tentunya dengan pemanfaatan library graphviz yang telah diimport dan difungsikan.
+\par Untuk gambarnya terlalu besar ketika di Console sehingga hanya sebagian yang bisa di screenshoot untuk dijadikan hasil.
+\begin{itemize}
+\par
+\item Hasil Codingan Keenam :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/hasil6.jpg}
+\caption{codingan keenam}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Ketujuh :
+\par Penjelasan : Secara keseluruhan, codingan ini membahas tentang penyimpanan tree dari library graphiz yang dieksekusi bersamaan dengan variabel sate dan parameter lainnya. Dilakukan pengecekan dan pengujian apakah klasifikasi decision treenya dapat berjalan atau tidak. Apabila tidak berjalan, maka akan terjadi error, namun codingan ini berfungsi.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Ketujuh :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/hasil7.jpg}
+\caption{codingan ketujuh}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Kedelapan :
+\par Penjelasan : Secara keseluruhan, codingan ini membaca score dari variabel sate dimana terdapat 2 parameter yang dihitung dan diuji yaitu bakso test att dan bakso test pass. Untuk hasilnya sendiri mengapa berupa angka, dikarenakan pada parameter yang dieksekusi memang memiliki data sehingga dieksekusi dan menghasilkan keluaran dari score tersebut.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Kedelapan :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figures/hasil8.jpg}
+\caption{codingan kedelapan}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Kesembilan :
+\par Penjelasan : Secara keseluruhan, codingan ini membahas mengenai pengkesekusian fungsi dan variabel dari library yang didefinisikan dan yang diimport. Penjelasan lebih jelasnya ialah codingan ini mendefinisikan library sklearn.model.selection kemudian mengimpor cross val score. Kemudian variabel score mendefinisikan cross val score yang telah diimport tadi dengan 4 parameter yaitu sate, bakso att, bakso pass dan cv=5 untuk dieksekusi. Setelah semua pemrosesan tersebut maka hasil yang di "print" ialah rata2 perhitungan dari variabel score dimana dan standar dari (+/-) tentunya dengan ketentuan parameter Accuracy .
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Kesembilan :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/hasil9.jpg}
+\caption{codingan kesembilan}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Ke-10 :
+\par Penjelasan : Codingan ini mendefinisikan max depth dalam jarak angka antara parameter 1 dan 20. Variabel sate mendefinisikan klasifier decision tree dengan 2 parameter. Kemudian variabel score mengeksekusi parameter lainnya yaitu seperti sate, bakso att, bakso pass dan cv=5 ) . Hasil yang ditampilkan ialah dari max depth, accuracy dan (+/-) dan akhirnya hasilnya nampak seperti pada gambar.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Ke-10 :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figures/hasil10.jpg}
+\caption{codingan ke-10}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Ke-11 :
+\par Penjelasan : Codingan ini mendefinisikan bahwa variabel fadila akan mengeksekusi empty dari importan library numphy yang dinamakan np dengan 2 parameter yaitu 19,3 dan float. i didefinisikan dengan angka 0 kemudian untuk perhitungan jarak max depth diantara parameter 1 dan 20. Variabel sate mendefinisikan klasifikasi decision tree dengan 2 parameter. setelah itu, variabel score mendefinisikan variabel fadila dengan i dan 0, variabel kedua dari fadila dengan i dan 1 serta variabel ketiga dari fadila dengan i dan 2, maka pengeksekusian akhir bahwa variabel i akan ditambah dengan angka 1 untuk hasil akhirnya. Keluarannya akan berupa array dari perhitungan parameter dan variabel yang telah didefinisikan sebelumnya.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Ke-11 :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figures/hasil11y.jpg}
+\caption{codingan ke-11}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\par
+\item Codingan Ke-12 :
+\par Penjelasan : Codingan ini mendefinisikan pemanggilan dari library matplotlib.pyplot sebagai fadila sehingga nanti hasilnya akan berbentuk gambar grafik/gelombang. Untuk variabel fig dan ax akan mendefinisikan subplots dari fadila. Setelah itu ketentuan dari parameter depth acc = 0, depth acc = 1 dan depth acc 2. Selanjutnya untuk menampilkan gelombang maka panggil variabel fadila dengan perintah show.
+\par 
+\begin{itemize}
+\par
+\item Hasil Codingan Ke-12 :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/hasil12.jpg}
+\caption{codingan ke-12}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+
+\subsection{Penanganan Error}
+\par Pembahasan dan Penyelesaiian Error
+\par
+\begin{enumerate}
+\item Error 1	: 
+\par
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/errorr.jpg}
+\caption{error 1}
+\label{contoh}
+\end{figure}
+
+\par
+\begin{itemize}
+\item Penjelasan	: 
+\begin{itemize}
+\item Pada error tersebut dikatakan bahwa untuk file -b"student-mat.csv" tidak ada. Mengapa? karena file codingan yang dieksekusi yaitu student-performance.py tidak berada pada folder yang sama jadi tidak dapat terpanggil dan tereksekusi.
+\item Nah, untuk penyelesaiannya yaitu dengan menambahkan fungsi yang mendefinisikan folder tempat file "student-mat.csv berada. 
+\item Silahkan tambahkan perintah " dataset/student-mat.csv " pada codingannya
+\item Dengan penambahan perintah tersebut maka tidak akan terjadi error lagi.
+\end{itemize}
+\end{itemize}
+
+
+
+\par
+\item Error 2	:
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/error6.jpg}
+\caption{error 2}
+\label{contoh}
+\end{figure}
+
+
+\par
+\begin{itemize}
+\item Penjelasan	: 
+\begin{itemize}
+\item Pada error tersebut dikatakan bahwa tidak terdapat module graphiz sehingga codingan tidak dapat dieksekusi.
+\item Penanganannya yaitu dengan melakukan penginstalan module graphiz itu sendiri
+\item Penginstalan bisa dilakukan pada Anaconda Prompt ataupun Command Prompt
+\item Pada promt tersebut masukkan perintah " conda install graphviz "
+\item Silahkan tunggu sampai instalasi berhasil
+\item Setelah selesai, maka cobalah RUN kembali codingan terkait
+\item Maka tidak akan terjadi error lagi.
+\end{itemize}
+\end{itemize}
+
+\par
+\item Error 3	:
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/error62.jpg}
+\caption{error 3}
+\label{error 3}
+\end{figure}
+
+\par
+\begin{itemize}
+\item Penjelasan	: 
+\begin{itemize}
+\item Pada error tersebut dikatakan bahwa eksekusinya dilarang atau di aborted.
+\item Penanganannya sebenarnya sederhana
+\item Tidak terdapat kesalahan dalam pembuatan dan penyesuaian codingan 
+\item Mungkin saja terjadi error tersebut karena pengeksekusian fungsi yang berulang-ulang pada codingan yang berbeda
+\item Silahkan di Restart atau dijalankan kembali aplikasi spydernya
+\item Run kembali maka errornya tidak akan muncul lagi dan hasilnya akan muncul seperti pada gambar pengujian no 6
+\end{itemize}
+\end{itemize}
+
+\par
+\item Error 4	:
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/error8.jpg}
+\caption{error 4}
+\label{contoh}
+\end{figure}
+
+\par
+
+\par
+\begin{itemize}
+\item Penjelasan	: 
+\begin{itemize}
+\item Pada error tersebut dikatakan terdapat error karakter b nya gak kebaca
+\item Penanganannya sebenarnya sederhana, dari codingan tidak ada yang salah
+\item Disarankan agar mengulang kembali penamaan untuk variabel terkait dari awal codingan hingga akhir sehingga lebih teratur
+\item Silahkan dicoba run codingan tersebut kembali
+\item Maka codingannya akan berhasil dan muncul seperti pada contoh codingan no 8 diatas
+\end{itemize}
+\end{itemize}
+
+\end{enumerate}
 \end{enumerate}
 
 \section{Lusia Violita Aprilian}
@@ -919,7 +1223,7 @@ Penyelesaian Tugas Harian 3 ( No. 1-7 )
 
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.7]{figures/gambar9.PNG}
+\includegraphics[scale=0.3]{figures/gambar9.PNG}
 \caption{informaion gain 1}
 \label{gambar9}
 \end{figure}
@@ -941,10 +1245,6 @@ Penyelesaian Tugas Harian 3 ( No. 1-7 )
 \par
 \end{itemize}
 
-\end{enumerate}
-
-
-\section{Rahmi Roza/1164085}
 \subsection{Scikit-learn}
 Penyelesaian Tugas Harian 4 ( No. 1-12 )
 \begin{itemize}
@@ -1165,314 +1465,6 @@ Penyelesaian Tugas Harian 4 ( No. 1-12 )
 
 \end{enumerate}
 
-
-
-
-\par
-\par
-\par
-\section{Fadila/1164072}
-\subsection{Praktek Scikit-Learn}
-Penyelesaian Tugas Harian 4 ( No. 1-12 )
-\begin{enumerate}
-\item Pembahasan Codingan Dan Hasilnya
-\begin{enumerate}
-\item Codingan Pertama :
-\par Penjelasan : Codingan pertama ini akan meload ( menampilkan ) data pada file yang ditentukan. Untuk codingan ini file yang dieksekusi ialah " student-mat.csv " . Secara jelasnya, dalam codingan dapat dilihat bahwa variabel bakso didefinisikan untuk pembacaan csv dari " pizza " dimana untuk pemisahnya yaitu separation berupa ; . Setelah itu variabel bakso di "print" dengan perintah menampilkan "len" panjang ataupun jumlah dan hasilnya berupa angka 395 . 
-\par
-\begin{itemize}
-\par
-\item Hasil Codingan Pertama :
-\par
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.7]{figures/hasil1.jpg}
-\caption{codingan pertama}
-\label{contoh}
-\end{figure}
-
-\par
-\end{itemize}
-\item Codingan Kedua :
-\par Penjelasan : Codingan kedua ini secara keseluruhan menampilkan  baris  G1, G2 dan G3 ( berdasarkan kriterianya ) untuk kolom PASS pada variabel bakso. Untuk lebih jelasnya, pada codingan terdapat pendefinisian pembacaan "lamda" ( panjang gelombang ) dari baris G1, G2 dan G3. Apabila row-row tersebut bernilai lebih dari 35 maka akan terdefinisikan angka "1" apabila tidak, maka akan terdefinisikan angka "0" pada kolom PASS ( sesuai permintaan awal ). Selanjutnya variabelnya di "print" sehingga menampilkan keluaran. Tidak lupa terdapat juga jumlah dari baris dan kolom yang terubah sesuai dengan baris yang dieksekusi.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Kedua :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.7]{figures/hasil2.jpg}
-\caption{codingan kedua}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Ketiga :
-\par Penjelasan : Secara keseluruhan, codingan ini mendefinisikan pemanggilan get dummies dari pizza dalam variabel bakso. Di dalam get dummies sendiri akan terdefinisikan variabel bakso dengan kolom-kolom yang akan dieksekusi seperti school, address dll. Kemudian variabel tersebut di definisikan untuk mendapatkan kembalian berupa keluaran dari eksekusi perintah variabel bakso beserta dengan jumlah baris dan kolom data yang dieksekusi.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Ketiga :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/hasil3.jpg}
-\caption{codingan ketiga}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Keempat :
-\par Penjelasan : Secara keseluruhan codingan ini difungsikan untuk mendefinisikan pembagian data yang berupa training dan testing data. Secara jelasnya pertama-tama variabel bakso akan mendefinisikan sampel yang akan digunakan ( berupa shuffle row ) . Nah kemudian masing2 parameter yaitu bakso train dan bakso test akan berjumlah 500 data ( telah dibagi untuk training dan testing ). Selanjutnya dilakukan pengeksekusian untuk kolom Pass, apabila sesuai dengan "axis=1" maka eksekusi fungsi berhasil. Selain itu juga disertakan jumlah dari peserta yang lolos dari semua nilai data setnya.  
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Keempat :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/hasil4.jpg}
-\caption{codingan keempat}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Kelima :
-\par Penjelasan : Secara keseluruhan, codingan ini hanya membuktikan pengujian dari Klasifikasi Decision Tree yang ada, apakah true atau tidak dan hasilnya true. Apabila dibahas secara lengkap maka pada codingan ini di definisikan library sklearn untuk mengimpor atau menampilkan tree. Variabel sate difungsikan untuk membaca klasifikasi decision tree dari tree itu sendiri dengan 2 parameternya yaitu kriteria="entropy" dan max depth=5. Maka selanjutnya variabel sate akan masuk dan terbaca dalam module fit dengan 2 parameter yaitu bakso trai att dan bakso train pass.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Kelima :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/hasil5.jpg}
-\caption{codingan kelima}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Keenam :
-\par Penjelasan :  Codingan ini memberikan gambaran dari klasifikasi decision tree dari pengolahan parameter yang dieksekusi kedalam variabel sate. Tentunya dengan pemanfaatan library graphviz yang telah diimport dan difungsikan.
-\par Untuk gambarnya terlalu besar ketika di Console sehingga hanya sebagian yang bisa di screenshoot untuk dijadikan hasil.
-\begin{itemize}
-\par
-\item Hasil Codingan Keenam :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/hasil6.jpg}
-\caption{codingan keenam}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Ketujuh :
-\par Penjelasan : Secara keseluruhan, codingan ini membahas tentang penyimpanan tree dari library graphiz yang dieksekusi bersamaan dengan variabel sate dan parameter lainnya. Dilakukan pengecekan dan pengujian apakah klasifikasi decision treenya dapat berjalan atau tidak. Apabila tidak berjalan, maka akan terjadi error, namun codingan ini berfungsi.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Ketujuh :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.6]{figures/hasil7.jpg}
-\caption{codingan ketujuh}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Kedelapan :
-\par Penjelasan : Secara keseluruhan, codingan ini membaca score dari variabel sate dimana terdapat 2 parameter yang dihitung dan diuji yaitu bakso test att dan bakso test pass. Untuk hasilnya sendiri mengapa berupa angka, dikarenakan pada parameter yang dieksekusi memang memiliki data sehingga dieksekusi dan menghasilkan keluaran dari score tersebut.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Kedelapan :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.8]{figures/hasil8.jpg}
-\caption{codingan kedelapan}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Kesembilan :
-\par Penjelasan : Secara keseluruhan, codingan ini membahas mengenai pengkesekusian fungsi dan variabel dari library yang didefinisikan dan yang diimport. Penjelasan lebih jelasnya ialah codingan ini mendefinisikan library sklearn.model.selection kemudian mengimpor cross val score. Kemudian variabel score mendefinisikan cross val score yang telah diimport tadi dengan 4 parameter yaitu sate, bakso att, bakso pass dan cv=5 untuk dieksekusi. Setelah semua pemrosesan tersebut maka hasil yang di "print" ialah rata2 perhitungan dari variabel score dimana dan standar dari (+/-) tentunya dengan ketentuan parameter Accuracy .
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Kesembilan :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.7]{figures/hasil9.jpg}
-\caption{codingan kesembilan}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Ke-10 :
-\par Penjelasan : Codingan ini mendefinisikan max depth dalam jarak angka antara parameter 1 dan 20. Variabel sate mendefinisikan klasifier decision tree dengan 2 parameter. Kemudian variabel score mengeksekusi parameter lainnya yaitu seperti sate, bakso att, bakso pass dan cv=5 ) . Hasil yang ditampilkan ialah dari max depth, accuracy dan (+/-) dan akhirnya hasilnya nampak seperti pada gambar.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Ke-10 :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.3]{figures/hasil10.jpg}
-\caption{codingan ke-10}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Ke-11 :
-\par Penjelasan : Codingan ini mendefinisikan bahwa variabel fadila akan mengeksekusi empty dari importan library numphy yang dinamakan np dengan 2 parameter yaitu 19,3 dan float. i didefinisikan dengan angka 0 kemudian untuk perhitungan jarak max depth diantara parameter 1 dan 20. Variabel sate mendefinisikan klasifikasi decision tree dengan 2 parameter. setelah itu, variabel score mendefinisikan variabel fadila dengan i dan 0, variabel kedua dari fadila dengan i dan 1 serta variabel ketiga dari fadila dengan i dan 2, maka pengeksekusian akhir bahwa variabel i akan ditambah dengan angka 1 untuk hasil akhirnya. Keluarannya akan berupa array dari perhitungan parameter dan variabel yang telah didefinisikan sebelumnya.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Ke-11 :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.3]{figures/hasil11y.jpg}
-\caption{codingan ke-11}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\par
-\item Codingan Ke-12 :
-\par Penjelasan : Codingan ini mendefinisikan pemanggilan dari library matplotlib.pyplot sebagai fadila sehingga nanti hasilnya akan berbentuk gambar grafik/gelombang. Untuk variabel fig dan ax akan mendefinisikan subplots dari fadila. Setelah itu ketentuan dari parameter depth acc = 0, depth acc = 1 dan depth acc 2. Selanjutnya untuk menampilkan gelombang maka panggil variabel fadila dengan perintah show.
-\par 
-\begin{itemize}
-\par
-\item Hasil Codingan Ke-12 :
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/hasil12.jpg}
-\caption{codingan ke-12}
-\label{contoh}
-\end{figure}
-
-\end{itemize}
-\end{enumerate}
 \end{enumerate}
 
-\subsection{Penanganan Error}
-\par Pembahasan dan Penyelesaiian Error
-\par
-\begin{enumerate}
-\item Error 1	: 
-\par
-\par
 
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/errorr.jpg}
-\caption{error 1}
-\label{contoh}
-\end{figure}
-
-\par
-\begin{itemize}
-\item Penjelasan	: 
-\begin{itemize}
-\item Pada error tersebut dikatakan bahwa untuk file -b"student-mat.csv" tidak ada. Mengapa? karena file codingan yang dieksekusi yaitu student-performance.py tidak berada pada folder yang sama jadi tidak dapat terpanggil dan tereksekusi.
-\item Nah, untuk penyelesaiannya yaitu dengan menambahkan fungsi yang mendefinisikan folder tempat file "student-mat.csv berada. 
-\item Silahkan tambahkan perintah " dataset/student-mat.csv " pada codingannya
-\item Dengan penambahan perintah tersebut maka tidak akan terjadi error lagi.
-\end{itemize}
-\end{itemize}
-
-
-
-\par
-\item Error 2	:
-\par
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/error6.jpg}
-\caption{error 2}
-\label{contoh}
-\end{figure}
-
-
-\par
-\begin{itemize}
-\item Penjelasan	: 
-\begin{itemize}
-\item Pada error tersebut dikatakan bahwa tidak terdapat module graphiz sehingga codingan tidak dapat dieksekusi.
-\item Penanganannya yaitu dengan melakukan penginstalan module graphiz itu sendiri
-\item Penginstalan bisa dilakukan pada Anaconda Prompt ataupun Command Prompt
-\item Pada promt tersebut masukkan perintah " conda install graphviz "
-\item Silahkan tunggu sampai instalasi berhasil
-\item Setelah selesai, maka cobalah RUN kembali codingan terkait
-\item Maka tidak akan terjadi error lagi.
-\end{itemize}
-\end{itemize}
-
-\par
-\item Error 3	:
-\par
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/error62.jpg}
-\caption{error 3}
-\label{error 3}
-\end{figure}
-
-\par
-\begin{itemize}
-\item Penjelasan	: 
-\begin{itemize}
-\item Pada error tersebut dikatakan bahwa eksekusinya dilarang atau di aborted.
-\item Penanganannya sebenarnya sederhana
-\item Tidak terdapat kesalahan dalam pembuatan dan penyesuaian codingan 
-\item Mungkin saja terjadi error tersebut karena pengeksekusian fungsi yang berulang-ulang pada codingan yang berbeda
-\item Silahkan di Restart atau dijalankan kembali aplikasi spydernya
-\item Run kembali maka errornya tidak akan muncul lagi dan hasilnya akan muncul seperti pada gambar pengujian no 6
-\end{itemize}
-\end{itemize}
-
-\par
-\item Error 4	:
-\par
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.4]{figures/error8.jpg}
-\caption{error 4}
-\label{contoh}
-\end{figure}
-
-\par
-
-\par
-\begin{itemize}
-\item Penjelasan	: 
-\begin{itemize}
-\item Pada error tersebut dikatakan terdapat error karakter b nya gak kebaca
-\item Penanganannya sebenarnya sederhana, dari codingan tidak ada yang salah
-\item Disarankan agar mengulang kembali penamaan untuk variabel terkait dari awal codingan hingga akhir sehingga lebih teratur
-\item Silahkan dicoba run codingan tersebut kembali
-\item Maka codingannya akan berhasil dan muncul seperti pada contoh codingan no 8 diatas
-\end{itemize}
-\end{itemize}
-
-\end{enumerate}
