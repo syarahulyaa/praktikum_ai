@@ -247,7 +247,7 @@ keputusan umum dan rata-rata. Jika kita menggunakan metode yang paling umum, itu
 \item Ilustrasi Gambar Voting Random Forest :
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.8]{figures/aku2.png}
+\includegraphics[scale=1]{figures/aku2.png}
 \caption{Voting Random forest}
 \label{contoh}
 \end{figure}
@@ -255,10 +255,185 @@ keputusan umum dan rata-rata. Jika kita menggunakan metode yang paling umum, itu
 \end{enumerate}
 
 
-\end{document}
+\section{Fadila/1164072}
+\subsection{Teori}
+Penyelesaian Tugas Harian 5 ( No. 1-6 )
+\begin{enumerate}
+\item Random Forest Dan Ilustrasi Gambarnya
+\begin{itemize}
+\item Pengertian Random Forest:
+\par Random forest ( hutan acak ) atau biasa juga disebut dengan istilah random decision fores (hutan keputusan acak ) merupakan metode pembelajaran ensembel untuk klasifikasi, regresi yang beroperasi dengan membangun banyak pohon keputusan pada waktu pelatihan dan menghasilkan kelas yang merupakan mode kelas (klasifikasi) atau prediksi rata-rata (regresi) dari masing-masing pohon.
+\item Ilustrasi Gambar Random Forest :
+\par
 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/random1.jpg}
+\caption{random forest}
+\label{contoh}
+\end{figure}
 
-\section{Method 1}
-Definition, steps, algoritm or equation of method 1 and how to apply into your data
-\section{Method 2}
-Definition, steps, algoritm or equation of method 2 and how to apply into your data
+\par
+\end{itemize}
+\item Cara Membaca Dataset, Dan artikan makna setiap file dan isinya.
+\begin{itemize}
+\item Cara Membaca Dataset :
+\par Membaca Dataset
+\begin{enumerate}
+\item Langakh-langkah cara membaca dataset :
+\begin{itemize}
+\item Pertama-tama kita harus membuka Aplikasi yang digunakan untuk membuka datasetnya 
+\item Yang saya gunakan ialah spyder dari Anaconda Navigator
+\item Selanjutnya import libraries seperti numphy, pandas, matplotlib dll ( sesuai kebutuhan ).
+\item Silahkan untuk memasukkan kode python yang digunakan untuk membaca file csv yang berada pada dataset 
+\par dataset = pd.read\_.csv('Data.csv)
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/data1.jpg}
+\caption{random forest 1}
+\label{contoh}
+\end{figure}
+\par
+\par
+\item Kemudian jalankan script python tersebut
+\item Perhatikan pada bagian " window consolenya ", tampilan akan seperti berikut :
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/data2.jpg}
+\caption{random forest 2}
+\label{contoh}
+\end{figure}
+\par
+\par
+\item Dari window 'explorer' tersebut, kita dapat melihat dataset yang terimport.
+\par Akan ada kolom nama, tipe, size dan values
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/data3.jpg}
+\caption{random forest 3}
+\label{contoh}
+\end{figure}
+\par
+\par
+\item Lalu klik dataset cell, maka akan muncul seperti berikut :
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/data4.jpg}
+\caption{random forest 4}
+\label{contoh}
+\end{figure}
+\par
+\par
+\item Selanjutnya seperti yang dapat dilihat pada gambar tersebut untuk dataset ini memiliki Kolom Country, Age, dan Salary sebagai independent variablenya dan kolom Purchased sebagai dependent variablenya.
+\item Kemudian pada code buatlah 2 matrix of features yang berisi values / nilai-nilai dari independent variable dan dependent variable yang sesuai.
+\item Setelah semuanya selesai, maka silahkan tuliskan perintah berikut :
+\par dataset = read.csv('Data.csv')
+\par
+\item Perintah/ script yang telah dibuat di atas akan membuat sebuah global environment 
+\item Global environmentnya berupa environment baru dan muncullah dataset.
+\item Silahkan untuk meng-Klik dataset tersebut, kemudian akan muncul tabel berisi dataset.
+\end{itemize}
+\end{enumerate}
+
+\par
+\end{itemize}
+\item Cross Validation Dan Ilustrasi Gambar	:
+\begin{itemize}
+\item Pengertian Cross Validation :
+\par Cross Validation (validasi silang) biasa disebut dengan estimasi rotasi, atau pengujian out-of-sample dimana merupakan salah satu dari berbagai teknik validasi model yang serupa untuk menilai bagaimana hasil analisis statistik akan digeneralisasikan ke set data independen. Hal ini (terutama) digunakan dalam pengaturan di mana tujuannya adalah prediksi, dan orang ingin memperkirakan seberapa akurat model prediksi akan dilakukan dalam praktek.
+\par Untuk satu putaran validasi silang melibatkan mempartisi sampel data ke dalam himpunan bagian pelengkap, melakukan analisis pada satu subset (disebut set pelatihan), dan jugamemvalidasi analisis pada subset lainnya (disebut set validasi atau set pengujian).
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/cross.jpg}
+\caption{cross validation}
+\label{contoh}
+\end{figure}
+
+\par Penjelasan : Pada contoh gambar, didefinisikan bahwa terjadi penilaian hasil analisis statistik yang telah berubah ke set data independen dan merupakan sebuah prediksi. Apabila prediksinya akurat maka tampilannya akan cross seperti gambar tersebut.
+\par
+\end{itemize}
+\par
+\item Penjelasan / Maksud Dari Score pada :
+\begin{itemize}
+\item Random forest ( 44 \% )
+\par Maksudnya adalah akurasi. Dimana Hasil dari eksekusi variabel, parameter dll dari perhitungan code dan decision tree terkait akan diproses lagi untuk menghasilkan nilai akurasi. Dan untuk nilai akurasinya berupa 44 \%
+\par
+\item Decision Tree ( 27 \% )
+\par Untuk score dari Decision Tree yang berupa 27 \% merupakan presentasi hasil dari perhitungan dataset yang telah dibaca dan diproses sebelumnya.
+\par
+\item SVM ( 29 \% )
+\par Untuk nilai 29 \% dari SCV merupakan hasil pendekatan jaringan saraf. Jaringan saraf sendiri merupakan komponen jaringan utama dari sistem saraf. Sistem tersebut mengatur dan mengontrol fungsi tubuh dan aktivitas dan terdiri dari dua bagian:  (SSP) yang terdiri dari otak dan sumsum tulang belakang, dan percabangan saraf perifer dari sistem saraf tepi (SST) yang terdapat dalam pengolahan dataset terkait. 
+\par
+
+\par
+\end{itemize}
+\item Confusion Matrix Dan Ilustrasinya :
+\begin{itemize}
+\item Pengertian Confusion Matrix :
+\par Pertama-tama confusion matrix ialah suatu metode yang digunakan untuk melakukan perhitungan akurasi pada konsep data mining.
+\item Cara Membaca Confusion Matrix :
+\par Untuk pembacaan dan pemahaman pada confusion matrix dapat memperhatikan penjelasan berikut
+\begin{itemize}
+\item Perhatikan : Apabila hasil prediksi negatif dan data sebenarnya merupakan negatif.
+\item Perhatikan : Apabila hasil prediksi positif sedangkan nilai sebenarnya merupakan negatif.
+\item Perhatikan : Apabila hasil prediksi negatif sedangkan nilai sebenarnya merupakan positif.
+\item Perhatikan : Apabila hasil prediksi positif dan nilai sebenarnya merupakan positif.
+\end{itemize}
+\par
+\par
+\item Pembacaan Lanjutan ( lebih jelas ) Untuk Confusion Matrix :
+\begin{enumerate}
+\item Pastikan definisi dari 4 proses klasifikasi yang akan digunakan ada dalam confusion matrix.
+\item 4 Istilah tersebut ada TP, TN, FP dan FN
+\item Cara bacanya yaitu True Positive ( TP ), True Negative ( TN ), False Positive ( FP ) dan False Negative ( FN ).
+\item Ada pendefinisian biner pada klasifikasi confusion matrix
+\item Klasifikasi tersebut menghasilkan keluaran berupa 2 Kelas ( Positif dan Negatif ) dan penentuan TP, FP ( 1 klasifikasi positif ) , FN dan TN ( 1 klasifikasi negatif ).
+\end{enumerate}
+\par
+
+\item Ilustrasi Gambar
+\par
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/confusion.jpg}
+\caption{confusion matrix}
+\label{contoh}
+\end{figure}
+
+\par
+\par Penjelasan : Pada gambar dapat dilihat bahwa cara membaca keluaran dari klasifikasi contoh tersebut dibaca 1 dan 0 ( yaitu iya atau tidak ). Untuk perhitungan lainnya pada klasifikasi untuk confusion marix memang bersifat mutlak atau hanya berada pada 2 pilihan.
+\par
+\par 
+\end{itemize}
+
+\par
+\par
+\item Voting Random Forest Dan Ilustrasi Gambarnya.
+\par
+\begin{itemize}
+\item Pengertian Voting pada Random Forest	:
+\par Voting merupakan metode yang paling umum digunakan dalam random forest. Ketika classifier membuat keputusan, Anda dapat memanfaatkan yang terbaik keputusan umum dan rata-rata yang didefinisikan ke dalam bentuk "voting".
+\par Setelah pohon terbentuk,maka akan dilakukan voting pada setiap kelas dari data sampel. Kemudian, mengkombinasikan vote dari setiap kelas kemudian diambil vote yang paling banyak.Dengan menggunakan random forest pada klasifikasi data maka, akan menghasilkan vote yang paling baik.
+\item Ilustrasi Gambar Voting Random Forest :
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figures/voting.jpg}
+\caption{voting random forest}
+\label{contoh}
+\end{figure}
+\par 
+\par Penjelasan : Pada gambar terlihat bahwa terdapat mayoritas voting dimana datanya berasal dari pengolahan decision tree 1, 2 dan 3 . Ketiga decision tree tersebut telah dikelompokkan kedalam class yang berbeda. Selanjutnya setelah dikelompokkan kedalam voting maka akan dieksekusi lagi sehingga menghasilkan class akhir untuk random forest dari decision tree tersebut. 
+\par
+\end{itemize}
+\par
+
+\end{enumerate}
