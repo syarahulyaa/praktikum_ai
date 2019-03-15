@@ -1353,3 +1353,727 @@ Penyelesaian Tugas Harian 5 ( No. 1-6 )
 \par
 
 \end{enumerate}
+
+
+\subsection{Praktek}
+Penyelesaian Tugas Harian 6 ( No. 1-8 )
+\begin{enumerate}
+\item Aplikasi Sederhana Pandas dan Penjelasan Code ( Perbaris )
+\begin{itemize}
+\item Code Pandas:
+\begin{lstlisting}
+import pandas as fadila
+np_array = np.array([10, 20, 30, 40, 50])
+print("NumPy array:")
+print(np_array)
+new_series = fadila.Series(np_array)
+print("Converted Pandas series dari Fadila:")
+print(new_series)
+\end{lstlisting}
+\par 
+\par
+\begin{itemize}
+\item Penjelasan Code Baris 1 : 
+\par Mengimport library / module pandas sebagai fadila
+\item Penjelasan Code Baris 2 :
+\par variabel np\_array mendefinisikan variabel np.array dimana terdapat beberapa parameter yang akan dieksekusi pada variabel tersebut
+\item Penjelasan Code Baris 3 :
+\par Mendefinisiikan perintah print dengan tulisan " Numpy array "
+\item Penjelasan Code Baris 4 :
+\par Melakukan perintah print / pencetakan untuk variabel np\_array
+\item Penjelasan Code Baris 5 :
+\par Mendefinisikan variabel baru yaitu new\_series dimana mengeksekusi fadila.series dengan variabel parameternya ialah np\_array
+\item Penjelasan Code Baris 6 :
+\par Mendefinisikan perintah print dengan tulisan " Converted pandas series dari fadila "
+\item Penjelasan Code Baris 7 :
+\par Melakukan perintah print / pencetakan terhadap variabel new\_series
+\end{itemize}
+\item Hasil Eksekusi :
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/pandasfadila.jpg}
+\caption{pandas}
+\label{contoh}
+\end{figure}
+\par
+\end{itemize}
+
+
+\par
+\par
+\item Aplikasi Sederhana Numpy dan Penjelasan Code ( Perbaris )
+\begin{itemize}
+\item Code Numpy:
+\begin{lstlisting}
+import numpy as fadila
+x = fadila.ones((3,3))
+print("Array Original:")
+print(x)
+print("0 berada di border sedangkan 1 berada dalam array")
+x = fadila.pad(x, pad_width=1, mode='constant', constant_values=0)
+print(x)
+\end{lstlisting}
+\par
+\begin{itemize}
+\item Penjelasan Code Baris 1 :
+\par Mengimport library / module numpy sebagai fadila
+\item Penjelasan Code Baris 2 :
+\par Mendefinisikan variabel x dengan mengeksekusi fadila.ones dengan 2 parameter yaitu ( 3,3 )
+\item Penjelasan Code Baris 3 :
+\par Mendefinisikan perintah print dengan parameter tulisan yaitu (" Array Original " )
+\item Penjelasan Code Baris 4 :
+\par Melakukan Perintah print variabel X
+\item Penjelasan Code Baris 5 :
+\par Mendefinisikan perintah print dengan parameter tulisan yaitu (" 0 berada di border sedangkan 1 berada dalam array ")
+\item Penjelasan Code Baris 6 :
+\par Variabel x mengeksekusi fadila.pad dengan 4 variabel parameter yaitu ( x, pad\_width=1 , mode='constant], constant\_values=0 )
+\item Penjelasan Code Baris 7 :
+\par  Melakukan perintah print / pencetakan variabel X
+\end{itemize}
+\item Hasil Eksekusi :
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/numpyfadila.jpg}
+\caption{numpy}
+\label{contoh}
+\end{figure}
+\par
+\par
+\end{itemize}
+
+\par
+\par
+\item Aplikasi Sederhana Matplotlib dan Penjelasan Code ( Perbaris )
+\begin{itemize}
+\item Code Matplotlib:
+\begin{lstlisting}
+import matplotlib.pyplot as fadila
+# line 1 points
+x1 = [10,20,30]
+y1 = [20,40,10]
+# plotting the line 1 points 
+fadila.plot(x1, y1, label = "line 1")
+# line 2 points
+x2 = [10,20,30]
+y2 = [40,10,30]
+# plotting the line 2 points 
+fadila.plot(x2, y2, label = "line 2")
+fadila.xlabel('x - axis')
+# Set the y axis label of the current axis.
+fadila.ylabel('y - axis')
+# Set a title of the current axes.
+fadila.title('Dua atau line lebih pada plot yang sama 
+	 dengan suitable legends ')
+# show a legend on the plot
+fadila.legend()
+# Display a figure.
+fadila.show()
+\end{lstlisting}
+\par
+\begin{itemize}
+\item Penjelasan Code Baris 1 :
+\par Mengimport library / module matplotlib.pyplot sebagai fadila
+\item Penjelasan Code Baris 2 :
+\par Mendefinisikan / membuat variabel x1  dengan pengeksekusian 3 parameter yaitu ( 10,20,30 )
+\item Penjelasan Code Baris 3 :
+\par Mendefinisikan / membuat  variabel y1  dengan pengeksekusian 3 parameter yaitu ( 10,20,30 )
+\item Penjelasan Code Baris 4 :
+\par Mendefinisikan perintah fadila.plot dengan 3 parameter ( x1,y1 , label = 'line 1")
+\item Penjelasan Code Baris 5 :
+\par Mendefinisikan variabel x1  dengan pengeksekusian 3 parameter yaitu ( 10,20,30 )
+\item Penjelasan Code Baris 6 :
+\par Mendefinisikan / membuat  variabel x2  dengan pengeksekusian 3 parameter yaitu ( 10,20,30 )
+\item Penjelasan Code Baris 7 :
+\par Mendefinisikan / membuat  variabel y2  dengan pengeksekusian 3 parameter yaitu ( 40,10,30 )
+\item Penjelasan Code Baris 8 :
+\par Mendefinisikan perintah fadila.plot dengan 3 parameter yaitu ( x2,y2 , label = 'line 2")
+\item Penjelasan Code Baris 9 :
+\par Mendefinisikan perintah fadila.xlabel dengan parameter ( x-axis )
+\item Penjelasan Code Baris 10 :
+\par Mendefinisikan perintah fadila.ylabel dengan parameter ( y-axis )
+\item Penjelasan Code Baris 11 :
+\par Mendefinisikan perintah fadila.title dengan parameter tulisan yaitu ( " dua atau line lebih pada plot yang sama dengan suitable legends " )
+\item Penjelasan Code Baris 12 :
+\par Mendefinisikan perintah fadila.legend tanpa parameter
+\item Penjelasan Code Baris 13 :
+\par Mendefinisikan perintah fadila.show untuk menampilkan hasil eksekusi dari variabel fadila
+\end{itemize}
+\item Hasil Eksekusi :
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figures/matplotlibfadila.jpg}
+\caption{matplotlib}
+\label{contoh}
+\end{figure}
+\par
+\end{itemize}
+
+\par
+\par
+\item Program Aplikasi Random Forest dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code Random Forest 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran1.jpg}
+\caption{random forest}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut akan menghasilkan sebuah variabel baru yaitu "imgatt" ( yang telah dibuat sebelumnya ) dengan tipe dataframe dan berupa matrix 2 dimensi. Terdapat 3 kolom dan 3677856 baris data. Bisa di check isi datanya karena berupa data frame. Codingan tersebut "Membaca" dan "Menampilkan" data yang berasal dari file "image\_attribute\_labels.txt".
+\par 
+\par
+\end{itemize}
+\item Code Random Forest 2 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/ran2.jpg}
+\caption{random forest 2}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Hasil dari codingan tersebut berfungsi untuk melihat data awal dari data/dataset yang dibaca dan diproses. Lebih jelasnya hanya untuk melihat isi paling atas dari data dan ditampilkan di console saat codingan dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 3 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/ran3.jpg}
+\caption{random forest 3}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan diatas akan menghasilkan dan juga mena-
+\par mpilkan dari jumlah data pada dataset yang telah dieksekusi. Jumlah data/ sizenya akan berupa baris dan kolom dari data yang ada.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 4 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran4.jpg}
+\caption{random forest 4}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menghasilkan tampilan variabel baru yaitu "imgatt2" . Fungsinya yaitu juga untuk merubah atribut menjadi kolom dengan menggunakan pivot layaknya excel. Yang membedakan antara "imgatt2" dan "imgatt1" ialah, jumlah dari data yang ditampilkan berbeda.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 5 :
+\par
+\par
+\begin{itemize}
+\item Penjelasan : Hasil dari codingan tersebut berfungsi untuk melihat data awal dari data/dataset yang dibaca dan diproses pada variabel"  imgatt2 ". Lebih jelasnya hanya untuk melihat isi paling atas dari data dan ditampilkan di console saat codingan dieksekusi.
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figures/ran5.jpg}
+\caption{random forest 5}
+\label{contoh}
+\end{figure}
+\end{itemize}
+\item Code Random Forest 6 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/ran6.jpg}
+\caption{random forest 6}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan diatas akan menghasilkan dan juga menam-
+\par pilkan dari jumlah data pada dataset yang telah dieksekusi pada variabel " imgatt2 ". Jumlah data/ sizenya akan berupa baris dan kolom dari data yang ada.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 7 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran7.jpg}
+\caption{random forest 7}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Hasil dari codingan diatas menampilkan atau menunjukkan load dari  jawabannya yang berisi " apakah burung tersebut ( subjek pada dataset ) termasuk dalam spesies yang mana ?. Kedua kolom yang digunakan adalah imgid dan label, kemudian melakukan pivot yang mana imgid menjadi index yang artinya unik sehubungan dengan dataset yang telah dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 8 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/ran8.jpg}
+\caption{random forest 8}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Hasil dari codingan tersebut berfungsi untuk melihat data awal dari data/dataset yang dibaca dan diproses pada variabel"  imglabels ". Lebih jelasnya hanya untuk melihat isi paling atas dari data dan ditampilkan di console saat codingan dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 9 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran9.jpg}
+\caption{random forest 9}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan diatas akan menghasilkan dan juga menam-
+\par pilkan dari jumlah data pada dataset yang telah dieksekusi pada variabel " imglabels ". Jumlah data/ sizenya akan berupa baris dan kolom dari data yang ada.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 10 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran10.jpg}
+\caption{random forest 10}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan diatas dikarenakan isinya sama, maka bisa melakukan join antara dua data yang diesekusi ( yaitu ada imgatt2 dan imglabels ), sehingga pada hasilnya akan didapatkan data ciri dan data jawaban atau labelnya sehingga bisa dikategorikan/dikelompokkan sebagai supervised learning. Jadi perintah untuk menggabungkan kedua data, kemudian dilakukan pemisahan antara data set untuk training dan test pada dataset yang dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 11 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran11.jpg}
+\caption{random forest 11}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menghasilkan pemisahan dan pemilihan tabel ( memisahkan dan memilih tabel ). Pada codingan ini dilakukan kegiatan untuk drop label yang berada di depan kemudian menggunakan label yang berada pada posisi paling belakang yang selanjutnya melakukan join terhadap 2 variabel tersebut yang tela dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 12 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran12.jpg}
+\caption{random forest 12}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menunjukkan hasil pengecekan dari isi variabel df.att bagian head ( tampilan awal ) dari dataset yang dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 13 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran13.jpg}
+\caption{random forest 13}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menunjukkan hasil pengecekan dari isi variabel df.label bagian head ( tampilan awal ) dari dataset yang dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 14 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran14.jpg}
+\caption{random forest 14}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Hasil codingannya menunjukkan pembagian untuk data training dan data testing pada dataset. Dilakukan pembagian data menjadi dua bagian dimana untuk row/baris data pertama sebanyak 8000 dijadikan sebagai data training , kemudian 8000 data sisanya sebagai data testing pada pengeksekusiannya.
+\par
+\par
+\end{itemize}
+\item Code Random Forest 15 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran15.jpg}
+\caption{random forest 15}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Hasil dari codingan tersebut yaitu instalasi kelas random forest. Dimana pada pemrosesannya, dilakukan pemanggilan kelas Random Forest Classifier ( Klasifikasi Random Forest ). Pada codingan terdapat max features yang diartikan sebagai berapa banyak kolom pada setiap tree yang dieksekusi pada dataset. 
+\par
+\par
+\end{itemize}
+\item Code Random Forest 16 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{figures/ran16.jpg}
+\caption{random forest 16}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan fitting random forest dengan dataset training. Dimana pengeksekusiannya dilakukan fit untuk membangun random forest yang sudah ditentukan dengan maksimum fitur sebanyak 50 untuk perpohonnya ( dari dataset yang dieksekusi ).
+\par
+\par
+\end{itemize}
+\item Code Random Forest 17 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran17.jpg}
+\caption{random forest 17}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan hasil dari prediksi dataset yang dieksekusi. 
+\par
+\par
+\end{itemize}
+\item Code Random Forest 18 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/ran18.jpg}
+\caption{random forest 18}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan score perolehan dari klasifikasi dataset yang dieksekusi. Terdapat hasil besaran akurasi dari code yang dieksekusi sesuai dengan data yang digunakan.
+\par
+\par
+\end{itemize}
+\end{itemize}
+
+
+
+
+\par
+\par
+\item Program Aplikasi Confusion Matrix dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code Confusion Matrix 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/Con1.jpg}
+\caption{confusion matrix 1}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan diatas menunjukkan proses dari pembuatan confusion matrix dimana dilakukan pemetaan dan pemetakan confusion matrix terhadap data yang dieksekusi.
+\par 
+\par
+\end{itemize}
+\item Code Confusion Matrix 2 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/con2.jpg}
+\caption{confusion matrix 2}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menunjukkan hasil dari pembuatan pemetakan data yang dilakukan sebelumnya ( Code confusion mtrix 1 ). Hasilnya berupa matrix yang didalamnya terdapat angka dari hasil eksekusi confusion matrix itu sendiri. Memunculkan array dan dtype dari hasil pembuatan confusion matrix.
+\par
+\par
+\end{itemize}
+\item Code Confusion Matrix 3 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/con3.jpg}
+\caption{confusion matrix 3}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan diatas melakukan plotting confusion matrix dimana dieksekusi beberapa parameter yang disesuaikan dengan data yang dieksekusi. Code ini hanya melakukan proses plotting dan tidak menunjukkan hasil plotting confusion matrixnya.
+\par
+\par
+\end{itemize}
+\item Code Confusion Matrix 4 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/con4.jpg}
+\caption{confusion matrix 4}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan hasil dari pembacaan file classes.txt yang dieksekusi. Dilakukan ploting terhadap sumbu sesuai dengan nama data dan dilakukan penyettingan ( set ) sehingga memberikan hasil seperti pada gambar.
+\par
+\par
+\end{itemize}
+\item Code Confusion Matrix 5 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/con5.jpg}
+\caption{confusion matrix 5}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menghasilkan plot dari hasil perubahan label. Dimana proses plot yang dilakukan akan merubah label dari classes / data yang dieksekusi.
+\par
+\par
+\end{itemize}
+
+\end{itemize}
+
+\par
+\par
+\item Program Klasifikasi SVM dan Decision Tree Beserta Penjelasan Keluarannya :
+\begin{itemize}
+\item Code SVM :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/svm1.jpg}
+\caption{svm}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menunjukkan klasifikasi dengan decision tree dengan dataset yang sama. Tentunya pada pemrosesannya decision tree digunakan dan menghasilkan output dari klasifikasi tersebut.
+\par 
+\par
+\end{itemize}
+\item Code Decision Tree :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/dec1.jpg}
+\caption{decision tree}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menunjukkan klasifikasi dengan SVM dengan dataset yang sama. Tentunya pada pemrosesannya SVM digunakan dan menghasilkan output dari klasifikasi tersebut.
+\par
+\par
+\end{itemize}
+\end{itemize}
+
+
+
+\par
+\par
+\item Program Cross Validation dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code Cross Validation 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/cross1.jpg}
+\caption{cross validation 1}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan hasil dari Cross Validation Random Forest. Pada pemrosesannya dilakukan pengecekan terhadap Cross Validation untuk Random Forest sesuai dengan data yang dieksekusi.
+\par 
+\par
+\end{itemize}
+\item Code Cross Validation 2  :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/cross2.jpg}
+\caption{cross validation 2}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan hasil dari Cross Validation Decision Tree. Pada pemrosesannya dilakukan pengecekan terhadap Cross Validation untuk Decision Tree sesuai dengan data yang dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code Cross Validation 3 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/cross3.jpg}
+\caption{cross validation 3}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan tersebut menunjukkan hasil dari Cross Validation SVM. Pada pemrosesannya dilakukan pengecekan terhadap Cross Validation untuk SVM sesuai dengan data yang dieksekusi.
+\par
+\par
+\end{itemize}
+\end{itemize}
+
+
+
+
+
+\par
+\par
+\item Program Pengamatan Komponen Informasi dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code Pengamatan Komponen Informasi 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/pe1.jpg}
+\caption{pengamatan komponen informasi 1}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini memberikan hasil pengamatan konponen informasi dimana pada pengeksekusiannya dapat diketahui berapa banyak tree yang dibuat, berapa banyak atribut yang dipakai dan informasi lainnya terkait kode yang digunakan.
+\par 
+\par
+\end{itemize}
+\item Code Pengamatan Komponen Informasi 2  :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/pe2.jpg}
+\caption{pengamatan komponen informasi 2}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan ini menunjukkan plot dari komponen informasi agar bisa dibaca dimana pada pemrosesannya plotting dilakukan pada informasi dengan menggunakan kode.
+\par
+\par
+\end{itemize}
+\end{itemize}
+
+
+\par
+\par
+\subsection{Penanganan Error}
+Penyelesaian Tugas Harian 6 ( Penanganan Error )
+\begin{enumerate}
+\item Menyelesaikan dan Membahas Penanganan Error :
+\begin{itemize}
+\item Error 1 :
+\par 
+\par
+\begin{itemize}
+\item Penjelasan Error 1 :
+\par Error tersebut disebabkan karena pada bagian codingan "directory" file yang akan dieksekusi atau dipanggil tidak ada.
+\begin{lstlisting}
+FileNotFoundError: File b'/data/CUB_200_2011/attributes/
+			image\_attribute\_labels.txt' does not exist
+\end{lstlisting}
+\item Penyelesaian Error 1 :
+\begin{enumerate}
+\item Pertama-tama perhatikan file yang akan dieksekusi yaitu " image\_atribute\_labels.txt" 
+\item Pastikan file tersebut berada satu tempat ( directory ) dengan file bird-identifier.py yang digunakan sebagai codingan untuk pengeksekusian file
+\item Selanjutnya hapus codingan dan sesuai seperti contoh codingan berikut :
+\begin{lstlisting}
+imgatt = pd.read_csv(image_attribute_labels.txt)
+\end{lstlisting}
+\par
+\item Maka tidak akan terjadi error lagi
+\par
+\end{enumerate}
+\end{itemize}
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/errorfadila1.jpg}
+\caption{error 1}
+\label{contoh}
+\end{figure}
+\par
+\par
+\par
+\item Penjelasan Error 2 :
+\par Error tersebut disebabkan karena pada bagian codingan "directory" file yang akan dieksekusi atau dipanggil tidak ada.
+\begin{lstlisting}
+FileNotFoundError: File b'/data/CUB_200_2011/attributes/
+			image\_class\_labels.txt' does not exist
+\end{lstlisting}
+\item Penyelesaian Error 2 :
+\begin{enumerate}
+\item Pertama-tama perhatikan file yang akan dieksekusi yaitu " image\_class\_labels.txt" 
+\item Pastikan file tersebut berada satu tempat ( directory ) dengan file bird-identifier.py yang digunakan sebagai codingan untuk pengeksekusian file
+\item Selanjutnya hapus codingan dan sesuai seperti contoh codingan berikut :
+\begin{lstlisting}
+imglabels = pd.read_csv(image_class_labels.txt)
+\end{lstlisting}
+\par
+\item Maka tidak akan terjadi error lagi
+\par
+\end{enumerate}
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/errorfadila2.jpg}
+\caption{error 2}
+\label{contoh}
+\end{figure}
+\par
+\par
+\par
+\item Penjelasan Error 3 :
+\par Error tersebut disebabkan karena pada bagian codingan "directory" file yang akan dieksekusi atau dipanggil tidak ada.
+\begin{lstlisting}
+FileNotFoundError: File b'/data/CUB_200_2011/attributes/classes.txt' does not exist
+\end{lstlisting}
+\item Penyelesaian Error 3 :
+\begin{enumerate}
+\item Pertama-tama perhatikan file yang akan dieksekusi yaitu " classes.txt" 
+\item Pastikan file tersebut berada satu tempat ( directory ) dengan file bird-identifier.py yang digunakan sebagai codingan untuk pengeksekusian file
+\item Selanjutnya hapus codingan dan sesuai seperti contoh codingan berikut :
+\begin{lstlisting}
+birds = pd.read_csv(classes.txt)
+\end{lstlisting}
+\par
+\item Maka tidak akan terjadi error lagi
+\par
+\end{enumerate}
+\par
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/errorfadila3.jpg}
+\caption{error 3}
+\label{contoh}
+\end{figure}
+
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
