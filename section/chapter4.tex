@@ -37,12 +37,9 @@ Please provide the result of experiment
 		\label{contoh}
 	\end{figure}
 
-\item Arti score
+\item Vectorisasi Data
 	\begin{itemize}
-		\item Maksud arti score 44\% pada random forest adalah hasil akurasi.
-		\item Maksud arti score 27\% pada decission tree adalah presentasi hasil dari perhitungan dataset.
-		\item Maksud arti score 29\% dari SVM adalah hasil pendekatan neural network.
-		\item Hasil tersebut didapat dari hasil valdasi silang untuk memastikan bahwa membagi  training test dengan cara yang berbeda. Sehingga didapat outputnya 44\% untuk hutan acak, 27\% untuk pohon keputusan, dan 29\% untuk SVM.
+		\item Maksud dari Vectorisasi Data merupakan Pemecahan dan Pembagian Data.
 	\end{itemize}
 	
 \item Bag of word
@@ -62,6 +59,126 @@ Please provide the result of experiment
 		\caption{Lusia-TF IDF}
 		\label{contoh}
 	\end{figure}
+\end{enumerate}
+
+
+
+
+
+
+\par
+\par
+\par
+\section{Fadila-1164072}
+\subsection{Teori}
+Penjelasan Tugas Harian 7 ( No 1-6 )
+\begin{enumerate}
+\item Pengertian Klasifikasi Teks Dan Ilustrasi Gambar
+\begin{itemize}
+\item Pengertian Klasifikasi Teks
+\par Klasifikasi teks adalah proses pemberian tag atau kategori ke teks sesuai dengan isinya. Teks dapat menjadi sumber informasi yang sangat kaya, tetapi mengekstraksi wawasan darinya bisa sulit dan memakan waktu karena sifatnya yang tidak terstruktur.
+\par
+\item Ilustrasi Gambar
+\par Penjelasan : Berdasarkan pengertian diatas, ada beberapa contoh yang bisa diterapkan. Untuk salah satu contoh dari klasifikasi data sendiri dapat diliat pada gambar berikut \ref{text-fadila}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/text-fadila.jpg}
+\caption{text-fadila}
+\label{text-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\item Mengapa Klasifikasi Bunga Tidak Bisa Menggunakan Machine Learning Dan Ilustrasi Gambar
+\begin{itemize}
+\item  Mengapa Klasifikasi Bunga Tidak Bisa Menggunakan Machine Learning
+\par Penjelasan : Untuk klasifikasi bunga tidak dapat menggunakan machine learning dikarenakan memiliki masalah input yang sama namun keluarannya (output) yang berbeda, biasanya output atau error ini disebut dengan istilah 'noise'. Noise sendiri merupakan output yang disimpan / ditangkap maupun direkam bukan seperti seharusnya ( keluaran yang diiginkan ). 
+\par Apabila diberikan contoh, maka contohnya yaitu kita berasumsi secara implisit bahwa klarifikasi bunga yang kita lakukan sudah tepat dan kita melakukannya seperti seorang ahli tanaman. Namun pada hasilnya masih saja terjadi kesalahan. Selain itu, selalu ada peluang untuk memperkenalkan kesalahan saat merekam ataupun menyimpan data, maka harus dilakukan penelitian yang lebih rinci sehingga tidak menimbulkan 'noise' itu sendiri.
+\par
+\item Ilustrasi Gambar
+\par Penjelasan : Berdasarkan pengertian diatas, ada beberapa contoh yang bisa diterapkan. Untuk salah satu contoh dari klasifikasi bunga sendiri dapat diliat pada gambar berikut \ref{bunga-fadila}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/bunga-fadila.jpg}
+\caption{bunga-fadila}
+\label{bunga-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\item Teknik Pembelajaran Mesin Pada Teks Pada Kata-Kata Yang Digunakan Di Youtube Dan Ilustrasi Gambar
+\begin{itemize}
+\item  Teknik Pembelajaran Mesin Pada Teks Pada Kata-Kata Yang Digunakan Youtube
+\par Penjelasan : Kita ambil sebuah kasus yang semua orang telah ketahui dan juga pahami. Kasus tersebut yaitu perekomendasian video dari pencarian menggunakan "text / kata" di  Youtube. Pada saat menggunakan Youtube terdapat Machine Learning yang bekerja dan memproses perintah ataupun aktivitas tersebut, dimana akan memfilter secara otomatis video yang disesuaikan dengan "keyword" yang kita masukkan sehingga memberikan keluaran video dengan keyword yang benar. 
+\par Adapula fitur yang di dapatkan ketika sedang menonton Youtube. Tampilan sebelah kanan terdapat pilihan 'Next' atapun 'Suggestion' yang menam-
+\par pilkan beberapa video serupa sesuai dengan yang dicari atau sedang ditonton. Ketika mengklik salah satu video dari baris tersebut, maka Youtube akan mengingat dan menggunakan kata yang tertera sebagai referensi kembali sehingga akan memberikan kemudahan pada pencarian yang lainnya, Dan disitulah mesin belajar sendiri dan menyimpan data secara berkala sehingga berkembang. 
+\par
+\item Ilustrasi Gambar
+\par Penjelasan : Berdasarkan pengertian diatas, ada beberapa contoh yang bisa diterapkan. Untuk salah satu contoh dari Mesin Teks Youtube sendiri dapat diliat pada gambar berikut \ref{youtube-fadila}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.25]{figures/youtube-fadila.jpg}
+\caption{youtube-fadila}
+\label{youtube-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\item Vektorisasi Data
+\begin{itemize}
+\item Maksud Dari Vektorisasi Data
+\par Penjelasan : Pembagian dan pemecahan data, kemudian dilakukan perhitungan. Vektorisasi juga dapat dimaksudkan dengan setiap data yang mungkin dipetakan ke integer tertentu. jika kita memiliki array yang cukup besar maka setiap kata / data cocok dengan slot unik dalam array (nilai pada indeks adalah nomor satu kali kata itu muncul).
+\par Array angka floating point ( Mewakili data ) :
+\begin{itemize}
+\item teks
+\item audio
+\item gambar
+\end{itemize}
+\par Contoh : -[1.0, 0.0, 1.0, 0.5]
+\par
+\end{itemize}
+\par
+\par
+\item Pengertian Bag Of Words Dan Ilustrasi Gambar
+\begin{itemize}
+\item  Pengertian Bag Of Words
+\par bag-of-words adalah representasi penyederhanaan yang digunakan dalam pemrosesan bahasa alami dan pengambilan informasi. Model bag-of-words sederhana untuk dipahami dan diterapkan dan telah melihat kesuksesan besar dalam masalah seperti pemodelan bahasa dan klasifikasi dokumen ( penyelesaian dll ).
+\par
+\par
+\item Ilustrasi Gambar
+\par Penjelasan : Berdasarkan pengertian diatas, ada beberapa contoh yang bisa diterapkan. Untuk salah satu contoh dari Bag Of Words sendiri dapat diliat pada gambar berikut \ref{bag-fadila}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/bag-fadila.jpg}
+\caption{bag-fadila}
+\label{bag-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\item Pengertian TF-IDF Dan Ilustrasi Gambar
+\begin{itemize}
+\item  Pengertian TF-IDF
+\par TF-IDF atau TFIDF, adalah kependekan dari istilah frekuensi dokumen terbalik, dimana merupakan statistik numerik yang dimaksudkan untuk mencerminkan betapa pentingnya sebuah kata untuk sebuah dokumen dalam kumpulan atau kumpulan.
+\par Nilai tf-idf meningkat secara proporsional dengan berapa kali sebuah kata muncul dalam dokumen dan diimbangi dengan jumlah dokumen dalam korpus yang mengandung kata, yang membantu menyesuaikan fakta bahwa beberapa kata muncul lebih sering secara umum
+\item Ilustrasi Gambar
+\par Penjelasan : Berdasarkan pengertian diatas, ada beberapa contoh yang bisa diterapkan. Untuk salah satu contoh dari TF-IDF sendiri dapat diliat pada gambar-gambar berikut \ref{tf2-fadila}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/tf2-fadila.jpg}
+\caption{tf2-fadila}
+\label{tf2-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+
 \end{enumerate}
 
 \subsection{Praktek}
