@@ -61,14 +61,155 @@ Please provide the result of experiment
 	\end{figure}
 \end{enumerate}
 
+\subsection{Praktek}
+\begin{enumerate}
+\item Aplikasi menggunakan pandas
+	\par Berikut adalah aplikasi yang dibuat menggunakan pandas :
+	
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n1a.jpg}
+		\caption{Lusia-Pandas}
+		\label{contoh}
+		\end{figure}
+		
+	\begin{enumerate}
+	\item 1 = memanggil library pandas sebagai pd
+	\item 2 = membuat varible mas untuk membaca foile csv
+	\item 3 = membuat varible untuk membuat data frame
+	\item 4 = membuat variable dummy untuk mengubah kategori menjadi integer
+	\item 5 = untuk memunculkan data teratas
+	\item 6 = untuk menjoinkan atau menggabungkan data frame dengan dummy
+	\end{enumerate}
+	
+	\par Berikut adalah hasilnya :
+	
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n1b.jpg}
+		\caption{Lusia-Hasil Pandas}
+		\label{contoh}
+		\end{figure}	
+	
+\item Memecah data frame
+	\par Berikut untuk memecah data frame menjadi dua :
+	
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n2a.jpg}
+		\caption{Lusia-Pecah data}
+		\label{contoh}
+		\end{figure}
+	
+	\begin{enumerate}
+	\item 1 = split data training 0-450 data pertama
+	\item 2 = split data test sisa dari 0-450 data pertama
+	\end{enumerate}
+	
+	\par Berikut adalah hasilnya :
+	
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n2b.jpg}
+		\caption{Lusia-Hasil Pecah data}
+		\label{contoh}
+		\end{figure}
+		
+\item Vektorisasi dan klasifikasi Decission Tree Katty Perry
+	\begin{itemize}
+	\item Berikut adalah vektorisasi dan klasifikasi Katty Perry
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n3a.jpg}
+		\caption{Lusia-Vektorisasi dan klasifikasi}
+		\label{contoh}
+		\end{figure}
+	\par Maksud dari gambar vektorisasi dan klasifikasi Katty Perry adalah hasil dari impor dataset, lalu import countvectorizer dari sklearn. Modul sklearn feature extraction digunakan untuk mengekstrak fitur dalam format yang didukung oleh algoritma pembelajaran mesin dari kumpulan data yang terdiri dari format seperti teks dan gambar. Lalu membuat variabel Dan CountVectorizer mengimplementasikan tokenization dan penghitungan kejadian dalam satu kelas. lalu membuat variabel dvec untuk mempelajari dataset. Membuat variabel daptarkata yang berfungsi untuk pemetaan array dari indeks integer fitur ke nama fitur. 
+	
+	\item Berikut adalah Decission Tree Katty Perry
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n3b.jpg}
+		\caption{Lusia-Decission Tree Katty Perry}
+		\label{contoh}
+		\end{figure}
+	\par Dalam gambar Decission Tree dijelaskan bahwa library tree dari sklearn. Dan mendifinisikan variable untuk memanggil Decission Tree Classifisier yang kemudian dilakukan fit atau pengujian. Lalu menggunakan prediksi dengan fungsi predict untuk memprediksi test. Yang terakhir memunculkan akurasi prediksi yaitu 0,86.
+	\end{itemize}
+
+\item Klasifikasikan dari data vektorisasi dengan klasifikasi SVM
+	\par Berikut adalah klasifikasikan dari data vektorisasi dengan klasifikasi SVM
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n4.jpg}
+		\caption{Lusia-Hasil klasifikasi SVM}
+		\label{contoh}
+		\end{figure}
+	\par Dalam gambar SVM dijelaskan bahwa mula-mula file svm diimpor dari sklearn, lalu melakukan fit dari d train att dan d train label atau disebut dengan pengujian. Selanjutnya variable didifinisikan variable untuk melakukan prediksi dataset dengan SVM. Dan yang terakhir muncul hasilnya yaitu 0,42.
+	
+\item Klasifikasikan dari data vektorisasi dengan klasifikasi Decission Tree
+	\par Maksud dari gambar vektorisasi adalah hasil dari impor dataset
+	\par Berikut adalah Decission Tree
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n3b.jpg}
+		\caption{Lusia-Decission Tree}
+		\label{contoh}
+		\end{figure}
+	\par Dalam gambar Decission Tree dijelaskan bahwa library tree dari sklearn. Dan mendifinisikan variable untuk memanggil Decission Tree Classifisier yang kemudian dilakukan fit atau pengujian. Lalu menggunakan prediksi dengan fungsi predict untuk memprediksi test. Yang terakhir memunculkan akurasi prediksi yaitu 0,86.
+
+\item Plot confusion matrix
+	\par Berikut adalah hasil dari ploting confusion matrix
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n6.jpg}
+		\caption{Lusia-ploting confusion matrix}
+		\label{contoh}
+		\end{figure}
+	\par Dari gambar dijelaskan bahwa library numpy di import sebagai np. Lalu 	Opsi set printoption untuk menentukan cara angka floating point, array dan objek NumPy lainnya ditampilkan. Selanjutnya matplotlib pyplot figure untuk membuat figur atau gambar baru. Selanjutnya confution matrix dinormalisasikan. Dan yang terakhir hasil ditampilkan.
+
+\item Program cross validation
+	\par Berikut adalah hasil dari program cross validation
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n7.jpg}
+		\caption{Lusia-Program cross validation}
+		\label{contoh}
+		\end{figure}
+		
+	\par Maksud dari hasil gambar tersebut adalah untuk mendefinisikan dataset untuk 'menguji' model.
+	
+\item Program pengamatan komponen informasi
+	\par Berikut adalah hasil dari program pengamatan komponen informasi
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/n8.jpg}
+		\caption{Lusia-Program pengamatan komponen informasi}
+		\label{contoh}
+		\end{figure}
+		
+	\par Maksud dari hasil gambar tersebut adalah diagram informasi dari dataset yang digunakan.
+
+\end{enumerate}
+
+\subsection{Penanganan Error}
+\begin{enumerate}
+	\item skrinsut error
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/o1.jpg}
+		\caption{Lusia-skrinsut error}
+		\label{contoh}
+		\end{figure}
+	\item Tuliskan kode eror dan jenis errornya
+		\begin{itemize}
+		\item Kode error = KeyError: 'test preparation course'
+		\item Jenis error = KeyError
+		\end{itemize}
+	\item Solusi pemecahan masalah error
+		\par Solusinya adalah dengan memasukkan salah satu atribut dari dataset file csv yang digunakan.
+\end{enumerate}
 
 
-
-
-
-\par
-\par
-\par
 \section{Fadila-1164072}
 \subsection{Teori}
 Penjelasan Tugas Harian 7 ( No 1-6 )
