@@ -1,17 +1,142 @@
 \chapter{Conclusion}
 brief of conclusion
 
-\section{Conclusion of Problems}
-Tell about solving the problem
+\section{Lusia Violita Aprilian-1164080}
 
-\section{Conclusion of Method}
-Tell about solving using method
+\subsection{Teori}
 
-\section{Conclusion of Experiment}
-Tell about solving in the experiment
+\begin{enumerate}
 
-\section{Conclusion of Result}
-tell about result for purpose of this research.
+\item Jelaskan kenapa kata-kata harus di lakukan vektorisasi. dilengkapi dengan ilustrasi atau gambar.
+	\begin{itemize}
+	\item Jawaban :
+		\par Kata-kata harus dilakukan vektorisasi karena kita dapat mengetahui kemiripan kata satu sama lain untuk mendapatkan kinerja yang lebih baik di mesin learning.
+	\item Ilustrasi :
+		\par Maksud dari kalimat di atas adalah  apabila sebelumnya menggunakan bag of word atau kantong kata yang dimana model tersebut hanya menghitung setiap kata muncul disetiap dokumen, maka disini akan menggunakan vektorisasi kata. Misal kita memiliki 2 bag of word vektor yang bisa dikatakan mirip, lalu kita dapat membandingngkan dokumen untuk melihat kemiripannya atau membandingkan kata-kata yang digunakan di kedua dokumen tersebut. Dengan kata lain, jika kedua dokumen memiliki banyak kata yang mirip dan muncul beberapa kali, mereka akan dianggap serupa.  Oleh karena itu pentingnya vektorisasi didasarkan untuk mengetahui seberapa mirip kata satu sama lain. 
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/p1.jpg}
+		\caption{Lusia-Vektorisasi}
+		\label{contoh}
+		\end{figure}
+	\end{itemize}
+
+\item Jelaskan mengapa dimensi dari vektor dataset google bisa sampai 300, dilengkapi
+dengan ilustrasi atau gambar.
+	\begin{itemize}
+	\item Jawaban :
+		\par Karena Google menggunakan model Word2Vec (model vektorisasi) dan setiap kata merupakan vektor yang bernilai 300 dimensi. Model yang digunakan google telah dilatih memerikas jutaan atau milyaran halaman teks. Dengan begitu google dapat menyediakan informasi yang dibutuhkan berdasarkan inputan kata kunci yang divektorisasi.
+	\item Ilustrasi :
+		\par Misalnya saja kita menggunakan kata kucing, anjing, dan spatula :
+	
+	\begin{itemize}
+	\item Kucing = [0.012, 0.204, ..., -0.275, 0.056] (300 dimensi)
+	\item Anjing = [0.051, -0.022, ..., -0.355, 0.227]
+	\item Spatula = [ -0.191, -0.043, ..., -0.348, 0.398]
+	\end{itemize}
+	
+	\par Persamaan terebut menjelaskan nilai dimensi dari setiap kata. Lalu dari dimensi kata tersebut kemudian dicari kesamaannya atau jaraknya, seperti berikut :	
+	
+	\begin{itemize}
+	\item Kesamaan (jarak) antara kucing dan anjing = 0,761
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/p2a.jpg}
+		\caption{Lusia-Kesamaan Kucing Anjing}
+		\label{contoh}
+		\end{figure}
+	\item Kesamaan antara kucing dan spatula = 0,124
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.5]{figures/p2b.jpg}
+		\caption{Lusia-Kesamaan Kucing Spatula}
+		\label{contoh}
+		\end{figure}
+	\end{itemize}
+	
+		\par Karena hasil dari kucing dan anjing lebih tinggi maka bisa dikatakan  mirip. Maka dari itu, ketika kita mencari dengan kata kunci kucing di google, google kadang juga menyuguhkan gambar anjing karena dinilai sama.
+	\end{itemize}
+
+\item Jelaskan konsep vektorisasi untuk kata, dilengkapi dengan ilustrasi atau gambar.
+	\begin{itemize}
+	\item Jawaban :
+		\par Konsep vektorisasi untuk kata adalah dengan mengetahui nilai dimensi dari setiap satuan kata. Lalu menghitung nilai kesamaan dimensi tersebut, setalah itu dibandingkan (seperti ilustrasi soal no.2). Vektorisasi kata (Word2Vec) menggunakan neural networks untuk mempelajari kata. Pada tingkatan kesulitan yang tinggi, neural networks mirip dengan random forest atau decission tree dan teknik machine learning lainnya karena mereka diberikan banyak input dan banyak output, sehingga dapat belajar bagaimana memprediksi output dari input. Untuk Word2Vec, input adalah satu kata dan hasilnya adalah kata-kata terdekat dari teks. Dengan demikian, Word2Vec belajar vektor kata dengan mengingat kata konteksnya.
+	\item Ilustrasi :
+		\par Jadi dari pemaparan soal no.2, anjing dan kucing akan memiliki vektor kata yang sama karena kedua kata ini digunakan dengan cara yang sama. Seperti contoh pada kalimat 'dia memelihara anjing' dan 'dia memelihara kucing'. Apabila 2 kalimat tersebut menggunakan model kantong kata kontinu (salah satu teknik yang digunakan untuk Word2Vec) dengan neutral networking yang mempelajari 300-dimensi perkata maka akan diperoleh hasil output yang sama.
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.5]{figures/p3.jpg}
+			\caption{Lusia-Konsep Vektorisasi Kata}
+			\label{contoh}
+			\end{figure}
+	\end{itemize}
+
+\item Jelaskan konsep vektorisasi untuk dokumen, dilengkapi dengan ilustrasi atau
+gambar.
+	\begin{itemize}
+	\item Jawaban :
+		\par Konsep vektorisasi dokumen mirip dengankonsep vektorisasi kata, hanya saja yang membedakan dalam hal ini inputnya adalah nama dokumen (seperti nama file) dan outputnya adalah kata-kata dari dokumen. Dan bentuk atau model yang digunakan adalah Doc2Vec.
+		\par Dalam hal ini, sebagai vektor yang membantu kita memprediksi kata-kata, dari mengetahui nama file. Sebenarnya, inputnya tidak terlalu penting, yang terpenting adalah nama dari file dokumen tersebut. Kita hanya perlu melacak kata-kata yang semuanya berasal dari dokumen yang sama. Sehingga semua kata-kata akan terhubung pada nama file tersebut. Sebab itu kita dapat memprediksi kata-kata dokumen berdasarkan nama filenya, kita dapat secara efektif memiliki model yang tahu kata-kata mana yang cocok dalam sebuah dokumen. 
+	\item Ilustrasi :
+		\par Misalnya saja pada sebuah dokumen yang berisi ulasan atau komentar. Sebuah komentar tentunya memiliki 2 sisi yang berlawanan yaitu positif dan negatif. Dengan menggunakan vektorisasi dokumen, kita dapat mengetahui banyak kata positif yang berbeda digunakan dalam ulasan positif dan banyak kata negatif digunakan dalam ulasan negatif.
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.5]{figures/p4.jpg}
+			\caption{Lusia-Vektorisasi Dokumen}
+			\label{contoh}
+			\end{figure}
+	\end{itemize}
+
+\item Jelaskan apa mean dan standar deviasi, dilengkapi dengan ilustrasi atau gambar.
+	\begin{itemize}
+	\item Mean
+		\begin{itemize}
+		\item Penjelasan :
+			\par Mean atau nilai rata-rata adalah teknik penjelasan kelompok yang berdasarkan nilai rata-rat dari kelompok data.
+		\item Ilustrasi :
+			\par Misal kita ingin mengetahui nilai rata-rata dari suatu kelompok, maka kita bisa menjumlahkan data seluruh individu dalam kelompok tersebut. Kemudian dibagi dengan jumlah individu yang ada pada kelompok tersebut.	
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.5]{figures/p5a.jpg}
+			\caption{Lusia-Mean}
+			\label{contoh}
+			\end{figure}
+		\end{itemize}
+	
+	\item Standar Devisiasi
+		\begin{itemize}
+		\item Penjelasan :
+			\par Standar deviasi merupakan akar dari varians (ingat, karena pada varians kita mengkuadratkan selisih data dari rata-ratanya, maka dengan mengakarkannya, kita mendapatkan kembali nilai asalnya). Atau umumnya standar devisiasi merupakan nilai statistik yang digunakan untuk menentukan bagaimana sebaran dari data sample dan seberapa dekat titik data individu ke mean atau nilai rata-rata sample.
+			
+		\item Ilustrasi :
+			\par Misal kita ingin mengetahui besar nilai sampel terhadap nilai rata-rata, maka kita dapat menggunakan standar deviasi.
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.5]{figures/p5b.jpg}
+			\caption{Lusia-Standar Deviasi}
+			\label{contoh}
+			\end{figure}
+		\end{itemize}
+		
+	\end{itemize}
+
+\item Jelaskan apa itu skip-gram, dilengkapi dengan ilustrasi atau gambar.
+	\begin{itemize}
+	\item Jawaban :
+		\par Skip-gram adalah teknik pada vektorisasi kata. Skrip-gram merupakan kebalikan dari teknik kantung kata kontinus. Dimana pada teknik ini, kata tengah adalah input dan kata-kata konteks adalah output. Dalam teknik ini, vektor kata tengah digunakan untuk memprediksi kata konteks yang diberikan. 
+
+	\item Ilustrasi :
+		\par Misalkan saja kita ingin memprediksi kata, pada teknik ini vektor kata tengah digunakan untuk memprediksi kata konteks yang diberikan kata tengah. Seperti gmbar berikut :
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.5]{figures/p6.jpg}
+			\caption{Lusia-Skip gram}
+			\label{contoh}
+			\end{figure}
+	
+	\end{itemize}
+
+\end{enumerate}
 
 
 
