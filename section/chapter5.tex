@@ -628,6 +628,125 @@ Praktek Tugas Harian
 \end{figure}
 \par Penjelasan: Pada gambar di atas dapat dikatakan bahwa dari huruf abjad tersebut dikocok atau di random secara ascenden. Dan hasilnya adalah huruf j.
 \end{itemize}
+
+
+\item Fungsi dari Librari Gensim TaggedDocument dan Doc2Vec
+\par
+\begin{itemize}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/1rozaa.jpg}
+\caption{No 3 Roza}
+\label{text-fadila}
+\end{figure}
+\item Penjelasan Hasil:  Pada baris pertama yaitu mengimport modul Tagged Document dari model gensim. Sedangkan pada baris kedua import Doc2vec dari model gensim.
+\end{itemize}
+
+\item Cara Menambahkan Data Training
+\par Penskalaan yaitu dataset ditempatkan sambil mempertimbangkan kumpulan data linier seperti data bank.
+\par Disintegrasi dan Komposisi: Langkah ini melibatkan pemecahan fitur tertentu untuk membangun data pelatihan yang lebih baik untuk model yang Anda pahami lebih komprehensif.
+\par Komposisi: Ini adalah proses terakhir yang melibatkan penggabungan berbagai fitur menjadi satu fitur untuk mendapatkan data yang lebih akurat atau bermakna.
+\begin{itemize}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/3roza.jpg}
+\caption{No 4 Roza}
+\label{text-fadila}
+\end{figure}
+\item  Penjelasan Hasil: Membaca direktori name dari data yang ada di dalam kurung. Pada kodingan di atas ada 3 data. Data pertama yaitu: train/pos,train/neg, train/unsuo, test/pos dan test/neg. Data kedua yaitu:txtsentoken/pos dan txt/sentokenneg. Sedangkan data ke 3 yaitu: standfordSentimentTreeBank/Originalrtsnippes.txt
+\end{itemize}
+
+
+\item Kenapa Harus Dilakukan Pengocokan dan Pembersih Data
+\par Pengocokan data dilakukan untuk merandom data-data yang ada. Sedangkan pembersihan data dilakukan untuk pengecekan data untuk penetapan dan pemulihan data yang hilang, pengecekan penentapan meliputi pemerikasaan data yang out of range (di luar cakupan) tidak konsisten secara logika, ada nilai-nilai ekstrim, data dengan nilai-nilai tdk terdefinisi, sedangkan pemulihan data yang hilang adalah nilai dari suatu variabel yang tidak diketahui dikarenakan  jawaban responden yang membingungkan.
+\begin{itemize}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/4broza.jpg}
+\caption{No 5 Roza}
+\label{text-fadila}
+\end{figure}
+\item Penjelasan Hasil: Pada gambar pertama yaitu melakukan pengacakan model terhadap data unsupervised learning. Dan kemudian baru membuat modelnya setelah dilakukan pengacakan terhadap yang pertama tadi.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/4roza.jpg}
+\caption{No 5 Roza}
+\label{text-fadila}
+\end{figure}
+\item Penjelasan Hasil:  Mengimport Library Re. Kemudian membuat fungsi utuk menghapus tag html dan perkocokan. Dimana di dalam variabel ini ada kodingan untuk menghapus tag html yaitu petik satu, tanda baca dan spasi yang berurutan.
+\end{itemize}
+
+\item Model harus di Save dan Kenapa Temporari Training Harus Dihapus
+\par Kenapa model harus di save berfungsi untuk mencegah ram agar tidak lemot. Sedangkan kenapa temporari training harus dihapus mengosongkan memori agar sedikit lega atau tidak lemot.
+\begin{itemize}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/6roza.jpeg}
+\caption{No 6 Roza}
+\label{text-fadila}
+\end{figure}
+\item Penjelasan Hasil: Menghapus Temporary Training Data
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/6broza.jpeg}
+\caption{No 6 Roza}
+\label{text-fadila}
+\end{figure}
+\item Penjelasan Hasil: Menyimpan model rozroza.d2v
+\end{itemize}
+
+
+\item InferCode
+\par Infercode digunakan untuk menyimpulkan vektor yang berhubungan dengan vektor dokumen baru.
+\begin{itemize}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/7roza.jpeg}
+\caption{No 7 Roza}
+\label{text-fadila}
+\end{figure}
+\item Penjelasan Hasil:  Pada hasil gambar tersebut dapat disimpulkan bahwa kalimat "Roza LDR an Jauh Parah" menghasilkan outputan berupa array seperti angka-angka di bawah.
+\end{itemize}
+
+\item Cosine Similarity.
+\par
+\begin{itemize}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/8roza.jpeg}
+\caption{No 8 Roza}
+\label{text-fadila}
+\end{figure}
+\item  Penjelasan Hasil:  Pada gambar di atas yaitu mengimport cosine similartity dari sklearn metrics pairwise. Dimana cosine similarity berfungsi untuk mengecek kemiripan dari kalimat Services Sucks. Dan akan muncul hasilnya yaitu array.
+\end{itemize}
+
+\item Score Dari Cross Validation
+\par
+\begin{itemize} 
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/9roza.jpeg}
+\caption{No 9 Roza}
+\label{text-fadila}
+\end{figure}
+\item  Penjelasan Hasil:  Menghitung model clrf, sentvecs, setiments serta juga meghitung keakuratannya.
+\end{itemize}
+
+\subsection{Penanganan Error}
+\begin{enumerate}
+\item Skrinsut Error
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/errorrozaaa.jpg}
+\caption{ Error Roza}
+\label{6}
+\end{figure}
+\item Kode Error dan Jenis Errornya
+\par Kode Error: "NameError: name 'unsup sentences is not defined". 
+\par Jenis Error: Unsup Sentence Not Defined
+\item Penanganan
+\par Running ulang dari awal, sehingga unsupervide baru bisa ditemukan.
+
 \end{enumerate}
 
 
@@ -961,4 +1080,5 @@ Penjelasan Tugas Harian 10 ( No 1-9 ). ( Dan Penanganan Error )
 \par
 \par
 \end{itemize}
+\end{enumerate}
 \end{enumerate}
