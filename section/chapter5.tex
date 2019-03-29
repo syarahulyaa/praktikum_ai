@@ -390,6 +390,19 @@ gambar.
 \end{enumerate}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Rahmi Roza-1164085}
 \subsection{Teori}
 Praktek Tugas Harian 
@@ -747,8 +760,9 @@ Praktek Tugas Harian
 \item Penanganan
 \par Running ulang dari awal, sehingga unsupervide baru bisa ditemukan.
 
-\end{enumerate}
 
+\end{enumerate}
+\end{enumerate}
 
 \par
 \par
@@ -1079,6 +1093,223 @@ Penjelasan Tugas Harian 10 ( No 1-9 ). ( Dan Penanganan Error )
 \end{figure}
 \par
 \par
+\end{itemize}
+
+
+
+
+
+\par
+\par
+\par
+\item Library Gensim TaggedDocument Dan Doc2Vec
+\begin{itemize}
+\item Gensim TaggedDocument : Tagged Document merupakan class yang digunakan dalam library gensim yang dicontohkan dimana tagged dokument yang 'memisahkan informasi dan struktur dari presentasi' dengan menggunakan tag .
+\item Doc2Vec : Untuk membuat representasi numerik dari suatu dokumen, terlepas dari panjangnya. Model doc2vec dapat digunakan dengan cara berikut: untuk pelatihan, diperlukan seperangkat dokumen.
+\item Contoh / Ilustrasi Gambar : \ref{3-tagged - fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/3-tagged-fadila.jpg}
+\caption{3-tagged - fadila}
+\label{3-tagged - fadila}
+\end{figure}
+\par
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par PPada gambar tersebut direalisasikan Perintah " import " yaitu digunakan untuk pemanggilan class tagged document dan model doc2vec yang masing-masing berada pada bagian model library gensim. Tidak terjadi error maka pemanggilan kedua perintah tersebut berhasil dan terbukti pemraktekannya.
+\par
+\end{itemize}
+\item Menambahkan Data Training ( Melatih model doc2vac )
+\begin{itemize}
+\item Penjelasan Untuk Penambahan Data Training : Ada beberapa point penting yang bisa diperhatikan dan dipertimbangkan pada penambahan data yaitu
+\begin{itemize}
+\item Disintegrasi dan Komposisi: Langkah ini melibatkan pemecahan fitur tertentu untuk membangun data pelatihan yang lebih baik untuk model yang Anda pahami lebih komprehensif sehingga menghasilkan hasil yang lebih tepat dan efisien.
+\item Penskalaan dimana dataset ditempatkan sambil mempertimbangkan kumpulan data linier seperti data bank ataupun data lainnya.
+\item Kemudian untuk Komposisi: merupakan proses terakhir yang melibatkan penggabungan berbagai fitur menjadi satu fitur untuk mendapatkan data yang lebih akurat atau bermakna.
+\par
+\end{itemize}
+\par Cara diatas dapat membantu dalam penambahan data training yang akan dilakukan.
+\par
+\par
+\item Contoh / Ilustrasi Gambar : \ref{4-model-1- fadila}, \ref{4-model-2- fadila} dan \ref{4-model-3- fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/4-model-1-fadila.jpg}
+\caption{4-model-1- fadila}
+\label{4-model-1- fadila}
+\end{figure}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/4-model-2-fadila.jpg}
+\caption{4-model-2- fadila}
+\label{4-model-2- fadila}
+\end{figure}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/4-model-3-fadila.jpg}
+\caption{4-model-3- fadila}
+\label{4-model-3- fadila}
+\end{figure}
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par Berdasarkan gambar diatas, direalisasikan pemanggilan directory name ( dirname ) dari file yang akan dieksekusi . Kemudian didefinisikan fname untuk pemberian nama terhadap file tersebut yang akan di urutkan sesuai dengan list dir dengan parameter dirnamenya. Setiap contoh yang diberikan semuanya akan direalisasikan dalam inputan variabel words dengan extract\_word yang dihubungkan dengan unsup\_sentences yang mengeksekusi class tagged document. Ketiga gambar tersebut ketika dijalankan tidak terjadi error, maka pengujian atau praktekpun berhasil dilakukan.
+\par
+\end{itemize}
+\item Pengocokan Dan Pembersihan Data
+\begin{itemize}
+\item Pengocokan Data : Melakukan pengacakan terhadap data kemudian nantinya bisa dieksekusi. Kemudian pada setiap eksekusinya akan menghasilkan hasil yang berbeda berdasarkan/berkaitan dengan penerapan mode ( shuffle atau random ) dalam pengeksekusian data.
+\item Pembersihan Data : Melakukan pengecekan dan pemulihan data.
+\item Contoh / Ilustrasi Gambar : \ref{5-pengpem-fadila}, 
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/5-pengpem-fadila.jpg}
+\caption{5- Pengocokan Dan Pembersihan Data- fadila}
+\label{5-pengpem-fadila}
+\end{figure}
+\par
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par Terjadi pengimportan Library Re. Selanjutnya dilakukan pembuatan fungsi utuk menghapus tag html dan perkocokan ( pengocokan ) . Berkaitan dengan penghapusan tersebut, pada variabel ini terdapat kodingan petik satu yang bisa direalisasikan, tanda baca dan spasi yang berurutan pun ada.'
+\par Selanjutnya yaitu melakukan pengacakan model terhadap data unsupervised learning yang ada, kemudian baru dibuatkan (membuat) modelnya setelah dilakukan pengacakan data yang telah ada sebelumnya.
+\par
+\end{itemize}
+\item Mengapa Model Harus Di Save Dan Temporari Training Harus Dihapus
+\begin{itemize}
+\item Penjelasan : Model harus di save dikarenakan atau difungsikan untuk mencegah ram pada komputer/laptop tidak terjadi malfuntion ataupun lemot ( loading yang lama ). Kemudian untuk mengapa temporari training harus dihapus dimana digunakan untuk mengosongkan memori sehingga terdapat ruang lebih ataupun lapang sehingga tidak terjadi malfunction pada komputer dll.
+\item Contoh / Ilustrasi Gambar : \ref{6-modelsavedelete-1-fadila} dan \ref{6-modelsavedelete-2-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/6-modelsavedelete-1-fadila.jpg}
+\caption{6-  Temporari Train Hapus-fadila}
+\label{6-modelsavedelete-1-fadila}
+\end{figure}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/6-modelsavedelete-2-fadila.jpg}
+\caption{6- Model Disave-fadila}
+\label{6-modelsavedelete-2-fadila}
+\end{figure}
+\par
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par Untuk model gambar pertama diperlihatkan praktek untuk percobaan penghapusan temporary training data dimana apabila parameternya "keep\_inference" true maka akan dilakukan penghapusan sesuai dengan perintah yang ada.
+\par Kemudian untuk gambar kedua memperlihatkan praktek dari perintah save terhadap sebuah parameter kata yaitu (fadilafadiluy) yang disimpan berupa INFO berbarengan / disertakan dengan tanggal dan waktu rincinya.
+\end{itemize}
+\item Maksud Dari Infer\_code
+\begin{itemize}
+\item Penjelasan : Difungsikan untuk menyimpulkan vector yang mana berhubungan dengan vecktor dokumen baru (pada subjek pengeksekusian).
+\item Contoh / Ilustrasi Gambar : \ref{7-infercode-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/7-infercode-fadila.jpg}
+\caption{7-infercode-fadila}
+\label{7-infercode-fadila}
+\end{figure}
+\par
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par Berdasarkan dari hasil tersebut, kalimat yang dieksekusi yaitu " fadila cahyoni lovers muah " dipecah kemudian disimpulkan dimana keluarannya menghasilkan array dengan dtype=float32.
+\par
+\end{itemize}
+\item Maksud Dari Cosine\_similarity
+\begin{itemize}
+\item Penjelasan : Cosine\_Similarity ini digunakan untuk menghitung tingkat kesamaan maupun kemiripan antar dua buah objek ataupun kata yang dieksekusi sehingga menghasilkan sebuah keluaran.
+\item Contoh / Ilustrasi Gambar : \ref{8-cosine-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/8-cosine-fadila.jpg}
+\caption{8-cosine-fadila}
+\label{8-cosine-fadila}
+\end{figure}
+\par
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par Berdasarkan dari hasil gambar diatas, pengeksekusian dan juga pengujian terhadap model cosine\_similarity dengan 2 objek kata yaitu "services sucks 2" memberikan keluaran berupa array sebagai tingkatan kesamaan ataupun perbandingan terhadap kedua kata yang sama tersebut. Hasilnya o.9 sehingga membuktikan tingkat kesamaan yang signifikan diantara keduanya.
+\par
+\end{itemize}
+\item Praktek Score Dari Cross Validation
+\begin{itemize}
+\item Penjelasan : Untuk Praktek dari score cross validation ini akan berpatokan pada perhitungan model clrf, sentvecs, setiments kemudian akan meghitung keakuratan dari data ataupun parameter yang dieksekusi tersebut.
+\item Contoh / Ilustrasi Gambar : \ref{9-score-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.16]{figures/9-score-fadila.jpg}
+\caption{9-score-fadila}
+\label{9-score-fadila}
+\end{figure}
+\par
+\par Penjelasan ( Maksud Dari Gambar Dan Code Secara Keseluruhan ) : 
+\par Berdasarkan dari gambar tersebut, telah dilakukan pengeksekusian untuk pengujian score dari cross validation dengan  perhitungan model clrf, sentvecs, setiments sebagai inputan kemudian menghasilkan keluaran ( output ) yang berupa angka dimana akan tersebut diartikan sebagai tingkat keakuratan perhitungan yang terjadi pada inputan yang ada.
+\par
+\end{itemize}
+\par
+
+\item Penanganan Error
+\begin{enumerate}
+\item Code Error 1:
+\begin{itemize}
+\item Code Error 1:
+\begin{lstlisting}
+for dirname in ["review_polarity/txt_sentoken/pos","review_polarity/txt_sentoken/neg"]:
+\end{lstlisting}
+\item Gambar Error :
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/error-error-fadila.jpg}
+\caption{error-error-fadila}
+\label{error-error-fadila}
+\end{figure}
+\par
+\item Code Dan Cara Pemecahan Error :
+\begin{itemize}
+\item Pada error tersebut dapat dipastikan bahwa directory file yang ingin dipanggil salah ataupun sesuai ( spesifik )
+\item Pastikan apabila ingin menggunakan perintah directory dlam pemanggilannya maka harus benar dan sesuai
+\item Namun disarankan untuk melakukan eksekusi dari file codingannya  berada dalam satu folder sehingga lebih mudah dan efisien.
+\item Silahkan menyesuaikan codingan sebelumnya dengan codingan dibawah ini untuk mengatasi error
+\begin{lstlisting}
+for dirname in ["txt_sentoken/pos","txt_sentoken/neg"]:
+\end{lstlisting}
+\item Setelah menganti codingan sebelumnya dengan code baru tersebut maka dipastikan tidak akan terjadi kesalahan atau error yang sama.
+\par 
+\par
+\end{itemize}
+\end{itemize}
+\par
+\par
+\item Code Error 2 :
+\begin{itemize}
+\item Code Error 2 :
+\begin{lstlisting}
+NameError: name 'os' is not defined
+\end{lstlisting}
+\item Gambar Error :
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/error-error-2-fadila.jpg}
+\caption{error-error-2-fadila}
+\label{error-error-2-fadila}
+\end{figure}
+\par
+\item Code Dan Cara Pemecahan Error :
+\begin{itemize}
+\item Pada error tersebut dapat dipastikan bahwa os tidak terdefinisikan
+\item Pada pemrosesan codenya harus di dahului dengan mendefinisikan os itu sendiri
+\item Silahkan masukkan code berikut, kemudian jalankan.
+\begin{lstlisting}
+import re
+import os
+unsup_sentences = []
+\end{lstlisting}
+\item Setelah menjalankan code tersebut silahkan jalankan kembali code yang telah dicoba sebelumnya
+\item Maka error tidak akan terjadi lagi.
+\end{itemize}
 \end{itemize}
 \end{enumerate}
 \end{enumerate}
