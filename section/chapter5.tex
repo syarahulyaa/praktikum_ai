@@ -13,7 +13,7 @@ brief of conclusion
 		\par Kata-kata harus dilakukan vektorisasi karena kita dapat mengetahui kemiripan kata satu sama lain untuk mendapatkan kinerja yang lebih baik di mesin learning.
 	\item Ilustrasi :
 		\par Maksud dari kalimat di atas adalah  apabila sebelumnya menggunakan bag of word atau kantong kata yang dimana model tersebut hanya menghitung setiap kata muncul disetiap dokumen, maka disini akan menggunakan vektorisasi kata. Misal kita memiliki 2 bag of word vektor yang bisa dikatakan mirip, lalu kita dapat membandingngkan dokumen untuk melihat kemiripannya atau membandingkan kata-kata yang digunakan di kedua dokumen tersebut. Dengan kata lain, jika kedua dokumen memiliki banyak kata yang mirip dan muncul beberapa kali, mereka akan dianggap serupa.  Oleh karena itu pentingnya vektorisasi didasarkan untuk mengetahui seberapa mirip kata satu sama lain. Gambar \ref{5a1} merupakan gambaran ilustrasi.
-		\begin{figure}[ht]
+		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.5]{figures/p1.jpg}
 		\caption{Lusia-Vektorisasi}
@@ -39,14 +39,14 @@ dengan ilustrasi atau gambar.
 	
 	\begin{itemize}
 	\item Kesamaan (jarak) antara kucing dan anjing = 0,761. Perhitungan pada gambar \ref{5a2}
-		\begin{figure}[ht]
+		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.5]{figures/p2a.jpg}
 		\caption{Lusia-Kesamaan Kucing Anjing}
 		\label{5a2}
 		\end{figure}
 	\item Kesamaan antara kucing dan spatula = 0,124. Perhitungan pada gambar  \ref{5a3}
-		\begin{figure}[ht]
+		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.5]{figures/p2b.jpg}
 		\caption{Lusia-Kesamaan Kucing Spatula}
@@ -63,7 +63,7 @@ dengan ilustrasi atau gambar.
 		\par Konsep vektorisasi untuk kata adalah dengan mengetahui nilai dimensi dari setiap satuan kata. Lalu menghitung nilai kesamaan dimensi tersebut, setalah itu dibandingkan (seperti ilustrasi soal no.2). Vektorisasi kata (Word2Vec) menggunakan neural networks untuk mempelajari kata. Pada tingkatan kesulitan yang tinggi, neural networks mirip dengan random forest atau decission tree dan teknik machine learning lainnya karena mereka diberikan banyak input dan banyak output, sehingga dapat belajar bagaimana memprediksi output dari input. Untuk Word2Vec, input adalah satu kata dan hasilnya adalah kata-kata terdekat dari teks. Dengan demikian, Word2Vec belajar vektor kata dengan mengingat kata konteksnya.
 	\item Ilustrasi :
 		\par Jadi dari pemaparan soal no.2, anjing dan kucing akan memiliki vektor kata yang sama karena kedua kata ini digunakan dengan cara yang sama. Seperti contoh pada kalimat 'dia memelihara anjing' dan 'dia memelihara kucing'. Apabila 2 kalimat tersebut menggunakan model kantong kata kontinu (salah satu teknik yang digunakan untuk Word2Vec) dengan neutral networking yang mempelajari 300-dimensi perkata maka akan diperoleh hasil output yang sama. Gambar \ref{5a4} merupakan gambar ilustrasinya.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/p3.jpg}
 			\caption{Lusia-Konsep Vektorisasi Kata}
@@ -79,7 +79,7 @@ gambar.
 		\par Dalam hal ini, sebagai vektor yang membantu kita memprediksi kata-kata, dari mengetahui nama file. Sebenarnya, inputnya tidak terlalu penting, yang terpenting adalah nama dari file dokumen tersebut. Kita hanya perlu melacak kata-kata yang semuanya berasal dari dokumen yang sama. Sehingga semua kata-kata akan terhubung pada nama file tersebut. Sebab itu kita dapat memprediksi kata-kata dokumen berdasarkan nama filenya, kita dapat secara efektif memiliki model yang tahu kata-kata mana yang cocok dalam sebuah dokumen. 
 	\item Ilustrasi :
 		\par Misalnya saja pada sebuah dokumen yang berisi ulasan atau komentar. Sebuah komentar tentunya memiliki 2 sisi yang berlawanan yaitu positif dan negatif. Dengan menggunakan vektorisasi dokumen, kita dapat mengetahui banyak kata positif yang berbeda digunakan dalam ulasan positif dan banyak kata negatif digunakan dalam ulasan negatif. Gambar \ref{5a5} merupakan gambar ilustrasinya.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/p4.jpg}
 			\caption{Lusia-Vektorisasi Dokumen}
@@ -95,7 +95,7 @@ gambar.
 			\par Mean atau nilai rata-rata adalah teknik penjelasan kelompok yang berdasarkan nilai rata-rat dari kelompok data.
 		\item Ilustrasi :
 			\par Misal kita ingin mengetahui nilai rata-rata dari suatu kelompok, maka kita bisa menjumlahkan data seluruh individu dalam kelompok tersebut. Kemudian dibagi dengan jumlah individu yang ada pada kelompok tersebut. Gambar \ref{5a6} merupakan gambar ilustrasinya.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/p5a.jpg}
 			\caption{Lusia-Mean}
@@ -110,7 +110,7 @@ gambar.
 			
 		\item Ilustrasi :
 			\par Misal kita ingin mengetahui besar nilai sampel terhadap nilai rata-rata, maka kita dapat menggunakan standar deviasi. Gambar \ref{5a7} merupakan gambar ilustrasinya.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/p5b.jpg}
 			\caption{Lusia-Standar Deviasi}
@@ -127,7 +127,7 @@ gambar.
 
 	\item Ilustrasi :
 		\par Misalkan saja kita ingin memprediksi kata, pada teknik ini vektor kata tengah digunakan untuk memprediksi kata konteks yang diberikan kata tengah. Seperti gambar \ref{5a8} : 
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/p6.jpg}
 			\caption{Lusia-Skip gram}
@@ -145,7 +145,7 @@ gambar.
 	\begin{enumerate}
 		\item Mencoba dataset
 		
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.4]{figures/chap5.jpg}
 			\caption{Lusia-Mencoba dataset}
@@ -162,7 +162,7 @@ gambar.
 		\item Menjelaskan vektor
 			\begin{itemize}
 				\item Love
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5a.jpg}
 					\caption{Lusia-Menjelaskan Vektor Love}
@@ -171,7 +171,7 @@ gambar.
 					\par Pada gambar \ref{5b2}, gmodel['love'] berfungsi untuk testing model love dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Faith
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5b.jpg}
 					\caption{Lusia-Menjelaskan Vektor Faith}
@@ -180,7 +180,7 @@ gambar.
 					\par Pada gambar \ref{5b3}, gmodel['faith'] berfungsi untuk testing faith dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Fall
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.39]{figures/chap5c.jpg}
 					\caption{Lusia-Menjelaskan Vektor Fall}
@@ -189,7 +189,7 @@ gambar.
 					\par Pada gambar \ref{5b4}, gmodel['fall'] berfungsi untuk testing fall dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Sick
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.37]{figures/chap5d.jpg}
 					\caption{Lusia-Menjelaskan Vektor Sick}
@@ -198,7 +198,7 @@ gambar.
 					\par Pada gambar \ref{5b5}, gmodel['sick'] berfungsi untuk testing sick dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Clear
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.4]{figures/chap5e.jpg}
 					\caption{Lusia-Menjelaskan Vektor Clear}
@@ -207,7 +207,7 @@ gambar.
 					\par Pada gambar \ref{5b6}, gmodel['clear'] berfungsi untuk testing clear dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Shine
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.4]{figures/chap5f.jpg}
 					\caption{Lusia-Menjelaskan Vektor Shine}
@@ -216,7 +216,7 @@ gambar.
 					\par Pada gambar \ref{5b7}, gmodel['shine'] berfungsi untuk testing shine dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Bag
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5g.jpg}
 					\caption{Lusia-Menjelaskan Vektor Bag}
@@ -225,7 +225,7 @@ gambar.
 					\par Pada gambar \ref{5b8}, gmodel['bag'] berfungsi untuk testing bag dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Car
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5h.jpg}
 					\caption{Lusia-Menjelaskan Vektor Car}
@@ -234,7 +234,7 @@ gambar.
 					\par Pada gambar \ref{5b9}, gmodel['car'] berfungsi untuk testing car dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Wash
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5i.jpg}
 					\caption{Lusia-Menjelaskan Vektor Wash}
@@ -243,7 +243,7 @@ gambar.
 					\par Pada gambar \ref{5b10}, gmodel['wash'] berfungsi untuk testing wash dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Motor
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5j.jpg}
 					\caption{Lusia-Menjelaskan Vektor Motor}
@@ -252,7 +252,7 @@ gambar.
 					\par Pada gambar \ref{5b11}, gmodel['motor'] berfungsi untuk testing motor dari google model. Dan outputnya adalah berupa array. 
 					
 				\item Cycle
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.45]{figures/chap5k.jpg}
 					\caption{Lusia-Menjelaskan Vektor Cycle}
@@ -264,7 +264,7 @@ gambar.
 		\item Perbandingan similirati
 			\par Dari percobaan model google, selanjutnya dibandingkan similiratinya seperti gambar \ref{5b13} berikut : 
 			
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/q1.jpg}
 			\caption{Lusia-Perbandingan}
@@ -291,7 +291,7 @@ gambar.
 \item Jelaskan dengan kata dan ilustrasi fungsi dari extract words dan PermuteSentences. 
 	\begin{itemize}
 		\item extract words 
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/q2a.jpg}
 			\caption{Lusia-extract words}
@@ -307,7 +307,7 @@ gambar.
 			
 			
 		\item Permute Sentences
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/q2b.jpg}
 			\caption{Lusia-Permute Sentences}
@@ -320,7 +320,7 @@ gambar.
 					\par Permute sentences berfungsi untuk melakukan random teks atau pengocokan pada sebuah teks.
 				\item Ilustrasi \ref{5b15} : 
 					\par Gambar 'Lusia-Permute Sentences' mengilustrasikan atribut unit cost yang akan dirandom pada sebuah class. Kemudian atribut diinisialisasi menggunakan method def init, yang dimana atribut bernilai samadengan 0. Setelah itu atribut dipresentasikan oleh 'self'. Dan yang terakhir perintah random akan mengeksekusi, sehingga menghasilkan hasil seperti gambar \ref{5b16} : 
-					\begin{figure}[ht]
+					\begin{figure}[!hbtp]
 					\centering
 					\includegraphics[scale=0.5]{figures/q2bb.jpg}
 					\caption{Lusia-Hasil Permute Sentences}
@@ -332,41 +332,127 @@ gambar.
 
 \item Jelaskan fungsi dari librari gensim TaggedDocument dan Doc2Vec disertai praktek pemakaiannya. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
 
+	\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[scale=0.5]{figures/q3.jpg}
+	\caption{Lusia-TaggedDocument dan Doc2Vec}
+	\label{5b17}
+	\end{figure}
+
 	\begin{enumerate}
-	\item Penjelasan fungsi gambar \ref{5b17} : (bagian ini blm selesai dikerjakan)
-		\begin{figure}[ht]
-		\centering
-		\includegraphics[scale=0.5]{figures/q3a.jpg}
-		\caption{Lusia-penjelasan fungsi}
-		\label{5b17}
-		\end{figure}
+	\item Penjelasan fungsi :
+		\par Doc2Vec telah disediakan oleh library gensim dan library tersebut memiliki sebuah class yang disebut TaggedDocument. Jadi fungsi TaggedDocument berfungsi untuk mempresentasikan kata pada dokumen dan Doc2Vec adalah model yang digunakan.
 		
-	\item Praktek pemakaian : (bagian ini blm selesai dikerjakan)
-		\begin{figure}[ht]
-		\centering
-		\includegraphics[scale=0.5]{figures/q3b.jpg}
-		\caption{Lusia-keluaran}
-		\label{5b18}
-		\end{figure}
+	\item Praktek pemakaian :
+	 \par Perhatikan gambar \ref{5b17}. Gambar tersebut merupakan output dari praktek pemakaian TaggedDocument dan Doc2Vec.
+	 \begin{itemize}
+	 \item Baris 1 = mengimport TaggedDocument dari library gensim
+	 \item Baris 2 = mengimport Doc2Vec dari library gensim
+	 \end{itemize}
+	  		
 	\end{enumerate}
 
 \item Jelaskan dengan kata dan praktek cara menambahkan data training dari file yang dimasukkan kedalam variabel.
+	\par Perhatikan gambar \ref{5b18}.
+	\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[scale=0.5]{figures/q4.jpg}
+	\caption{Lusia-menambahkan data training}
+	\label{5b18}
+	\end{figure}
+	\par Berikut adalah praktek cara menambahkan data training dari file yang dimasukkan kedalam variabel beserta penjelasan katanya, berdasarkan gambar \ref{5b18} :
+	\begin{enumerate}
+	\item Import library os
+	\item membuat variable unsup sentences
+	\item Berikutnya memamnggil direktori yang akan digunakan.
+	\item Lalu fname memberikan nama pada direktori yang telah dipanggil.
+	\item Direktori yang telah dinamai kemudian memanggil data yang bertipe data .txt.
+	\item Lalu data tersebut dibuka dan di urutkan sesuai dengan list dir dengan parameter dirnamenya.
+	\item Setiap data training direalisasikan pada sebuah inputan variabel words dengan extract word.
+	\item Yang selanjutnya dihubungkan dengan unsup sentences yang mengeksekusi class tagged document.
+	\item Dan data selesai ditambahkan.
+	\end{enumerate}
 
 \item Jelaskan dengan kata dan praktek kenapa harus dilakukan pengocokan dan pembersihan data. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+	\par Data harus dilakukan pengocokan supaya hasil keluaran acak tidak berurutan.  Begitu juga dilakukan pembersihan data bertujuan untuk pengecekan serta pemulihan data. Perhatikan gambar \ref{5b19}.
+	\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[scale=0.5]{figures/q5.jpg}
+	\caption{Lusia-Pengocokan dan Pembersihan Data}
+	\label{5b19}
+	\end{figure}
+	\par Gambar \ref{5b19} merupakan gambar praktik dari pengocokan dan pembersihan data. Pembersihan data dimulai dari import library re. Baris kedua penggunaan extract word dengan object sent. Baris ketiga variable sent menggunakan method lower untuk mengembalikan salinan string. Baris keempat untuk menghapus tag html, baris kelima untuk menghapus tanda baca petik satu, baris ke enam untuk menghapus tanda baca, baris ke tujuh untuk menghapus spasi yang berurutan, Dan yang teraknir untuk mengembalikan varible sent yang telah dibagi.
+	\par Dan untuk pengocokan dimulai dari import library random. Lalu membuat class permute sentences yang berisi opject yang menfinisikan metode pengocokan.
 
 \item Jelaskan dengan kata dan praktek kenapa model harus di save dan kenapa temporari training harus dihapus.Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+	\begin{itemize}
+	\item Penjelasan :
+	\begin{itemize}
+		\item Model harus di save karena berfungsi menyimpan data inferensi untuk mengikat vektor dokumen baru.
+		\item Temporari training harus dihapus karena untuk mengosongkan sebagian memory yang telah digunakan saat melakukan training.
+	\end{itemize}	  
+	
+	\item Praktek :
+		\item Save
+			\begin{figure}[!hbtp]
+			\centering
+			\includegraphics[scale=0.5]{figures/q6a.jpg}
+			\caption{Lusia-Save}
+			\label{5b20}
+			\end{figure}
+			
+			\par Penjelasan Gambar \ref{5b20} :
+			\par model.save berfungsi untuk menyimpan model yang telah dibuat. Dan dua baris dibawahnya memberikan informasi mengenai penyimpanan model tersebut.
+			
+		\item Delete Temporary
+			\begin{figure}[!hbtp]
+			\centering
+			\includegraphics[scale=0.5]{figures/q6b.jpg}
+			\caption{Lusia-Delete Temporary}
+			\label{5b21}
+			\end{figure}
+			
+			\par Penjelasan gambar \ref{5b21} :
+			\par model.delete temporary training data berfungsi untuk menghapus beberapa data.
+			
+	\end{itemize}
 
-\item jalankan dengan kta dan praktek maksud dari infer code. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+\item jalankan dengan kata dan praktek maksud dari infer code. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+	\par Infer code berfungsi untuk menyimpulkan vektor yang berkaitan dengan vektor dokumen baru.
+	\par Perhatikan gambar \ref{5b22}
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/q7.jpg}
+		\caption{Lusia-Infer code }
+		\label{5b22}
+		\end{figure}
+	\par Gambar tersebut merupakan praktek dari infer code. Dimana infer vektor menyimpulkan vektor dari kata 'aku sayang emak bapak' yang sudah di ekstrak. Sehingga menghasilkan output berupa array dengan tipe data float32.
 
 \item Jelaskan dengan praktek dan kata maksud dari cosine similarity. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+	\par Cosine similarity digunakan untuk mengecek kemiripan dari 2 kalimat berbeda. Perhatikan gambar \ref{5b23} untuk praktiknya.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/q8.jpg}
+		\caption{Lusia-cosine similarity}
+		\label{5b23}
+		\end{figure}
+	\par Mula-mula import cosine similarity dari library sklearn. Lalu cek kemiripan menggunakan cosine similarity yang didalamnya sudah terdapat 2 kalimat  yang akan dibandingkan. Praktek ini menggunakan kalimat 'Aku sayang emak bapak' dan kalimat 'Aduh aku ngantuk, bagaimana ini' yang menghasilkan output berupa array dengan tipe data float32.
 
 \item Jelaskan dengan praktek score dari cross validation masing-masing metode. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+	\par Score dari cross validation berfungsi untuk memprediksi model yang telah dibuat dan memperkirakan keakuratannya. Perhatikan gambar \ref{5b24}
+	 	\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/q9.jpg}
+		\caption{Lusia-score}
+		\label{5b24}
+		\end{figure}
+	\par Gambar \ref{5b24} merupakan praktik dari score. Gambar tersebut menjelaskan variable score yang akan menghitung keakurasian menggunakan teknik cross validation. Baris kedua merupakan perintah untuk menghitung variable score. Sehingga menghasilkan output 0.757 (akurasi = 76 persen)
 \end{enumerate}
 
 \subsection{Penanganan Error}
 \begin{enumerate}
 \item Skrinsut Error
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/r1.jpg}
 	\caption{Lusia-Error}
@@ -381,7 +467,7 @@ gambar.
 	
 \item Solusi Pemecahan 
 	\par Solusi dari permasalahan error pada skrinsut error adalah dengan mengintal modul gensim di anaconda dengan cara berikut :
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/r3.jpg}
 	\caption{Lusia-Solusi}
