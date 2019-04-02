@@ -7,7 +7,7 @@
 	\begin{itemize}
 	\item Random Forest diperkenalkan dan diselidiki untuk memprediksi aktivitas biologis kategoris atau kategoris suatu senyawa berdasarkan pada deskripsi kuantitatif dari struktur molekul senyawa. Random Forest adalah ensemble dari pohon klasifikasi atau regresi yang tidak ditandai yang dibuat dengan menggunakan sampel bootstrap dari data pelatihan dan pemilihan fitur acak dalam induksi pohon. Prediksi dibuat dengan menggabungkan (suara terbanyak atau rata-rata) prediksi ensemble.
 	\item Gambar Random Forest
-		\begin{figure}[ht]
+		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.5]{figures/j1.jpg}
 		\caption{Random Forest}
@@ -21,28 +21,28 @@
 		\begin{enumerate}
 			\item Buka Anaconda Navigator lalu jalankan Spyder, kemudian import libraries yang dibutuhkan.
 			\item Masukkan kode python untuk membaca file csv, lalu jalankan.
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.8]{figures/j41.jpg}
 				\caption{Kode Python}
 				\label{contoh}
 				\end{figure}
 			\item Maka pada window console akan menampilkan pesan berikut :
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.9]{figures/j42.jpg}
 				\caption{Pesan Window Console}
 				\label{contoh}
 				\end{figure}
 			\item Dari explorer dapat terlihat dataset yang terimport.
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.6]{figures/j43.jpg}
 				\caption{Dataset}
 				\label{contoh}
 				\end{figure}
 			\item Lalu klik dataset cell, maka akan muncul seperti berikut :
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.7]{figures/j44.jpg}
 				\caption{Hasil Dataset Cell}
@@ -51,7 +51,7 @@
 			\item Seperti yang terlihat pada gambar tersebut dataset ini memiliki Kolom Country, Age, dan Salary sebagai independent variable-nya dan kolom Purchased sebagai dependent variable-nya.
 			\item Selanjutnya buat 2 matrix of features yang berisi values dari independent variable dan dependent variable.
 			\item Lalu tuliskan perintah berikut :
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.9]{figures/j45.jpg}
 				\caption{Perintah}
@@ -78,14 +78,14 @@
 \item Cara Membaca Confusion Matriks
 	\begin{itemize}
 		\item Mari kita lihat contoh klasifikasi biner berikut ini, yang menunjukkan berapa kali model telah membuat prediksi objek yang benar:
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/j2a.jpg}
 			\caption{Tabel Confusion Matriks}
 			\label{contoh}
 			\end{figure}
 		\item Dalam tabel tersebut, baris apple dan orange mengacu pada kasus di mana objek tersebut sebenarnya sebuah apel atau sebuah jeruk. Kolom merujuk pada prediksi yang dibuat oleh model. Kita melihat bahwa dalam contoh ada 20 apel yang diprediksi dengan benar, sementara ada 5 apel yang salah diidentifikasi sebagai jeruk. Idealnya, confusion matriks harus memiliki semua nilai nol, kecuali untuk diagonal. Di sini kita dapat menghitung akurasi dengan menambahkan angka secara diagonal, sehingga ini semua adalah contoh yang diklasifikasikan dengan benar, dan membagi jumlah tersebut dengan jumlah semua angka dalam matriks:
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/j2b.jpg}
 			\caption{Rumus Confusion Matriks}
@@ -93,7 +93,7 @@
 			\end{figure}
 		\item Sehingga dari perhitungan tersebut kita mendapat akurasi 84%.
 		\item Berikut adalah gambar klasifikasi biner :
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/j2c.jpg}
 			\caption{Confusion Matriks}
@@ -105,7 +105,7 @@
 	\begin{itemize}
 		\item Voting pada random forest merupakan metode yang paling umum digunakan setelah classifier membuat keputusan.
 		\item Gambar voting pada random forest
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/j3.jpg}
 			\caption{Voting Pada Random Forest}
@@ -118,7 +118,7 @@
 \subsection{Praktek}
 \begin{enumerate}
 \item Aplikasi Sederhana Menggunakan Pandas
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k1a.jpg}
 	\caption{Aplikasi Pandas}
@@ -131,14 +131,14 @@
 		\item Menampilkan hasil
 		\end{enumerate}
 	\par Sehingga menghasilkan :
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k1b.jpg}
 	\caption{Hasil Pandas}
 	\label{contoh}
 	\end{figure}
 \item Aplikasi Sederhana Menggunakan Numpy
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k2a.jpg}
 	\caption{Aplikasi Numpy}
@@ -151,14 +151,14 @@
 		\item Menampilkan hasil value
 		\end{enumerate}
 	\par Sehingga menghasilkan :
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k2b.jpg}
 	\caption{Hasil Numpy}
 	\label{contoh}
 	\end{figure}
 \item Aplikasi Sederhana Menggunakan Matplotlib
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k3a.jpg}
 	\caption{Aplikasi Matplotlib}
@@ -176,7 +176,7 @@
 		\item Menampilkan hasil
 		\end{enumerate}
 	\par Sehingga menghasilkan :
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k3b.jpg}
 	\caption{Hasil Matplotlib}
@@ -185,126 +185,126 @@
 \item Program Klasifikasi Random Fores
 	\begin{itemize}
 		\item Yang pertama dataset akan dibaca.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k41.jpg}
 			\caption{Membaca Data File}
 			\label{contoh}
 			\end{figure}
 		 \item Selanjutnya sebagian data awal akan dilihat dengan menggunkan listing.
-		 	\begin{figure}[ht]
+		 	\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k42.jpg}
 			\caption{Melihat Data Sebagian}
 			\label{contoh}
 			\end{figure}
 		\item Selanjutnya jumlah data dilihat dengan menggunakan listing.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k43.jpg}
 			\caption{Melihat Jumlah Data}
 			\label{contoh}
 			\end{figure}
 		\item Lalu atribut diubah menjadi kolom dengan menggunakan perintah pivot.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k44.jpg}
 			\caption{Mengubah menjadi kolom}
 			\label{contoh}
 			\end{figure}
 		\item Selanjutnya atribut yang telah diubah, sebagian data awalnya akan dilihat dengan menggunkan listing kembali.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k45.jpg}
 			\caption{Lihat sebagian data awal}
 			\label{contoh}
 			\end{figure}
 		\item Selanjutnya atribut yang telah diubah, jumlah data dilihat dengan menggunakan listing kembali.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k46.jpg}
 			\caption{Melihat jumlah data}
 			\label{contoh}
 			\end{figure}
 		\item Lalu mengelompokkan burung kedalam spesies yang sama dengan dua kolom imgid dan label.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k47.jpg}
 			\caption{Mengelompokkan burung}
 			\label{contoh}
 			\end{figure}
 		\item Lalu melakukan pivot dimana imgid menjadi index.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k48.jpg}
 			\caption{Melalukan pivot}
 			\label{contoh}
 			\end{figure}
 		\item Selanjutnya imgid, sebagian data awalnya akan dilihat dengan menggunkan listing untuk mengecek data.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k49.jpg}
 			\caption{Melihat data awal imgid}
 			\label{contoh}
 			\end{figure}
 		\item Selanjutnya imgid, jumlah data dilihat dengan menggunakan listing untuk mengecek data.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k410.jpg}
 			\caption{Melihat jumlah data imgid}
 			\label{contoh}
 			\end{figure}
 		\item Lalu melakukan join karena isi datanya adalah sama di antara dua data. Sehingga mendapatkan data ciri labelnya sehingga bisa dikategorikan.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k411.jpg}
 			\caption{Data ciri label dari join}
 			\label{contoh}
 			\end{figure}
 		\item Kemudian label yang didepan di drop dan berikan label pada data yang telah dilakukan join dengan perintah listing.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k412.jpg}
 			\caption{Mengubah menjadi kolom}
 			\label{contoh}
 			\end{figure}
 		\item Lalu cek kembali isinya dengan perintah listing. 
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k413.jpg}
 			\caption{Melihat isi data frame}
 			\label{contoh}
 			\end{figure}
 		\item Kemudian data dibagi menjadi dua bagian, dimana 8000 row pertama merupakan data training dan sisanya adalah data testing.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k414.jpg}
 			\caption{Membagi data}
 			\label{contoh}
 			\end{figure}
 		\item Kelas random forest selanjuknya dipanggil dengan RandomForestClassifier, dengan banyak kolom yang telah ditentukan oleh max feature.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k415.jpg}
 			\caption{Kelas Random Forest}
 			\label{contoh}
 			\end{figure}
 		\item Kemudian untuk membangun random forest dilakukan perintah fitting dengan maksimum fitur sebanyak 50.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k416.jpg}
 			\caption{Membangun Random forest}
 			\label{contoh}
 			\end{figure}
 		\item Kemudian lihat hasilnya dengan perintah predict.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k417.jpg}
 			\caption{Melihat hasil}
 			\label{contoh}
 			\end{figure}
 		\item Lalu akan terlihat hasil score dari klasifikasi.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k418.jpg}
 			\caption{Lihat hasil score}
@@ -314,35 +314,35 @@
 \item Program Klasifikasi Confusion Matrix
 	\begin{itemize}
 		\item Setelah melakukan random forest kemudian dipetakan ke dalam confusion matrix.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k51.jpg}
 			\caption{Memetakan ke confusion matrix}
 			\label{contoh}
 			\end{figure}
 		\item Lalu melihat hasilnya.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k52.jpg}
 			\caption{Melihat hasil}
 			\label{contoh}
 			\end{figure}
 		\item Kemudian dilakukan perintah plot.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k53.jpg}
 			\caption{Melakukan Plot}
 			\label{contoh}
 			\end{figure}
 		\item Selanjutnya nama data akan di set agar plot sumbunya sesuai.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k54.jpg}
 			\caption{Plotting nama data}
 			\label{contoh}
 			\end{figure}
 		\item Setelah label berubah, maka dilakukan perintah plot.
-		\begin{figure}[ht]
+		\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k55.jpg}
 			\caption{Melakukan perintah plot}
@@ -353,7 +353,7 @@
 	\begin{enumerate}
 		\item Program Decision Tree
 			\par Mengklasifikasikan dataset yang sama menggunakan decision tree.
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.5]{figures/k61.jpg}
 				\caption{Klasifkasi menggunakan decision tree}
@@ -361,7 +361,7 @@
 				\end{figure}
 		\item Program Klasifikasi SVM
 			\par Mengklasifikasikan dataset yang sama menggunakan SVM.
-				\begin{figure}[ht]
+				\begin{figure}[!hbtp]
 				\centering
 				\includegraphics[scale=0.5]{figures/k62.jpg}
 				\caption{Klasifikasi menggunakan SVM}
@@ -371,21 +371,21 @@
 \item Program Cross Validation
 	\begin{itemize}
 		\item Melakukan pengecekan cross validation untuk random forest.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k71.jpg}
 			\caption{Pengecekan cross validation random forest}
 			\label{contoh}
 			\end{figure}
 		\item Melakukan pengecekan cross validation untuk decission tree.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k72.jpg}
 			\caption{Pengecekan cross validation decision tree}
 			\label{contoh}
 			\end{figure}
 		\item Melakukan pengecekan cross validation untuk SVM.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k73.jpg}
 			\caption{Pengecekan cross validation SVM}
@@ -395,14 +395,14 @@
 \item Program Pengamatan Komponen Informasi
 	\begin{itemize}
 		\item Melakukan pengamatan komponen informasi untuk menetahui berapa banyak tree yang dibuat, atribut yang dipakai, dan informasi lainnya.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k81.jpg}
 			\caption{Pengamatan Komponen}
 			\label{contoh}
 			\end{figure}
 		\item Melakukan plot informasi agar bisa dibaca.
-			\begin{figure}[ht]
+			\begin{figure}[!hbtp]
 			\centering
 			\includegraphics[scale=0.5]{figures/k82.jpg}
 			\caption{Plot informasi}
@@ -414,7 +414,7 @@
 \subsection{Penanganan Error}
 \begin{enumerate}
 \item Skrinsut Error
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/l1.jpg}
 	\caption{Skrinsut Error}
@@ -425,14 +425,14 @@
 	\par Jenis Error = File not found
 \item Solusi Pemecahan Masalah Error
 \par Solusi dari error yang terjadi pada nomor 1 adalah perbaiki alamat direktorinya sebagai berikut :
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/l2.jpg}
 	\caption{Penyelesaian}
 	\label{contoh}
 	\end{figure}
 \par Sehingga didapat hasil seperti berikut :
-	\begin{figure}[ht]
+	\begin{figure}[!hbtp]
 	\centering
 	\includegraphics[scale=0.5]{figures/k41.jpg}
 	\caption{Hasil}
