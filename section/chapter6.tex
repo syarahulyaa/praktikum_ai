@@ -165,3 +165,273 @@ Please tell more about conclusion and how to the next work of this study.
 \end{itemize}
 
 \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\par
+\par
+\section{Fadila-1164072}
+\subsection{Teori}
+Penjelasan Tugas Harian 11 ( No 1-8 ).
+\begin{enumerate}
+\item Mengapa File Suara Harus Dilakukan MFCC Dilengkapi Dengan Ilustrasi Atau Gambar :
+\par Perlu diketahui terlebih dahulu bahwa MFCC ( Mel Frequency Cepstral Coefficients ) merupakan koefisien yang merepresentasikan audio ( lebih simpelnya digunakan sebagai library ). Ekstraksi ciri dalam proses ini ditandai dengan pengubahan data suara menjadi data citra berupa spektrum gelombang.
+\begin{itemize}
+\item Penjelasan File Suara Harus Dilakukan MFCC : 
+\par Diharuskan melakukan MFCC kepada objek suara agar suara dapat berubah / diubah ke dalam bentuk data matrix dimana telah dilakukan ekstraksi oleh MFCC ( data citra berupa spektrum gelombang ) kemudian direalisasikan sebagai data matrix. Suara tersebut menjadi vektor yang nantinya akan diolah jadi outputan.
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\par Penjelasan :
+\par Pada gambar tersebut, digambarkan sebuah bingkai dari klip suara bernyanyi untuk pengujian yang sama. Dengan menggunakan jendela Hamming, harmonik dalam respons frekuensi jauh lebih tajam.Untuk bingkai input terdiri dari 3 periode fundamental yang identik, maka respons frekuensi magnitudo akan dimasukkan 2 nol antara setiap dua titik tetangga dari respons frekuensi dari periode fundamental tunggal. Dengan kata lain, harmonik dari respons frekuensi umumnya disebabkan oleh periode fundamental berulang dalam bingkai. 
+\par
+\par
+\end{itemize}
+\par
+\par
+\item Konsep Dasar Neural Network Dilengkapi Dengan Ilustrasi Atau Gambar :
+\par Neural Network merupakan sistem komputasi yang efisien yang tema utamanya dipinjam dari analogi jaringan saraf biologis. JST juga disebut sebagai "sistem saraf tiruan," atau "sistem pemrosesan terdistribusi paralel," atau "sistem koneksionis."
+\begin{itemize}
+\item Penjelasan Konsep Dasar Neural Network : ( Proses Kerja Saraf Pada Manusia )
+\par Ide dasar Neural Network dimulai dari otak manusia atau terkenal yang diawali dengan karya fisiolog, dimana otak memuat sekitar 1011 neuron. Untuk setiap dari sel yang dihasilkan akan saling berinteraksi satu sama lain yang menghasilkan kemampuan tertentu pada kerja otak manusia.
+\par
+\item Ilustrasi Gambar : \ref{konsep-neu-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/konsep-neu-net-fadila.jpg}
+\caption{Konsep Dasar Neural Network- fadila}
+\label{konsep-neu-fadila}
+\end{figure}
+\par
+\par Penjelasan :
+\par Gambar tersebut mendefinisikan beberapa hal berikut :
+\begin{enumerate}
+\item Untuk Dendrit (Dendrites) berfungsi untuk mengirimkan impuls yang diterima ke badan sel syaraf.
+\item Untuk Akson (Axon) berfungsi untuk mengirimkan impuls dari badan sel ke jaringan lain
+\item Untuk Sinapsis berfungsi sebagai unit fungsional di antara dua sel syaraf.
+\end{enumerate}
+\par Secara keseluruhan dapat dijelaskan bahwa Sebuah neuron menerima impuls dari neuron lain melalui dendrit dan mengirimkan sinyal yang dihasilkan oleh badan sel melalui akson. Akson dari sel syaraf ini bercabang-cabang dan berhubungan dengan dendrit dari sel syaraf lain dengan cara mengirimkan impuls melalui sinapsis.
+\par
+\end{itemize}
+\par
+\par
+\item Konsep Pembobotan Neural Network Dilengkapi Dengan Ilustrasi Atau Gambar :
+\begin{itemize}
+\item Penjelasan Konsep Pembobotan Neural Network :
+\par  Sebuah Neural Network dikonfigurasi untuk aplikasi tertentu, seperti pengenalan pola atau klasifikasi data. Terjadi penglibatan dalam penyesuaian koneksi sinaptik yang ada antara neuron ketika melakukan penyempurnaan dengan proses pembelajaran. Penyesuaian nilai bobot yang ada pada tiap konektivitas baik dari input, neuron maupun output disinkronkan dengan penyesuaian koneksi sinaptik antar neuron itu sendiri.
+\par
+\item Ilustrasi Gambar : \ref{bobot-neu-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/bobot-neu-fadila.jpg}
+\caption{Pembobotan Pada Neural Network- fadila}
+\label{bobot-neu-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\item Konsep Fungsi Aktifasi Dalam Neural Network Dilengkapi Dengan Ilustrasi Atau Gambar :
+\begin{itemize}
+\item Penjelasan Konsep Fungsi Aktifasi Dalam Neural Network :
+\par Operasi matematik yang dikenakan pada sinyal output y. Fungsi ini akan digunakan untuk pengaktifan dan juga penonaktifan neuron. Perilaku dari JST ( jaringan saraf tiruan ) ditentukan oleh bobot beserta dengan masukan-keluaran fungsi aktivasi yang ditetapkan.
+\item Dalam Konsep Fungsi Aktivasi Neuron Network Terdapat Beberapa Jenis :
+\begin{itemize}
+\item Fungsi Undak Biner Hard Limit ( Menkonversi nilai masukan dari suatu variabel )
+\item Fungsi Undak Biner Threshold ( Menggunakan nilai ambang 0 sebagai batas eksekusil )
+\item Fungsi Bipolar Symetric Hard Limit ( Mempunyai keluaran bernilai 1 dan 0 )
+\item Fungsi Bipolar Threshold ( Mempunyai keluaran bernilai 1, 0 atau -1 )
+\item Fungsi Linear ( Nilai masukan dan keluaran sama )
+\item Fungsi Saturating Linear ( Keluarannya bernilai satu apabila masukkanya lebih dari 0 )
+\par
+\end{itemize}
+\item Ilustrasi Gambar : \ref{fungsi-aktivasi-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/fungsi-aktivasi-fadila.jpg}
+\caption{Fungsi Aktifasi - fadila}
+\label{fungsi-aktivasi-fadila}
+\end{figure}
+\par
+\par Penjelasan : ( Contoh Fungsi Aktivasi Neural Network : Bipolar Threshold )
+\par Pada gambar tersebut menjelaskan bahwa fungsi ini mempunyai keluaran atau outputan yang bernilai 1,0 ataupun -1 untuk batas nilai ambang 0 tertentu. Secara sistematis, fungsi tersebut dapat digambarkan seperti contoh yang telah diberikan.
+\par
+\par
+\end{itemize}
+\par
+\par
+\item Cara Membaca Hasil Plot Dari MFCC Dilengkapi Dengan Ilustrasi Atau Gambar :
+\begin{itemize}
+\item Pembacaan Hasil Plot Dari MFCC : ( berdasarkan contoh )
+\par Untuk hasil ploting dari MFCC, perhitungan pada prosesnya melibatkan atau mendefinisikan pemrosesan sinyal dimana terdapat 430 sampel yang tumpang tindih dengan 215 sampel (kesetaraan jendela ~ 50 ms) kemudian di terapkan jendela Hamming ke sebuah segmen (Hitung FFT: X = fft (x) ). Perhitungan energi tidak termasuk pada bagian frekuensi negatif oleh karena hanya diambil frekuensi antara 0-4kHz. Kemudian di dapatlah bank 40 filter berbentuk segitiga dengan pusat tersebar di frekuensi mel antara 20Hz dan 4kHz.
+\par
+\item Ilustrasi Gambar : \ref{hasil-plot-1-fadila} dan \ref{hasil-plot-2-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/hasil-plot-1-fadila.jpg}
+\caption{Pembacaan Hasil Plot MFCC- fadila}
+\label{hasil-plot-1-fadila}
+\end{figure}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/hasil-plot-2-fadila.jpg}
+\caption{Pembacaan Hasil Plot MFCC- fadila}
+\label{hasil-plot-2-fadila}
+\end{figure}
+\end{itemize}
+\par
+\par
+\item Apa itu One-Hot Encoding Dilengkapi Dengan Ilustrasi Atau Gambar :
+\begin{itemize}
+\item Penjelasan One-Hot Encoding : 
+\par Proses di mana variabel kategorikal dikonversi menjadi bentuk yang dapat disediakan untuk algoritma ML untuk melakukan pekerjaan yang lebih baik dalam prediksi.
+\par
+\par
+\item Ilustrasi Code Dan Gambar :
+\begin{enumerate}
+\item Ilustrasi 1 : \ref{one-hot-en-fadila} dan \ref{one-hot-en-2-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/one-hot-en-fadila.jpg}
+\caption{One-Hot Encoding 1- fadila}
+\label{one-hot-en-fadila}
+\end{figure}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/one-hot-en-2-fadila.jpg}
+\caption{One-Hot Encoding 1- fadila}
+\label{one-hot-en-2-fadila}
+\end{figure}
+\par
+\par Penjelasan :
+\par Nilai kategoris mewakili nilai numerik dari entri dalam dataset. Dicontohkan apabila ada perusahaan lain dalam dataset, itu akan diberi nilai kategoris sebagai 4. Ketika jumlah entri unik meningkat, nilai kategoris juga meningkat secara proporsional. Tabel sebelumnya hanyalah representasi. Pada kenyataannya, nilai-nilai kategorikal mulai dari 0 sampai dengan kategori N-1. 
+\par Inimerupakan bentuk organisasi yang didefinisikan dengan VW> Acura> Honda berdasarkan pada nilai-nilai kategorikal. Rata-rata VW dan Honda adalah Acura, dengan menggunakan satu one-hot encoding untuk melakukan "binarisasi" kategori dan memasukkannya sebagai fitur untuk melatih model sehingga memberikan hasil yang sesuai.
+\par
+\item Ilustrasi 2 : \ref{one-hot-en-3-fadila}.
+\begin{lstlisting}
+from numpy import array
+from numpy import argmax
+from keras.utils import to_categorical
+# define example
+data = [1, 3, 2, 0, 3, 2, 2, 1, 0, 1]
+data = array(data)
+print(data)
+# one hot encode
+encoded = to_categorical(data)
+print(encoded)
+# invert encoding
+inverted = argmax(encoded[0])
+print(inverted)
+\end{lstlisting}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/one-hot-en-3-fadila.jpg}
+\caption{One-Hot Encoding 2 - fadila}
+\label{one-hot-en-3-fadila}
+\end{figure}
+\par
+\par Penjelasan :
+\par Pada gambar tersebut dijelaskan bahwa terdapat bilangan bulat yang kemudian dikodekan sebagai vektor biner dan dicetak. Kemudian dapat dilihat bahwa nilai integer pertama 1 dikodekan sebagai [0, 1, 0, 0].Selanjutnya membalikkan pengkodean dengan menggunakan fungsi argumax NumPy () pada nilai pertama dalam urutan yang mengembalikan nilai yang diharapkan 1 untuk bilangan bulat pertama.
+\end{enumerate}
+\end{itemize}
+\par
+\par
+\item Fungsi Dari Unp.Unique Beserta To.Categorical Dilengkapi Dengan Ilustrasi Atau Gambar :
+\begin{enumerate}
+\item Penjelasan Fungsi Dari Unp.Unique :
+\par Berfungsi untuk menemukan elemen unik array. Dimana dapat , mengembalikan elemen unik array yang diurutkan. Ada tiga output opsional selain elemen unik :
+\begin{itemize}
+\item indeks array input yang memberikan nilai unik
+\item indeks array unik yang merekonstruksi array input
+\item berapa kali setiap nilai unik muncul dalam array input
+\end{itemize}
+\par
+\par Ilustrasi Gambar : \ref{np-unique-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/np-unique-fadila.jpg}
+\caption{Np.Unique - fadila}
+\label{np-unique-fadila}
+\end{figure}
+\par
+\par Penjelasan :
+\par Pada gambar tersebut, secara garis besarnya np.unique mengambil data yang berbeda dari variabel a yang berada dalam array modul np itu sendiri. Pada contoh terdapat nilai 1 yang memiliki pengulangan angka, maka hanya salah satu diantara angka tersebut yang ditampilkan bukan keduanya yang diikuti dengan angka berbeda lainnya. Hasilnya yang telah digambarkan pada contoh.
+\par
+\par
+\item Penjelasan Fungsi Dari To\_Categorical :
+\par Berfungsi untuk mengubah vektor kelas yang berupa integer ( number ) menjadi matriks kelas biner.
+\par
+\begin{itemize}
+\item Ilustrasi Gambar : \ref{to-categorical-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/to-categorical-fadila.jpg}
+\caption{To Categorical - fadila}
+\label{to-categorical-fadila}
+\end{figure}
+\par
+\par
+\par Penjelasan :
+\par Pada gambar berikut di contoh penerapan array dari 5 label yang telah diset mejadi 3 kelas. Kemudian to\_categorical difungsikan untuk mengkonversi array tersebut kedalam matrix sebanyak dari kolom-kolom yang ada pada kelas tersebut. Jumlah dari barisnya akan tetap sama dengan yang telah dieksekusi sebelumnya. Dan jadilah hasil seperti contoh tersebut.
+\par
+\par
+\end{itemize}
+\end{enumerate}
+\par
+\par
+\item Fungsi Dari Sequential Dilengkapi Dengan Ilustrasi Atau Gambar :
+\begin{itemize}
+\item Penjelasan Fungsi Dari Sequential :
+\par Sebuah jenis model yang digunakan dalam perhitungan ataupun code program yang direalisasikan. Neural Networks Sequential membangun fitur tingkat tinggi melalui lapisannya yang berurutan. Sequential juga merupakan proses dimana membandingkan setiap elemen larik satu per satu secara beruntun, mulai dari elemen pertama, sampai dengan elemen terakhir atau elemen yang dicari sudah ditemukan.
+\par
+\item Ilustrasi Gambar : \ref{sequential-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/sequential-fadila.jpg}
+\caption{Sequential - fadila}
+\label{sequential-fadila}
+\end{figure}
+\par
+\par Penjelasan :
+\par Pada gambar diatas, mendefinisikan pencarian terhadap angka 47 dimana hasilnya tetap diurutkan sesuai dengan elemennya.
+\par
+\par
+\end{itemize}
+\par
+\par
+\item Plagiarism :
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/plagiarismmmm-fadila.jpg}
+\caption{Plagiarisme- fadila}
+\label{plagiarisme-fadila}
+\end{figure}
+\par
+\end{enumerate}
