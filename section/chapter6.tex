@@ -1,5 +1,5 @@
-\chapter{Discussion}
-Please tell more about conclusion and how to the next work of this study.
+\chapter{MFCC dan Neutral Network}
+Untuk pratikum saat ini menggunakan buku Python Artificial Intelligence Projects for Beginners. Dengan praktek menggunakan python 3 dan editor spyder dan library python keras dan librosa.
 
 \section{Rahmi Roza-1164085}
 \subsection{Teori}
@@ -435,3 +435,129 @@ print(inverted)
 \end{figure}
 \par
 \end{enumerate}
+
+\section{Lusia Violita Aprilian-1164080}
+
+\subsection{Teori}
+
+\begin{enumerate}
+\item Jelaskan kenapa file suara harus di lakukan MFCC.
+	\begin{itemize}
+	\item Jawaban :
+		\par MFCC (Mel Frequency Cepstral Coeficients) digunakan untuk mengubah file suara kedalam bentuk vektor. Dan mengapa harus dilakukan MFCC? Jawabannya ialah supaya file suara tersebut dapat diolah kembali menjadi output-an. Dan semua parameter inputan baik itu suara maupun dokumen harus dipersiapkan datanya terlebih dahulu. 
+	\item Ilustrasi Gambar :
+		\par Berikut adalah ilustrasi penggambaran dari MFCC :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s1.jpg}
+		\caption{Lusia-MFCC}
+		\label{6A1}
+		\end{figure}
+	\end{itemize}
+	
+\item Jelaskan konsep dasar neural network.
+	\begin{itemize}
+	\item Jawaban :
+		\par Konsep dasar yang digunakan pada nural network mengadopsi mekanisme berfikir dari struktur dan proses kerja neuron pada otak manusia. Dimana otak manusia dapat bekerja untuk memberikan stimulasi atau rangsangan, melakukan proses, dan memberikan output-an. Baik untuk memproses sebagai sinyal elemen yang diterima, toleransi terhadap kesalahan, maupun pada proses paralel.
+	\item Ilustrasi Gambar :
+		\par Berikut adalah ilustrasi penggambaran pada konsep dasar neural network :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s2.jpg}
+		\caption{Lusia-Neural Network}
+		\label{6A2}
+		\end{figure}
+	\end{itemize}
+	
+\item Jelaskan konsep pembobotan dalam neural network.
+	\begin{enumerate}
+	\item Jawaban :
+		\par Bobot merupakan jembatan yang menghubungkan neuron satu dengan neuron yang lainnya. Dimana pada proses neural network dimulai dari input yang diterima neuron beserta nilai bobot. Nilai bobot tersebut sebagai penanda dari sebuah koneksivitas. Selanjutnya nilai inputan akan dihitung dan menghasilkan aktif atau tidak. Apabila data aktif, neuron mengirimkan nilai output melalui bobot output-nya ke semua neutron yang terhubung. 
+	\item Ilustrasi Gambar :
+		\par Berikut adalah ilustrasi penggambaran pada konsep pembobotan :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s3.jpg}
+		\caption{Lusia-Konsep Pembobotan}
+		\label{6A3}
+		\end{figure}
+	\end{enumerate}
+	
+\item Jelaskan konsep fungsi aktivasi dalam neural network. 
+	\begin{itemize}
+	\item Jawaban :
+		\par Fungsi aktivasi pada neural network berfungsi layaknya sinapsis pada neuron manusia. Dimana pada neural network, fungsi aktivasi sebagai penentu aktivasi dari sebuah nilai input-an yang sebelumnya telah dihitung pada hidden layer.
+	\item Ilustrasi gambar :
+		\par Berikut adalah ilustrasi penggambaran pada konsep fungsi aktivasi :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/s4.jpg}
+		\caption{Lusia-Konsep Fungsi Aktivasi}
+		\label{6A4}
+		\end{figure}
+	\end{itemize}
+	
+\item Jelaskan cara membaca hasil plot dari MFCC.
+	\begin{itemize}
+	\item Jawaban :
+		\par Pada sebuah grafik hasil plot dari MFCC, terdapat 2 sumbu yaitu x dan y. Sumbu x merupakan waktu atau durasi dari sebuah suara/musik/lagu, sedangkan sumbu y merupakan frekuensi dari suara yang dihasilkan, dan hasilnya merupakan desibel/power. Desibel yang dihasilkan memiliki range warna yang berbeda-beda. Range warna dari desibel adalah mulai dari biru tua hingga coklat tua. Range warna biru merupakan suara yang tidak dapat didengar manusia dan coklat merupakan suara yang dapat dapat didengar manusia.
+	\item Ilustrasi gambar :
+		\par Berikut adalah ilustrasi dari cara membaca hasil plot dari file whistling.wav :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/s5.jpg}
+		\caption{Lusia-Membaca hasil plot}
+		\label{6A5}
+		\end{figure}
+		
+	\end{itemize}
+\item Jelaskan apa itu one-hot encoding.
+	\begin{itemize}
+	\item Jawaban :
+		\par one-hot encoding adalah proses di mana variabel kategorikal dikonversi menjadi bentuk yang tersedia pada algoritma Machine Learning (vektor biner) untuk melakukan prediksi. Nilai kategirokal akan dipetakan ke bentuk biner, lalu nilai integer diubah atau dipresentasikan kedalam bentuk vektor biner yang semua nilainya bernilai nol kecuali indeks integer.
+	\item Ilustrasi gambar :
+		\par Berikut adalah ilustrasi penggambaran one-hot encoding :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s6.jpg}
+		\caption{Lusia-one hot encoding}
+		\label{6A6}
+		\end{figure}
+	\end{itemize}
+	
+\item Jelaskan apa fungsi dari np.unique dan to\_categorical dalam kode program.
+	\begin{itemize}
+	\item np.unique 
+		\par np.unique atau numpy.unique yang berfungsi untuk menemukan elemen unik pada array.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s7a.jpg}
+		\caption{Lusia-np.unique}
+		\label{6A7}
+		\end{figure}
+	\item to\_categorical
+		\par to\_categorical digunakan untuk meng-convert atau mengubah class vector berupa integer ke dalam matrix kelas biner.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s7b.jpg}
+		\caption{Lusia-to categorical}
+		\label{6A8}
+		\end{figure}
+	\end{itemize}
+	
+\item Jelaskan apa fungsi dari Sequential dalam kode program.
+	\begin{itemize}
+	\item Jawaban :
+		\par Sequential merupakan proses untuk membandingkan setiap satu larik elemen dengan cara satu persatu secara beruntun. Atau pada library keras, sequential merupakan sebuah model.
+	\item Ilustrasi gambar :
+		\par Berikuta adalah gambaran ilustrasi dari sequential.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/s8.jpg}
+		\caption{Lusia-sequential}
+		\label{6A9}
+		\end{figure}
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Praktek}
