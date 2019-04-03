@@ -967,6 +967,7 @@ print(inverted)
 \par
 \par
 \par
+
 \section{Lusia Violita Aprilian-1164080}
 
 \subsection{Teori}
@@ -977,7 +978,7 @@ print(inverted)
 	\item Jawaban :
 		\par MFCC (Mel Frequency Cepstral Coeficients) digunakan untuk mengubah file suara kedalam bentuk vektor. Dan mengapa harus dilakukan MFCC? Jawabannya ialah supaya file suara tersebut dapat diolah kembali menjadi output-an. Dan semua parameter inputan baik itu suara maupun dokumen harus dipersiapkan datanya terlebih dahulu. 
 	\item Ilustrasi Gambar :
-		\par Berikut adalah ilustrasi penggambaran dari MFCC :
+		\par Berikut adalah ilustrasi penggambaran dari MFCC, perhatikan gambar \ref{6A1}:
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s1.jpg}
@@ -991,7 +992,7 @@ print(inverted)
 	\item Jawaban :
 		\par Konsep dasar yang digunakan pada nural network mengadopsi mekanisme berfikir dari struktur dan proses kerja neuron pada otak manusia. Dimana otak manusia dapat bekerja untuk memberikan stimulasi atau rangsangan, melakukan proses, dan memberikan output-an. Baik untuk memproses sebagai sinyal elemen yang diterima, toleransi terhadap kesalahan, maupun pada proses paralel.
 	\item Ilustrasi Gambar :
-		\par Berikut adalah ilustrasi penggambaran pada konsep dasar neural network :
+		\par Berikut adalah ilustrasi penggambaran pada konsep dasar neural network, perhatikan gambar \ref{6A2} :
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s2.jpg}
@@ -1005,7 +1006,7 @@ print(inverted)
 	\item Jawaban :
 		\par Bobot merupakan jembatan yang menghubungkan neuron satu dengan neuron yang lainnya. Dimana pada proses neural network dimulai dari input yang diterima neuron beserta nilai bobot. Nilai bobot tersebut sebagai penanda dari sebuah koneksivitas. Selanjutnya nilai inputan akan dihitung dan menghasilkan aktif atau tidak. Apabila data aktif, neuron mengirimkan nilai output melalui bobot output-nya ke semua neutron yang terhubung. 
 	\item Ilustrasi Gambar :
-		\par Berikut adalah ilustrasi penggambaran pada konsep pembobotan :
+		\par Berikut adalah ilustrasi penggambaran pada konsep pembobotan, perhatikan gambar \ref{6A3} :
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s3.jpg}
@@ -1019,7 +1020,7 @@ print(inverted)
 	\item Jawaban :
 		\par Fungsi aktivasi pada neural network berfungsi layaknya sinapsis pada neuron manusia. Dimana pada neural network, fungsi aktivasi sebagai penentu aktivasi dari sebuah nilai input-an yang sebelumnya telah dihitung pada hidden layer.
 	\item Ilustrasi gambar :
-		\par Berikut adalah ilustrasi penggambaran pada konsep fungsi aktivasi :
+		\par Berikut adalah ilustrasi penggambaran pada konsep fungsi aktivasi, perhatikan gambar \ref{6A4} :
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.5]{figures/s4.jpg}
@@ -1031,7 +1032,7 @@ print(inverted)
 \item Jelaskan cara membaca hasil plot dari MFCC.
 	\begin{itemize}
 	\item Jawaban :
-		\par Pada sebuah grafik hasil plot dari MFCC, terdapat 2 sumbu yaitu x dan y. Sumbu x merupakan waktu atau durasi dari sebuah suara/musik/lagu, sedangkan sumbu y merupakan frekuensi dari suara yang dihasilkan, dan hasilnya merupakan desibel/power. Desibel yang dihasilkan memiliki range warna yang berbeda-beda. Range warna dari desibel adalah mulai dari biru tua hingga coklat tua. Range warna biru merupakan suara yang tidak dapat didengar manusia dan coklat merupakan suara yang dapat dapat didengar manusia.
+		\par Pada sebuah grafik hasil plot dari MFCC gamabar \ref{6A5}, terdapat 2 sumbu yaitu x dan y. Sumbu x merupakan waktu atau durasi dari sebuah suara/musik/lagu, sedangkan sumbu y merupakan frekuensi dari suara yang dihasilkan, dan hasilnya merupakan desibel/power. Desibel yang dihasilkan memiliki range warna yang berbeda-beda. Range warna dari desibel adalah mulai dari biru tua hingga coklat tua. Range warna biru merupakan suara yang tidak dapat didengar manusia dan coklat merupakan suara yang dapat dapat didengar manusia.
 	\item Ilustrasi gambar :
 		\par Berikut adalah ilustrasi dari cara membaca hasil plot dari file whistling.wav :
 		\begin{figure}[!hbtp]
@@ -1040,14 +1041,14 @@ print(inverted)
 		\caption{Lusia-Membaca hasil plot}
 		\label{6A5}
 		\end{figure}
-		
 	\end{itemize}
+
 \item Jelaskan apa itu one-hot encoding.
 	\begin{itemize}
 	\item Jawaban :
 		\par one-hot encoding adalah proses di mana variabel kategorikal dikonversi menjadi bentuk yang tersedia pada algoritma Machine Learning (vektor biner) untuk melakukan prediksi. Nilai kategirokal akan dipetakan ke bentuk biner, lalu nilai integer diubah atau dipresentasikan kedalam bentuk vektor biner yang semua nilainya bernilai nol kecuali indeks integer.
 	\item Ilustrasi gambar :
-		\par Berikut adalah ilustrasi penggambaran one-hot encoding :
+		\par Berikut adalah ilustrasi penggambaran one-hot encoding, perhatikan gambar \ref{6A6} :
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s6.jpg}
@@ -1059,7 +1060,7 @@ print(inverted)
 \item Jelaskan apa fungsi dari np.unique dan to\_categorical dalam kode program.
 	\begin{itemize}
 	\item np.unique 
-		\par np.unique atau numpy.unique yang berfungsi untuk menemukan elemen unik pada array.
+		\par np.unique atau numpy.unique yang berfungsi untuk menemukan elemen unik pada array. Perhatikan gambar \ref{6A7} :
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s7a.jpg}
@@ -1067,7 +1068,7 @@ print(inverted)
 		\label{6A7}
 		\end{figure}
 	\item to\_categorical
-		\par to\_categorical digunakan untuk meng-convert atau mengubah class vector berupa integer ke dalam matrix kelas biner.
+		\par to\_categorical digunakan untuk meng-convert atau mengubah class vector berupa integer ke dalam matrix kelas biner. perhatikan gambar \ref{6A8} :
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s7b.jpg}
@@ -1081,7 +1082,7 @@ print(inverted)
 	\item Jawaban :
 		\par Sequential merupakan proses untuk membandingkan setiap satu larik elemen dengan cara satu persatu secara beruntun. Atau pada library keras, sequential merupakan sebuah model.
 	\item Ilustrasi gambar :
-		\par Berikuta adalah gambaran ilustrasi dari sequential.
+		\par Berikuta adalah gambaran ilustrasi dari sequential, perhatikan gambar \ref{6A9}
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/s8.jpg}
@@ -1092,3 +1093,152 @@ print(inverted)
 \end{enumerate}
 
 \subsection{Praktek}
+\begin{enumerate}
+\item Data GTZAN Genre Collection dan data dari freesound. 
+	\par Isi Data GTZAN Genre Collection adalah file musik yang difolderkan berdasarkan genre atau jenis lagu dan data freesound berisikan suara alam contohnya adalah suara lebah, suara air, dan sebagainya.
+	\par Berikut adalah kode program untuk meload data tersebut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/1-lusia.py}
+	\par Berikut penjelasan dari kode program :
+	\begin{itemize}
+	\item membuat variabel untuk mendefinisikan direktori file yang akan digunakan.
+	\item membuat variabel untuk meload atau memanggil variabel filename\_rock.
+	\end{itemize}
+	
+	\par Apabila kode program dijalankan maka akan menghasilkan seperti gambar \ref{6B1} :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t1.jpg}
+		\caption{Lusia-Hasil Load}
+		\label{6B1}
+		\end{figure}
+
+\item Fungsi dari display\_mfcc() .
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/2a-lusia.py}
+	\par Setelah kode program dijalankan, maka akan muncul seperti gambar \ref{6B2} :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t2a.jpg}
+		\caption{Lusia-Hasil display MFCC}
+		\label{6B2}
+		\end{figure}
+	\par Penjelasan Gambar :
+	\begin{itemize}
+	\item Baris 1 : membuat fungsi display mfcc untuk menampilkan vektorisasi dari sebuah suara
+	\item Baris 2 : membuat variabel y untuk meload atau membaca variable song dari perintah librosa load song
+	\item Baris 3 : membuat variabel mfcc untuk memenggil variabel y dan mengubah suara menjasi vektor
+	\item Baris 4 : memploting gambar dengan ukuran 10x4
+	\item Baris 5 : menampilkan spektogram/chromagram
+	\item Baris 6 : menambahkan colorbar pada plot
+	\item Baris 7 : menetapkan atau memberikan judul untuk suara
+	\item Baris 8 : untuk memberikan label pada sumbu di grafik
+	\item Baris 9 : fungsi untuk menampilkan hasil plot
+	\end{itemize}
+	\par Untuk menampilkan hasil ploting dilakukan perintah berikut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/2-lusia.py}
+	\par Apabila program tersebut dijalankan, maka akan muncul hasil seperti gambar \ref{6B3} :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/t2.jpg}
+		\caption{Lusia-Hasil display}
+		\label{6B3}
+		\end{figure}
+	\par Penjelasan kode : display MFCC digunakan untuk menampilkan hasil dari gambar \ref{6B2}. Dimana gambar tersebut menjelaskan kekuatan atau daya dari sebuah suara.
+
+\item Fungsi dari extract\_features\_song().
+	\par Untuk menggunakan fungsi dari extract\_features\_song() diimplementasikan pada kode berikut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/3-lusia.py}
+	\par Jika kode di atas dijalankan maka didapat hasil seperti gambar \ref{6B4} :
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t3.jpg}
+		\caption{Lusia-Hasil extract feature}
+		\label{6B4}
+		\end{figure}
+	\par Berikut adalah penjelasan dari gambar \ref{6B4}:
+	\begin{itemize}
+	\item Baris 1 : membuat fungsi extract feature song dengan inputan f
+	\item Baris 2 : membuat variabel y untuk meload atau membaca inputan f dari perintah librosa load song
+	\item Baris 3 : membuat variabel mfcc untuk membuat feature dari variabel y
+	\item Baris 4 : membuat normalisasi nilai antara -1 sampai 1
+	\item Baris 5 : mengambil 25000 data pertama berdasarkan durasi suara atau musik lali dikembalikan salinan arraynya dan dikecilkan menjadi satu.
+	\end{itemize}
+	
+	\par  Mengapa yang diambil 25.000 baris pertama? Karena menyesuaikan dengan kapasitas penyimpanan supaya tidak lemot.
+
+\item Penjelasan kode program generate\_features\_and\_labels()
+	\par Disini akan mengilustrasikan fungsi dari generate\_feature\_and\_labels(). Kode program yang digunakan adalah  seperti berikut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/4-lusia.py}
+	\par Apabila kode program tersebut dijalankan akan menghasilkan seperti pada gambar \ref{6B5}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t4.jpg}
+		\caption{Lusia-Hasil generate feture and label}
+		\label{6B5}
+		\end{figure}
+	\par Berikut adalah penjelasan dari hasil gambar ilustrasi \ref{6B5}:
+	\begin{itemize}
+	\item Baris 1 : membuat perintah fungsi generate features and labels
+	\item Baris 2 : membuat variabel all features dengan array kosong
+	\item Baris 3 : membuat variabel all labels dengan array kosong
+	\item Baris 4 : Membuat variable yang berisi nama folder
+	\item Baris 5 : membuat perintah fungsi looping
+	\item Baris 6 : membuat atribut sound files yang berisi perintah looping perfolder dari folder genres dan mengambil semua file berekstensi au.
+	\item Baris 7 : memunculkan berapa song.
+	\item Baris 8 : membuat perintah fungsi
+	\item Baris 9 : membuat variabel. features untuk memanggil fungsi extract features song (f) sebagai inputan. Setiap satu file array sound files dilakukan ekstrak fitur.
+	\item Baris 10 : memasukkan semua features kedalam all features
+	\item Baris 11 : memasukkan semua genres kedalam all labels
+	\item Baris 12 : medefinisikan label uniq ids dan row ids untuk mengeksekusi perintah unix yang memiliki perameter atribut all labels dan return inverse.
+	\item Baris 13 : Membuat variabel label\_row\_ids untuk menentukan type data 32 byte dari variabel tersebut.
+	\item Baris 14 : Membuat variabel onehot\_labels yang akan mengeksekusi to\_categorical dengan variabel parameter low\_row\_ids dan len(label\_uniq\_ids)
+	\item Baris 15 : Mengembalikan (return) dan menampilkan hasil eksekusi dari variabel parameter all\_features dan onehot\_labels perintah dari np.stack.
+	\end{itemize}
+
+\item penggunaan fungsi generate\_features\_and\_labels()
+	\par Mengapa fungsi generate\_features\_and\_labels() sangat lama ketika meload dataset genre? Itu karena data yang diload sangat banyak sehingga membutuhkan waktu yang banyak
+	\par Berikut kode program yang digunakan :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/5-lusia.py}
+	\par Dari kode program tersebut dapat dijelaskan bahwa kode tersebut digunakan untuk passing parameter dari fitur ekstraksi menggunakan mfcc. Sehingga ketika dijalankan menghasilkan seperti gambar \ref{6B6}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t5.jpg}
+		\caption{Lusia-Hasil generate feture and label}
+		\label{6B6}
+		\end{figure}
+	\par Gambar \ref{6B6} menjelaskan setelah kode dieksekusi, program memproses 100 song setiap genre musik. Sehingga membutuhkan waktu yang lama.
+
+\item Jelaskan kenapa harus dilakukan pemisahan data training dan data set sebesar 80 persen?
+
+\item Fungsi Sequential()
+
+\item Fungsi compile()
+
+\item Fungsi fit()
+
+\item Fungsi evaluate()
+
+\item Fungsi predict()
+
+
+\end{enumerate}
+
+\subsection{Penanganan Error}
+Dari praktek pemrograman yang dilakukan di modul ini, error yang kita dapatkan(hasil komputer sendiri) di dokumentasikan dan di selesaikan(nilai 5 per error yang ditangani. Untuk hari kedua):
+
+\begin{enumerate}
+	\item skrinsut error
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/u1.jpg}
+		\caption{Lusia-skrinsut errorl}
+		\label{6C1}
+		\end{figure}
+	\item Tuliskan kode error dan jenis errornya
+		\begin{itemize}
+			\item Kode error : FileNotFoundError: [Errno 2] No such file or directory: 'D: Python Artificial-Intelligence-Projects-for-Beginners-master  Chapter04 266093 stereo-surgeon kick-loop-5.wav'
+			\item Jenis error : FileNotFoundError
+		\end{itemize}
+	\item Solusi pemecahan masalah error tersebut
+		\par Error yan terjadi pada gambar \ref{6C1} akibat dari kesalahan pada pengalamatan direktori sehingga file yang akan digunakan tidak ditemukan, oleh karena itu pengalamatan direktori disesuaikan dengan kebutuhan penggunaan.
+\end{enumerate}
