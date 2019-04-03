@@ -171,6 +171,155 @@ Untuk pratikum saat ini menggunakan buku Python Artificial Intelligence Projects
 
 
 
+\subsection{Praktek}
+\begin{enumerate}
+\item Menjelaskan Isi Dari Data GTZAN Genre Colection dan Data Freesound
+\begin{itemize}
+\par Isi dari data GTZAN adalah data musik berdasarkan genre atau jenis dari lagu.Yang sudah di folderkan berdasarkan jenis lagu nya masing-masing.
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/1-roza.py}
+\par Hasil \ref{no1roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no1roza.jpg}
+\caption{Hasil No 1 Roza}
+\label{no1roza}
+\end{figure}
+\par Baris 1: filename jazz merupakan variabel yang berisikan direktori dari file yang dituju, disini digunakan file audio dari genre jazz
+\par Baris 2: x jazz dan sr jazz variabel yang digunakan untuk meload file dari variabel filename jazz menggunakan librari Librosa. Yang nantinya akan digunakan pada MFCC
+\end{itemize}
+\par
+
+\item Menjelaskan Perbaris Kode Fungsi Dari display mfcc()
+\begin{itemize}
+\item Kode Program
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/2-roza.py}
+\par Kode Program 2\ref{kpno2} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/kodeprogram2roza.jpg}
+\caption{Kode Program No 2 Roza}
+\label{kpno2}
+\end{figure}
+\end{itemize}
+\begin{itemize}
+\item Hasil Plot
+\par Apabila Sudah Di Plot \ref{hasil2} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no2roza.jpg}
+\caption{Hasil No 2 Roza}
+\label{hasil2}
+\end{figure}
+\par  Baris 1: Membuat fungsi display mfcc untuk menampilkan vektorisasi sebuah suara
+\par  Baris 2: Membuat variabel y untuk membaca variabel song dari perintah library load song
+\par  Baris 3: Membuat variabel mfcc untuk variabel y dan mengubah suara menjadi vektor
+\par  Baris 4: Memplot gambar dengan ukuran 10X4
+\par  Baris 5: Menampilkan spektogram atau chromagram agar hasil dari kodingan ini berwarna atau pada grafiknya
+\par  Baris 6: Menambahkan colorbar pada plot
+\par  Baris 7: Menetapkan judul suara atau lagu
+\par  Baris 8: Memberikan label pada sumbu di grafik
+\par  Baris 9: Menampilkan hasil plot
+\end{itemize}
+\par
+
+\item Menjelaskan Kode Program extract features song() dan Mengapa Yang Diambil 25000 Baris Pertama
+\begin{itemize}
+\item Penjelasan Kode program
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/3-roza.py}
+\par Hasil 3\ref{hasil3} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no3roza.jpg}
+\caption{Hasil No 3 Roza}
+\label{hasil3}
+\end{figure}
+\par Baris 1: Membuat fungsi extract features song dengan inputan f
+\par Baris 2: Membuat variabel y untuk meload inputan f dari perintah librosa load song
+\par Baris 3: Membuat variabel mfcc untuk membuat featuredari variabel y
+\par Baris 4: Membuat normalisasi nilai antara -1 sampai 1
+\par Baris 5: Mengambil 25000 data pertama berdasarkan durasi suara lalu dikembalikan salinan arraynya  dan dikecilkan menjadi satu.
+\item Mengapa Yang Diambil 25000 Baris Pertama
+\par Diambil 25000 baris pertama karena agar eksekusi data atau saat running tidak memakan waktu yang cukup lama.
+\end{itemize}
+
+\item Menjelaskan Kode Program generate features dan labels 
+\begin{itemize}
+\item Penjelasan Kode program
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/4-roza.py}
+\par Hasil 4\ref{hasil4} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no4roza.jpg}
+\caption{Hasil No 4 Roza}
+\label{hasil4}
+\end{figure}
+\par Baris 1: Pembuatan perintah untuk fungi generate geatures dan labels
+\par Baris 2: Membuat variabel all features dengan array / parameter kosong
+\par Baris 3: Membuat variabel label dengan array / parameter kosong
+\par Baris 4: Mendefinisikan variable genres yang didalamnya berisi nama folder-folder pada variabel genres tersebut
+\par Baris 5: Membuat perintah looping ( header )
+\par Baris 6: Membuat atribut sound files yang berisi perintah looping perfolder dari folder genres dan mengambil semua file berekstensi au ( semuanya dieksekusi berdasarkan module glob ).
+\par Baris 7: Menampilkan jumlah song yang dieksekusi.
+\par Baris 8: Membuat perintah fungsi dari sound files
+\par Baris 9: Membuat variabel features untuk memanggil fungsi extract features song (f) sebagai inputan. Setiap satu file array sound files dilakukan ekstrak fitur.
+\par Baris 10: Memasukkan semua features menggunakan perintah append kedalam all features
+\par Baris 11: Memasukkan semua genres menggunakan perintah append ke dalam all labels
+\par Baris 12: Mendefinisikan label uniq ids dan label row ids sebagai variabel dimana mengeksekusi perintah np.unique dengan parameter variabelnya all labels dan return inverse=True.
+\par Baris 13: Membuat variabel label row ids untuk menentukan type dari variabel tersebut dengan type bit yang sesuai dengan yang digunakan.
+\par Baris 14: Membuat variabel onehot labels dimana mengeksekusi to categorical dengan variabel parameter low row ids dan len(label uniq ids)
+\par Baris 15: Mengembalikan dan menampilkan hasil eksekusi dari variabel parameter all features dan onehot labels perintah dari np.stack.
+\end{itemize}
+\par
+
+
+\item Menjelaskan Mengapa Fungsi generate features and labels sangat lama ketika meload dataset genre
+\begin{itemize}
+\item Kenapa saat load dataset genre lama? karena ada 1000 data yang di proses.
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/5-roza.py}
+\par Hasil \ref{no5roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no5roza.jpeg}
+\caption{Hasil No 5 Roza}
+\label{no5roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Baris 1: Variabel features and label akn mengeksekusi isi dari features and label
+\par Baris 2: Memproses 100 lagu di genre blues
+\par Baris 3: Memproses 100 lagu di  genre classical
+\par Baris 4: Memproses 100 lagu di  genre country
+\par Baris 5: Memproses 100 lagu di  genre disco
+\par Baris 6: Memproses 100 lagu di  genre  hip hop
+\par Baris 7: Memproses 100 lagu di  genre jazz
+\par Baris 8: Memproses 100 lagu di  genre metal
+\par Baris 9: Memproses 100 lagu di genre pop
+\par Baris 10: Memproses 100 lagu di genre reggae
+\par Baris 11: Memproses 100 lagu di genre rock
+\end{itemize}
+\par
+
+\subsection{Penanganan Error}
+\begin{enumerate}
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/error-roza.py}
+\item Skrinsut Error
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/erorroza.jpeg}
+\caption{ Error Roza}
+\label{6}
+\end{figure}
+\item Kode Error dan Jenis Errornya
+\par Kode Error: "Name Error" name 'librosa' is not defined
+\par Jenis Error: Nama Librosa Tidak terdefinisi
+\item Penanganan
+\par Mendefinisikan library librosa
+
+\end{enumerate}
+\end{enumerate}
+
+
+
+
 
 
 
