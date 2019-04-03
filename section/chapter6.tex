@@ -585,6 +585,388 @@ print(inverted)
 \par
 \end{enumerate}
 
+
+
+\par
+\par
+\subsection{Praktek}
+\begin{enumerate}
+\item Penjelasan Isi Data GTZAN Genre Collection Dan Data Dari Freesound.
+\begin{itemize}
+\item Penjelasan Isi Data GTZAN :
+\par Pada GTZAN Genre Collection itu isinya berupa data musik yang sudah di folderkan berdasarkan genre lagunya ( dikelompokkan ).
+\par
+\item Code Yang Digunakan :
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/1-fadila.py}
+\par
+\item Ilustrasi Gambar ( Contoh ) : \ref{gtzan-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/gtzan-fadila.jpg}
+\caption{Contoh GTZAN Genre Collection - fadila}
+\label{gtzan-fadila}
+\end{figure}
+\par
+\item Penjelasan Contoh Code :
+\begin{enumerate}
+\item Baris Code 1 : Filename reggae merupakan variabel yang berisikan direktori dari file yang dituju, pada code ini digunakan file audio dari genre reggae.
+\item Baris Code 2 : Membuat variabel X reggae dan sr reggae yang digunakan untuk meload file dari variabel filename reggae menggunakan librari Librosa dengan durasi 10, yang nantinya akan digunakan pada Mfcc.
+\end{enumerate}
+\end{itemize}
+\par
+\item Penjelasan Perbaris Kode Program Dari Display\_Mfcc.
+\begin{itemize}
+\item Code Yang Digunakan :
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/2-fadila.py}
+\item Penjelasan :
+\par
+\begin{enumerate}
+\item Baris Code 1 : Membuat fungsi display mfcc untuk menampilkan vektorisasi dari sebuah suara dimana variabel parameter yaitu song
+\item Baris Code 2 : Membuat variabel Y dimana untuk melakukan load (meload) atau membaca variable parameter song dari perintah librosa load
+\item Baris Code 3 : Membuat variabel mfcc untuk memanggil variabel Y ( yang telah dibuat sebelumnya ) dan mengubah suara menjadi vektor
+\item Baris Code 4 : Melakukan plotting gambar dengan ukuran 10x4 dari figsize
+\item Baris Code 5 : Menampilkan spektogram/chromagram dari library librosa dimana untuk x\_axis mendefinisikan time kemudian y\_axis mendefinisikan mel.
+\item Baris Code 6 : Menambahkan colorbar pada plot yang dijalankan
+\item Baris Code 7 : Menetapkan atau memberikan judul untuk suara yang dieksekusi
+\item Baris Code 8 : Untuk menyesuaikan subplot params ( label dll ) sehingga subplot cocok dengan area gambar.
+\item Baris Code 9 : Fungsi untuk menampilkan hasil plot dari inputan yang telah dieksekusi.
+\par Code dibawah ini merupakan code lanjutan
+\item Baris Code 10 : Fungsi Yang Akan Menampilkan Plot Dan Bar Dari Inputan code dan file suara whisling
+\end{enumerate}
+\par
+\item Ilustrasi Gambar : Ketika program tersebut dijalankan maka akan memberikan hasil seperti pada gambar berikut \ref {display-mfcc-1-fadila} dan \ref{display-mfcc-2-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/display-mfcc-1-fadila.jpg}
+\caption{Display Mfcc 1 - fadila}
+\label{display-mfcc-1-fadila}
+\end{figure}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/display-mfcc-2-fadila.jpg}
+\caption{Display Mfcc 2 - fadila}
+\label{display-mfcc-2-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Perbaris Code Dari Extract\_Feature\_Song().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/3-fadila.py}
+\par
+\item Penjelasan Code :
+\begin{enumerate}
+\item Baris Code 1 : Membuat fungsi extract feature song dengan inputan (parameter) f
+\item Baris Code 2 : Membuat variabel y dimana untuk meload atau membaca inputan (parameter) f dari perintah librosa load song 
+\item Baris Code 3 : Membuat variabel mfcc yang difungsikan untuk membuat feature dari variabel y berdasarkan library librosa
+\item Baris Code 4 : Membuat normalisasi nilai antara -1 sampai 1 yang didapatkan dari eksekusi np.absolute
+\item Baris Code 5 : ( return = mengembalikan ) atau bisa didefinisikan untuk mengambil 25000 data pertama berdasarkan durasi suara atau musik lalu dikembalikan salinan arraynya dan dikecilkan menjadi satu.
+\end{enumerate}
+\par
+\item Ilustrasi Gambar : Ketika program tersebut dijalankan maka akan memberikan hasil seperti pada gambar berikut \ref{extract-feature-song-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/extract-feature-song-fadila.jpg}
+\caption{Extract Feature Song - fadila}
+\label{extract-feature-song-fadila}
+\end{figure}
+\par
+\par
+\item Mengapa Yang Diambil Merupakan 25.000 Baris Data Pertama ?
+\par Data yang digunakan hanya 25.000 saja ( baris data pertama ) sehingga menghindari down pada sistem yang dieksekusi. Apabila diganti dengan 100.00 ( sebagai contoh pembuktian ) angka pertama dapat dipastikan pemrosesan yang lama terhadap dataset tersebut. Jadi digunakan 25.000 baris data pertama dijadikan sebagai contoh untuk pengeksekusian.
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Perbaris Code Dari Generate\_Features\_And\_Labels().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/4-fadila.py}
+\par
+\item Penjelasan Code :
+\begin{enumerate}
+\item Baris Code 1 : Membuat perintah untuk fungsi generate features and labels
+\item Baris Code 2 : Pembuatan variabel all\_features dengan array/parameter kosong
+\item Baris Code 3 : Pembuatan variabel all\_labels dengan array/parameter kosong
+\item Baris Code 4 : Membuat / mendefinisikan variable genres yang didalamnya berisi nama folder-folder pada variabel genres tersebut
+\item Baris Code 5 : Membuat perintah fungsi looping ( header )
+\item Baris Code 6 : Membuat atribut sound files yang berisi perintah looping perfolder dari folder genres dan mengambil semua file berekstensi au ( semuanya dieksekusi berdasarkan module glob ).
+\item Baris Code 7 : Memunculkan berapa (jumlah) song yang dieksekusi.
+\item Baris Code 8 : Membuat perintah fungsi dari sound\_files
+\item Baris Code 9 : Membuat variabel features untuk memanggil fungsi extract features song (f) sebagai inputan. Setiap satu file array sound files dilakukan ekstrak fitur.
+\item Baris Code 10 : Memasukkan semua features menggunakan perintah append kedalam all\_features
+\item Baris Code 11 : Memasukkan semua genres menggunakan perintah append ke dalam all\_labels
+\item Baris Code 12 : Mendefinisikan label\_uniq\_ids dan label\_row\_ids sebagai variabel dimana mengeksekusi perintah np.unique dengan parameter variabelnya all\_labels dan return\_inverse=True.
+\item Baris Code 13 : Membuat variabel label\_row\_ids untuk menentukan type dari variabel tersebut dengan type bit yang sesuai dengan yang digunakan.
+\item Baris Code 14 : Membuat variabel onehot\_labels dimana mengeksekusi to\_categorical dengan variabel parameter low\_row\_ids dan len(label\_uniq\_ids)
+\item Baris Code 15 : Mengembalikan dan menampilkan hasil eksekusi dari variabel parameter all\_features dan onehot\_labels perintah dari np.stack.
+\end{enumerate}
+\par
+\item Ilustrasi Gambar :  Ketika program tersebut dijalankan maka akan memberikan hasil seperti pada gambar berikut \ref{generate-features-and-labels-fadila}.
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/generate-features-and-labels-fadila.jpg}
+\caption{Generate\_Features\_And\_Labels - fadila}
+\label{generate-features-and-labels-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Penggunaan Fungsi Generate\_Features\_And\_Labels() Sangat Lama Ketika Meload Dataset Genre.
+\begin{itemize}
+\par
+\item Penjelasan : 
+\par Fungsi Generate\_Features\_And\_Labels() sangat lama ketika meload dataset genre dikarenakan dalam dataset tersebut memilik 1000 data dimana 1000 data tersebut dibagi menjadi 10 bagian genre. Pada setiap genre tersebut selain memiliki 100 data, atribut-atribut ( feature dan label ) yang dieksekusi juga terhitung banyak sehingga membutuhkan waktu yang cukup lama agar pemrosesan 1000 data tersebut sesuai dengan perintah yang diberikan.
+\par
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/5-fadila.py}
+\par
+\par
+\item Ilustrasi Gambar : \ref{generate-features-and-labels-2-fadila}
+\par Penjelasan :
+\par Hasil yang di dapatkan dari gambar yaitu dilakukan pemrosesan load pada data-data di masing-masing genre. Dimana setiap genrenya terdiri dari 100 data yang apabila di akumulatifkan dengan 10 jenis genre musik maka akan ada 1000 data secara keseluruhan.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/generate-features-and-labels-2-fadila.jpg}
+\caption{Generate\_Features\_Labels-2-fadila}
+\label{generate-features-and-labels-2-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Mengapa Harus Dilakukan Pemisahan Data Training Dan Data Set Sebesar 80\%?
+\begin{itemize}
+\item Penjelasan :
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Parameter Dari Fungsi Sequential().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/7-fadila.py}
+\par
+\item Penjelasan :
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Masing-Masing Parameter Dari Fungsi Compile().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/8-fadila.py}
+\par
+\item Penjelasan :
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Masing-Masing Parameter Dari Fungsi Fit().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/9-fadila.py}
+\par
+\item Penjelasan :
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\item Penjelasan Masing-Masing Parameter Dari Fungsi Evaluate().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/10-fadila.py}
+\par
+\item Penjelasan :
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\end{itemize}
+\item Penjelasan Masing-Masing Parameter Dari Fungsi Predict().
+\begin{itemize}
+\item Code Yang Digunakan :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/11-fadila.py}
+\par
+\item Penjelasan :
+\par
+\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
+\caption{Suara Harus Dilakukan MFCC - fadila}
+\label{suara-mfcc-fadila}
+\end{figure}
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\end{itemize}
+\end{enumerate}
+
+\par
+\par
+\par
+\subsection{ Fadila-Penanganan Error Chapter 6}
+\begin{enumerate}
+\item Screenshoot Error : \ref{chapter-6-error-1-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/chapter-6-error-1-fadila.jpg}
+\caption{Error - fadila}
+\label{chapter-6-error-1-fadila}
+\end{figure}
+\par
+\par
+\item Code Error :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/error-1-fadila.py}
+\par
+\item Penyelesaian Error :
+\begin{enumerate}
+\item Pertama-tama silahkan perhatikan maksdu errornya seperti apa
+\item Pada error tersebut dikatakan bahwa "librosa" tidak terdefinisikan
+\item Selanjutnya silahkan definisikan library librosanya sebelum menjalankan perintah tersebut
+\item Code yang harus dijalankan untuk mendefinisikan library librosa yaitu sebagai berikut :
+\par
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/code-penyelesaian-error-fadila.py}
+\par
+\item Silahkan jalankan code tersebut, lalu jalankan kembali code yang menghasilkan error tadi
+\item Setelah semua langkah-langkahnya diikuti maka tidak akan terjadi error lagi.
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\par
+\par
+\par
+\par
 \section{Lusia Violita Aprilian-1164080}
 
 \subsection{Teori}
