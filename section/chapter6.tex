@@ -769,21 +769,52 @@ print(inverted)
 \item Mengapa Harus Dilakukan Pemisahan Data Training Dan Data Set Sebesar 80\%?
 \begin{itemize}
 \item Penjelasan :
+\par Diperlukan Pemisahan sebesar 80\% data dikarenakan untuk kemudahan dalam melakukan pengacakan yang dimana untuk komposisinya sendiri sebesar 80\% untuk data training dan 20\% untuk data test ( dari dataset ). Data trainingnya memang diharuskan lebih banyak sehingga pada saat pengacakan yang dilakukan datanya akan berada pada urutan yang berbeda.
+\item Code Yang Digunakan :
+\par 
 \par
-\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\lstinputlisting[firstline=8, lastline=20]{src/1164072/6-fadila.py}
+\par
+\par
+\par
+\item Penjelasan Perbaris ( Tapi dalam soal tidak diperintahkan namun hanya saya jelaskan ) :
+\begin{enumerate}
+\item Baris Code 1 : Melakukan Proses Training split dimana akan memisahkan training set sebanyak 80\%
+\item Baris Code 2 : Melakukan penumpukan features dan labels yang didefinisikan dalam variabel all\_data
+\item Baris Code 3 : Melakukan Pengocokan ( shuffle ) untuk variabel all\_data 
+\item Baris Code 4 : Membuat variabel splitidx untuk mengkalikan isi dari variabel all\_data dengan training\_split yang ada.
+\item Baris Code 5 : Merealisasikan variabel train dan test dengan all\_data yang telah diproses dengan variabel splitidx
+\item Baris Code 6 - 7 : Memisahkan mana yang termasuk data train dan mana yang termasuk data test dengan perintah / pada np.shape kemudian di cetak
+\item Baris Code 8 - 9 : Menampilkan isi train dari 2 variabel yaitu train\_input dan train\_labels
+\item Baris Code 10-11 : Menampilkan isi test dari 2 variabel yaitu test\_input dan test\_labels
+\item Baris Code 12-13 : Mencetak / menampilkan data training dimana terdapat 800 baris dan data test sebesar 200 baris dengan jumlah kolom yang sama yaitu 25010
+\par
+\end{enumerate}
+\item  Ilustrasi Gambar : \ref{pemisahan-data-train-set-fadila} dan  \ref{pemisahan-data-train-set-2-fadila}
+\begin{itemize}
+\item Penjelasan : 
+\par Berdasarkan gambar ataupun hasil dari codingan tersebut, memperlihatkan bahwa data dipisah dan dipecah berpatokan dengan ketentuan 80\%. Untuk hasil pertama data trainingnya ada 800 baris dengan 25000 kolom dan data set sebanyak 200 baris dengan 10 kolom, sedangkan untuk hasil kedua yang telah digabungkan dengan one-hot encoding maka data training terdapat 800 baris dan data set dengan 200 baris namun keduanya memiliki jumlah kolom yang sama yaitu 25010.
+\par
+\par
 \par
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
-\caption{Suara Harus Dilakukan MFCC - fadila}
-\label{suara-mfcc-fadila}
+\includegraphics[scale=0.2]{figures/pemisahan-data-train-set-fadila.jpg}
+\caption{Pemisahan Data Training Dan Dataset - fadila}
+\label{pemisahan-data-train-set-fadila}
+\end{figure}
+\par
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/pemisahan-data-train-set-2-fadila.jpg}
+\caption{Pemisahan Data Training Dan Dataset 2 - fadila}
+\label{pemisahan-data-train-set-2-fadila}
 \end{figure}
 \par
 \end{itemize}
-\par
-\par
-\par
-\par
+\end{itemize}
 \par
 \par
 \par
@@ -793,27 +824,17 @@ print(inverted)
 \item Code Yang Digunakan :
 \par
 \lstinputlisting[firstline=8, lastline=20]{src/1164072/7-fadila.py}
-\par
-\item Penjelasan :
-\par
-\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
-\par
+\par Penjelasan :
+\item Ilustrasi Gambar : \ref{fungsi-sequential-fadila}
+\par Pada gambar tersebut dapat dilihat bahwa untuk layer pertama densenya dari 100 neuron kemudian untuk inputan activationnya menggunakan fungsi relu ( nilai maksimum yang akan dipilih ). Dense 10 mengkategorikan 10 neuron untuk jenis genrenya untuk keluarnnya menggunakan aktivasi yaitu fungsi Softmax.
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
-\caption{Suara Harus Dilakukan MFCC - fadila}
-\label{suara-mfcc-fadila}
+\includegraphics[scale=0.2]{figures/fungsi-sequential-fadila.jpg}
+\caption{Fungsi Sequential - fadila}
+\label{fungsi-sequential-fadila}
 \end{figure}
 \par
 \end{itemize}
-\par
-\par
-\par
-\par
-\par
-\par
-\par
-\par
 \par
 \par
 \par
@@ -824,20 +845,20 @@ print(inverted)
 \par
 \lstinputlisting[firstline=8, lastline=20]{src/1164072/8-fadila.py}
 \par
-\item Penjelasan :
 \par
-\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\item Ilustrasi Gambar : \ref{fungsi-compile-fadila}
+\par
+\par Penjelasan :
+\par Pada gambar dapat dilihat bahwa untuk model.compilenya dilakukan pemrosesan menggunakan algortima adam sebagai optimizer yang sudah didefinisikan.Kemudian adam tersebut merupakan algoritme pengoptimalan dan untuk memperbarui bobot jaringan yang berulang berdasarkan data training sebelumnya. Untuk loss sendiri menggunakan categorical\_crossentropy yang difungsikan sebagai optimasi skor / accuracy. Dan model tersebut digabungkan serta disimpulkan kemudian dicetak.
 \par
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
-\caption{Suara Harus Dilakukan MFCC - fadila}
-\label{suara-mfcc-fadila}
+\includegraphics[scale=0.2]{figures/fungsi-compile-fadila.jpg}
+\caption{Fungsi Compile - fadila}
+\label{fungsi-compile-fadila}
 \end{figure}
 \par
 \end{itemize}
-\par
-\par
 \par
 \par
 \par
@@ -851,21 +872,19 @@ print(inverted)
 \lstinputlisting[firstline=8, lastline=20]{src/1164072/9-fadila.py}
 \par
 \item Penjelasan :
+\par Berdasarkan gambar tersebut dapat dilihat bahwa pada model fit dilakukan pelatihan dengan epoch(  iterasi berapa kali nilai digunakan ) dengan rambatan balik sebanyak 10, kemudian dalam sekali epochs dilakukan 32  sampel yang diproses sebelum model diperbarui. Dilakukan validation\_split sebesar 20\% untuk melakukan pengecekan pada cross score validation yang telah dilakukan.
 \par
-\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\item Ilustrasi Gambar : \ref{fungsi-fit-fadila}
 \par
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
-\caption{Suara Harus Dilakukan MFCC - fadila}
-\label{suara-mfcc-fadila}
+\includegraphics[scale=0.2]{figures/fungsi-fit-fadila.jpg}
+\caption{Fungsi Fit - fadila}
+\label{fungsi-fit-fadila}
 \end{figure}
 \par
 \end{itemize}
-\par
-\par
-\par
-\par
 \par
 \par
 \par
@@ -877,15 +896,22 @@ print(inverted)
 \lstinputlisting[firstline=8, lastline=20]{src/1164072/10-fadila.py}
 \par
 \item Penjelasan :
+\par Berdasarkan code maka dapat dilihat bahwa dengan menggunakan test input dan test label dilakukan evaluasi atau proses menemukan model terbaik yang mewakili data dan seberapa baik model yang dipilih akan dijalankan kedepannya. 
+\par Kemudian pada hasilnya sendiri dapat dilihat bahwa Loss merupaka hasil prediksi yang salah sebanyak 1,7985 dan keakurasian prediksinya sebesar 0,4200.
 \par
-\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\par
+\item Ilustrasi Gambar : \ref{fungsi-evaluate-fadila}
 \par
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
-\caption{Suara Harus Dilakukan MFCC - fadila}
-\label{suara-mfcc-fadila}
+\includegraphics[scale=0.2]{figures/fungsi-evaluate-fadila.jpg}
+\caption{Fungsi Evaluate - fadila}
+\label{fungsi-evaluate-fadila}
 \end{figure}
+\par
+\par
+\par
+\par
 \par
 \end{itemize}
 \item Penjelasan Masing-Masing Parameter Dari Fungsi Predict().
@@ -894,15 +920,17 @@ print(inverted)
 \par
 \lstinputlisting[firstline=8, lastline=20]{src/1164072/11-fadila.py}
 \par
-\item Penjelasan :
 \par
-\item Ilustrasi Gambar : \ref{suara-mfcc-fadila}
+\item Ilustrasi Gambar : \ref{fungsi-predict-fadila}
+\par Penjelasan :
+\par Code tersebut dipergunakan untuk melakukan prediksi diambil dari satu baris berdasarkan test\_input . Nilai yang tertinggi terdapat pada label kedua yang dipilih prediksi yang tepat kemudian akan dikelompokkan.
+\par
 \par
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[scale=0.2]{figures/suara-mfcc-fadila.jpg}
-\caption{Suara Harus Dilakukan MFCC - fadila}
-\label{suara-mfcc-fadila}
+\includegraphics[scale=0.2]{figures/fungsi-predict-fadila.jpg}
+\caption{Fungsi Predict - fadila}
+\label{fungsi-predict-fadila}
 \end{figure}
 \par
 \par
