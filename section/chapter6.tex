@@ -298,6 +298,106 @@ Untuk pratikum saat ini menggunakan buku Python Artificial Intelligence Projects
 \end{itemize}
 \par
 
+\item Kenapa Harus Dilakukan Pemisahan Data Training dan Data Set 80 persen?
+\begin{itemize}
+\item Agar saat dilakukan pengocokan tidak teracak dalam urutan yang berbeda. Diperlukan Pemisahan sebesar 80\% data dikarenakan untuk kemudahan dalam melakukan pengacakan yang dimana untuk komposisinya sendiri sebesar 80\% untuk data training dan 20\% untuk data test ( dari dataset ). Data trainingnya memang diharuskan lebih banyak sehingga pada saat pengacakan yang dilakukan datanya akan berada pada urutan yang berbeda.
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/6-roza.py}
+\par Hasil \ref{no6roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no6roza.png}
+\caption{Hasil No 6 Roza}
+\label{no6roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Baris 1: Variabel features and label akn mengeksekusi isi dari features and label
+\par Baris 2: Memproses 100 lagu di genre blues
+\par Baris 3: Memproses 100 lagu di  genre classical
+\par Baris 4: Memproses 100 lagu di  genre country
+\par Baris 5: Memproses 100 lagu di  genre disco
+\end{itemize}
+\par
+
+\item Menjelelaskan Masing-Masing Parameter dari Fungsi Sequential.
+\begin{itemize}
+\item Kodingan:
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/7-roza.py}
+\par Hasil \ref{no7roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no7roza.png}
+\caption{Hasil No 7 Roza}
+\label{no7roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Pada gambar tersebut dapat dilihat bahwa untuk layer pertama densenya dari 100 neuron kemudian untuk inputan activationnya menggunakan fungsi relu ( nilai maksimum yang akan dipilih ). Dense 10 mengkategorikan 10 neuron untuk jenis genrenya untuk keluarnnya menggunakan aktivasi yaitu fungsi Softmax.
+\end{itemize}
+\par
+
+\item Menjelelaskan Masing-Masing Parameter dari Fungsi Compile.
+\begin{itemize}
+\item Kodingan:
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/8-roza.py}
+\par Hasil \ref{no8roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no8roza.png}
+\caption{Hasil No 8 Roza}
+\label{no8roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Pada gambar di atas dapat dilihat bahwa untuk model.compilenya dilakukan pemrosesan menggunakan algortima adam sebagai optimizer yang sudah didefinisikan.Kemudian adam tersebut merupakan algoritme pengoptimalan dan untuk memperbarui bobot jaringan yang berulang berdasarkan data training sebelumnya. Untuk loss sendiri menggunakan categorical\_crossentropy yang difungsikan sebagai optimasi skor / accuracy. Dan model tersebut digabungkan serta disimpulkan kemudian dicetak.
+\end{itemize}
+\par
+
+\item Menjelalaskan Masing-Masing  Parameter dari Fungsi Fit
+\begin{itemize}
+\item Kodingan:
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/9-roza.py}
+\par Hasil \ref{no9roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no9roza.png}
+\caption{Hasil No 9 Roza}
+\label{no9roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Berdasarkan gambar tersebut dapat dilihat bahwa pada model fit dilakukan pelatihan dengan epoch(  iterasi berapa kali nilai digunakan ) dengan rambatan balik sebanyak 10, kemudian dalam sekali epochs dilakukan 32  sampel yang diproses sebelum model diperbarui. Dilakukan validation\_split sebesar 20\% untuk melakukan pengecekan pada cross score validation yang telah dilakukan.
+\end{itemize}
+\par
+
+\item Menjelalaskan Masing-Masing  Parameter dari Fungsi Evaluate
+\begin{itemize}
+\item Kodingan:
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/10-roza.py}
+\par Hasil \ref{no10roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no10roza.png}
+\caption{Hasil No 10 Roza}
+\label{no10roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Berdasarkan code maka dapat dilihat bahwa dengan menggunakan test input dan test label dilakukan evaluasi atau proses menemukan model terbaik yang mewakili data dan seberapa baik model yang dipilih. Kemudian pada hasilnya sendiri dapat dilihat bahwa Loss merupaka hasil prediksi yang salah sebanyak 1,7985 dan keakurasian prediksinya sebesar 0,4200.
+\end{itemize}
+\par
+
+\item Menjelalaskan Masing-Masing  Parameter dari Fungsi Predict
+\begin{itemize}
+\item Kodingan:
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/11-roza.py}
+\par Hasil \ref{no11roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/no11roza.png}
+\caption{Hasil No 11 Roza}
+\label{no11roza}
+\end{figure}
+\item Penjelasan Hasil:
+\par Kode tersebut digunakan untuk melakukan prediksi diambil dari satu baris berdasarkan test\_input . Nilai yang tertinggi terdapat pada label kedua yang dipilih prediksi yang tepat kemudian akan dikelompokkan.
+\end{itemize}
+\par
+
 \subsection{Penanganan Error}
 \begin{enumerate}
 \lstinputlisting[firstline=8, lastline=20]{src/1164085/error-roza.py}
