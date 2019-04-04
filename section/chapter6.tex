@@ -1209,16 +1209,156 @@ print(inverted)
 	\par Gambar \ref{6B6} menjelaskan setelah kode dieksekusi, program memproses 100 song setiap genre musik. Sehingga membutuhkan waktu yang lama.
 
 \item Jelaskan kenapa harus dilakukan pemisahan data training dan data set sebesar 80 persen?
+	\par Mengapa harus dilakukan pemisahan data training dan data testing dari dataset sebesar 80 persen, itu karena dataset yang digunakan akan dibuat klasifikasinya.
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/6-lusia.py}
+	\par Penjelasan kode program :
+	\begin{itemize}
+	\item Membuat klasifikasi dengan plit data sebesar 80 persen data training dan 80 persen data testing.
+	\end{itemize}
+	
+	\par Setelah kode program tersebut dijalankan, maka akan menghasilkan seperti gambar \ref{6B7}:
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t6.jpg}
+		\caption{Lusia-Hasil Pemisahan}
+		\label{6B7}
+		\end{figure}
 
 \item Fungsi Sequential()
+	\par Kode program yang digunakan adalah sebagai berikut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/7-lusia.py}
+	\par Penjelasan parameter :
+	\begin{itemize}
+	\item sequential = merupakan sebuah model
+	\item dense 100 = inputan awal neutron adalah 100.
+	\item np.shape = mendapatkan bentuk array.
+	\item relu = menjelaskan untuk inputan yang maksimum yang akan dipilih.
+	\item dense 10 = outputan neutron adalah 10
+	\item softmax = sebuah fungsi yang mengambil input vektor dari bilangan real K, dan menormalkannya menjadi distribusi probabilitas yang terdiri dari probabilitas K.
+	\end{itemize}
+	
+	\par Setelah program dijalankan, maka akan menghasilkan seperti pada gambar \ref{6B8}.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t7.jpg}
+		\caption{Lusia-Hasil Sequential}
+		\label{6B8}
+		\end{figure}
+		
+	\par Penjelasan gambar \ref{6B8}:
+	\begin{enumerate}
+	\item Membuat model sequential
+	\item Inputan awal neuton adaldah 100 yang diambil dari data train. 
+	\item Melakukan aktivasi dengan parameter fungsi relu.
+	\item Dense(10) merupakan outputan dari neural network  yang mengkategorikan 10 kategori jenis genre.
+	\item Melakukan aktivasi dengan menggunakan parameter fungsi softmax.
+	\end{enumerate}
 
 \item Fungsi compile()
+	\par Kode program yang digunakan adalah sebagai berikut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/8-lusia.py}
+	\par Penjelasan parameter :
+	\begin{itemize}
+	\item adam = algoritma optimisasi yang digunakan sebagai ganti dari prosedur penurunan gradien stokastik klasik untuk memperbarui bobot jaringan yang berulang berdasarkan data train.
+	\item categorical\_crossentropy = parameter yang digunakan untuk menyusun sebuah model yang memiliki target dalam format kategorikal.
+	\item accuracy = fungsi metrik yang digunakan untuk menilai kinerja model.
+	\end{itemize}
+	
+	\par Setelah program dijalankan, maka akan menghasilkan seperti pada gambar \ref{6B9}.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t8.jpg}
+		\caption{Lusia-Hasil Compile}
+		\label{6B9}
+		\end{figure}
+		
+	\par Berikut adalah penjelasan gambar \ref{6B9} :
+	\begin{enumerate}
+	\item Mengcompile model yang sudah dibuat. Dengan menggunakan algoritma optimisasi, fungsi loss, dan fungsi metrik.
+	\item Lalu perintah print digunakan untuk menampilkan hasil yang berupa seperti tabel yang berisi tipe layer, dense, aktivasi, total params dan trainable param.
+	\item Dense\_1 dan activation\_1 menunjukkan neuron inputan sebanyak 100.
+	\item Dense\_2 dan activation\_2 menunjukkan neuron outputan sebanyak 10.
+	\end{enumerate}
 
 \item Fungsi fit()
+	\par Kode program yang digunakan adalah sebagai berikut :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/9-lusia.py}
+	\par Penjelasan parameter pada kode program :
+	\begin{itemize}
+	\item epochs = fungsi yang digunakan untuk menentukan berapa kali melakukan iterasi.
+	\item batch\_size = fungsi yang digunakan untuk menentukan berapa file dalam satu epochs.
+	\item validation\_split = melakukan pengecekan cross validasi.
+	\end{itemize}
+	
+	\par Apabila kode program tersebut dijalankan, maka akan menghasilkan seperti pada gambar \ref{6B10}.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t9.jpg}
+		\caption{Lusia-Hasil Fungsi Fit}
+		\label{6B10}
+		\end{figure}
+		
+	\par Penjelasan hasil, perhatikan gambar \ref{6B10} :
+	\begin{enumerate}
+	\item Melakukan pelatihan model dengan menggunakan perintah fit.
+	\item Data yang digunakan adalah data training.
+	\item Kemudian data training dilakukan iterasi atau dijalankan sebanyak 10 kali.
+	\item Dan dalam satu epochs diberlakukan 32 file.
+	\item Lalu diambil 20 persen data untuk dilakukan pengecekan cross validation.
+	\end{enumerate}
+	
+	\par Dari gambar \ref{6B10} kita dapat melihat bahwa setiap satu epoch terdapat nilai akurasi dan loss.
 
 \item Fungsi evaluate()
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/10-lusia.py}
+	\par Parameter yang digunakan pada kode program :
+	\begin{itemize}
+	\item  batch\_size = fungsi yang digunakan untuk menentukan berapa file yang digunakan.
+	\end{itemize}
+	
+	\par Apabila kode program tersebut dijalankan, maka akan menghasilkan seperti pada gambar \ref{6B11}.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t10.jpg}
+		\caption{Lusia-Hasil Fungsi Evaluate}
+		\label{6B11}
+		\end{figure}
+		
+	\par Penjelasan hasil pada gambar \ref{6B11} :
+	\begin{enumerate}
+	\item Membuat parameter loss dan acc untuk mengetahui dan mengevaluasi hasil prediksi data test, berapa kesalahannya dan berapa ketepatannya.
+	\end{enumerate}
 
 \item Fungsi predict()
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=8, lastline=20]{src/1164080/11-lusia.py}
+	\par Parameter yang digunakan pada kode program :
+	\begin{itemize}
+	\item [:1] = digunakan untuk menentukan batasa row.
+	\end{itemize}
+	
+	\par Apabila kode program tersebut dijalankan, maka akan menghasilkan seperti pada gambar \ref{6B12}.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/t11.jpg}
+		\caption{Lusia-Hasil Fungsi Predic}
+		\label{6B12}
+		\end{figure}
+		
+	\par Penjelasan hasil pada gambar \ref{6B12} :
+	\begin{enumerate}
+	\item Mengetes hasil prediksi model dari data test\_input dengan batasan 1 row atau lagu nomor satu. Dan hasilnya berupa array dengan tipedata float32.
+	\item Cara bacanya adalah 25 persen dari satu lagu tersebut bergenre blues, 77 persen bergenre classical, dan begitu pula seterusnya.
+	\item Sehingga ditemukan paling tinggi dari lagu tersebut sebesar 64.8 persen yang bergenre disco.
+	\end{enumerate}
 
 
 \end{enumerate}
@@ -1228,17 +1368,51 @@ Dari praktek pemrograman yang dilakukan di modul ini, error yang kita dapatkan(h
 
 \begin{enumerate}
 	\item skrinsut error
-		\begin{figure}[!hbtp]
-		\centering
-		\includegraphics[scale=0.5]{figures/u1.jpg}
-		\caption{Lusia-skrinsut errorl}
-		\label{6C1}
-		\end{figure}
+		\begin{enumerate}
+		\item Error 1
+			\begin{figure}[!hbtp]
+			\centering
+			\includegraphics[scale=0.5]{figures/u1.jpg}
+			\caption{Lusia-skrinsut error l}
+			\label{6C1}
+			\end{figure}
+		\item Error 2
+			\begin{figure}[!hbtp]
+			\centering
+			\includegraphics[scale=0.5]{figures/u2.jpg}
+			\caption{Lusia-skrinsut error 2}
+			\label{6C2}
+			\end{figure}
+		\end{enumerate}
+		
 	\item Tuliskan kode error dan jenis errornya
-		\begin{itemize}
-			\item Kode error : FileNotFoundError: [Errno 2] No such file or directory: 'D: Python Artificial-Intelligence-Projects-for-Beginners-master  Chapter04 266093 stereo-surgeon kick-loop-5.wav'
-			\item Jenis error : FileNotFoundError
-		\end{itemize}
-	\item Solusi pemecahan masalah error tersebut
-		\par Error yan terjadi pada gambar \ref{6C1} akibat dari kesalahan pada pengalamatan direktori sehingga file yang akan digunakan tidak ditemukan, oleh karena itu pengalamatan direktori disesuaikan dengan kebutuhan penggunaan.
+		\begin{enumerate}
+		\item Error 1 :
+			\begin{itemize}
+				\item Kode error : FileNotFoundError: [Errno 2] No such file or directory: 'D: Python Artificial-Intelligence-Projects-for-Beginners-master  Chapter04 266093 stereo-surgeon kick-loop-5.wav'
+				\item Jenis error : File Not FoundError
+			\end{itemize}
+		\item Error 2 :
+			\begin{itemize}
+				\item Kode error : NameError: name 'plt' is not defined
+				\item Jenis error : Name Error
+			\end{itemize}
+		\end{enumerate}
+	\item Solusi pemecahan masalah error
+	\begin{enumerate}
+	\item Error 1
+		\par Error yang terjadi pada gambar \ref{6C1} akibat dari kesalahan pada pengalamatan direktori sehingga file yang akan digunakan tidak ditemukan, oleh karena itu pengalamatan direktori disesuaikan dengan kebutuhan penggunaan.
+	\item Error 2
+		\par Error yang terjadi pada gambar \ref{6C2} akibat dari library matplotlib.pyplot yang belum diinstall.
+	\end{enumerate}
+		
 \end{enumerate}
+
+\subsection{Cek plagiarisme}
+Dari teori hingga praktek yang telah dilakukan telah dilakukan cek plagiarisme seperti gamabar \ref{6D1}  berikut :
+			\begin{figure}[!hbtp]
+			\centering
+			\includegraphics[scale=0.5]{figures/pc5.jpg}
+			\caption{Lusia-Cek Plagiarisme}
+			\label{6D1}
+			\end{figure}
