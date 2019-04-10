@@ -349,6 +349,143 @@ Penjelasan Tugas Harian 12 ( No 1-11 ).
 \par
 \par
 
+\item Jelaskan konsep dasar K Fold Cross Validation pada dataset komentar Youtube pada kode listing 
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/chapter7-2.py}
+\begin{itemize}
+\item Penjelasan: Startified KFold berisikan presentasi sampel untuk setiap kelas. Dimana dalam ilustrasi ini sampel dibagi menjadi 5 dalam setiap class nya. Kemudian sampel tadi akan dimasukan kedalam class dari dataset youtube tadi.
+\par 
+\par
+\item Ilustrasi Gambar
+\item K-Fold Cross Validation \ref{teori2}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/teori2.jpg}
+\caption{K-Fold Cross Validation Roza}
+\label{teori2}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksudnya kode program for train, test in splits.dilengkapi dengan ilustrasi atau gambar.
+\begin{itemize}
+\item Penjelasan: Maksudnya yaitu untuk menguji apakah setiap data pada dataset sudah di split dan tidak terjadi penumpukan. Yang dimana maksudnya di setiap class tidak akan muncul id yang sama. Ilustrasinya misalkan kita memiliki 4 botol minuman dengan model yang berbeda. Kemudian kita bagikan kedua anak, tentunya setiap anak yang menerima botol tidak memiliki botol minuman  yang sama modelnya.
+\par 
+\par
+\item Ilustrasi Gambar
+\item No 3  \ref{teori3}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/teori3.png}
+\caption{No 3 Roza}
+\label{teori3}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksudnya kode program {train\_content = d['CONTENT'].iloc[train\_idx]} dan {test\_content = d['CONTENT'].iloc[test\_idx]}.
+\begin{itemize}
+\item Penjelasan: Maksudnya yaitu mengambil data pada kolom atau index CONTENT yang merupakan bagian dari train\_idx dan test\_idx. Ilustrasinya, ketika data telah diubah menjadi train dan test maka kita dapat memilihnya untuk ditampilkan pada kolom yang diinginkan.
+\par 
+\par
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksud dari fungsi tokenizer {tokenizer = Tokenizer(num\_words=2000)} dan tokenizer.{tokenizer.fit\_on\_texts(train\_content)}, dilengkapi dengan ilustrasi atau gambar.
+\begin{itemize}
+\item Penjelasan: Dimana variabel tokenizer akan melakukan vektorisasi kata menggunakan fungsi Tokenizer yang dimana jumlah kata yang ingin diubah kedalam bentuk token adalah 2000 kata. Dan untuk \emph{tokenizer.fit\_on\_texts(train\_content)} maksudnya kita akan melakukan fit tokenizer hanya untuk data trainnya saja tidak dengan data test nya untuk kolom CONTENT. 
+\par 
+\par
+\item Ilustrasi Gambar
+\item No 5 \ref{teori5}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/teori5.png}
+\caption{No 5 Roza}
+\label{teori5}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+
+\item Jelaskan apa maksud dari fungsi \emph{d\_train\_inputs = tokenizer.texts\_to\_matrix(train\_content, mode='tfidf')} dan \emph{d\_test\_inputs = tokenizer.texts\_to\_matrix(test\_content, mode='tfidf')}, dilengkapi dengan ilustrasi kode dan atau gambar.
+\begin{itemize}
+\item Penjelasan: Maksudnya yaitu untuk variabel d\_train\_inputs akan melakukan tokenizer dari bentuk teks ke matrix dari data train\_content dengan mode matriksnya yaitu tfidf begitu juga dengan variabel d\_test\_inputs untuk data test. Berikut gambar ilustrasinya
+\par 
+\par
+\item Ilustrasi Gambar
+\item No 6 \ref{teori6}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.3]{figures/teori6.jpg}
+\caption{No 6 Roza}
+\label{teori6}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksud dari fungsi \emph{d\_train\_inputs = d\_train\_inputs/np.amax(np.absolute(d\_train\_inputs))} dan \emph{d\_test\_inputs = d\_test\_inputs/np.amax(np.absolute(d\_test\_inputs))}, dilengkapi dengan ilustrasi atau gambar.
+\begin{itemize}
+\item Penjelasan: Fungsi tersebut akan membagi matrix tfidf tadi dengan amax yaitu mengembalikan maksimum array atau maksimum sepanjang sumbu. Yang hasilnya akan dimasukan kedalam variabel d\_train\_inputs untuk data train dan d\_test\_inputs untuk data test dengan nominal absolut atau tanpa ada bilangan negatif dan koma.
+\par 
+\par
+\item Ilustrasi Gambar
+\item No 7 \ref{teori7}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/teori7.png}
+\caption{No 7 Roza}
+\label{teori7}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksud fungsi dari d\_train \_outputs = np\_utils.to\_categorical(d['CLASS'].iloc[train dan d\_test \_outputs = np\_ utils.to\_categorical(d['CLASS'].iloc[test\_idx]) dalam kode program
+\begin{itemize}
+\item Penjelasan: Dari fungsi pada kode program tersebut dijelaskan fungsi tersebut ditujukan untuk melakukan one-hot encoding agar dapat masuk dan digunakan di neural network. One-hot encoding diambil dari 'CLASS' yang berarti hanya terdapat 2 neuron, yaitu satu nol(1,0) atau nol satu(0,1) karena pilihannya hanya ada dua (spam atau bukan).
+\par 
+\par
+\item Ilustrasi Gambar
+\item No 8 \ref{teori8}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/teori8.png}
+\caption{No 8 Roza}
+\label{teori8}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksud dari fungsi di listing!
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/chapter7-9.py}
+\begin{itemize}
+\item Penjelasan: Dari fungsi pada kode program tersebut ditujukan untuk melakukan pemodelan dengan sequential, membandingkan setiap satu larik elemen dengan cara satu persatu secara beruntun. Dimana terdapat 512 neuron inputan dengan input shape 2000 vektor. Lalu model dilakukan aktivasi dengan fungsi 'relu'. Kemudian dilakukan pemotongan bobot supaya tidak overfitting sebesar 50 persen dari neuron inputan 512. Lalu pada layer output terdapat 2 neuron outputan yaitu nol(1,0) atau nol satu(0,1). Kemudian outputan tersebut diaktivasi menggunakan fungsi softmax.
+\par 
+\end{itemize}
+\par
+\par
+
+\item Jelaskan apa maksud dari fungsi di listing!
+\lstinputlisting[firstline=8, lastline=20]{src/1164085/chapter7-10.py}
+\begin{itemize}
+\item Penjelasan: Dari fungsi pada kode program tersebut model yang telah dibuat selanjutnya dicompile dengan menggunakan algoritma optimisasi denganfungsi fungsi loss, fungsi opttimaizer dan fungsi metrik. Dimana nama masing-masing fungsi tersebut adalah categorical\_crossentropy, adamax dan accuracy.
+\par 
+\end{itemize}
+\par
+\par
+
 \item 	Apa Itu Deep Learning
 \begin{itemize}
 \item Penjelasan: 
@@ -367,5 +504,33 @@ Penjelasan Tugas Harian 12 ( No 1-11 ).
 \end{itemize}
 \par
 \par
+
+\item Perhitungan Algoritma Konvolusi Dengan NPM 1164085. Seperti gambar di bawah penyelesaiannya:
+\begin{itemize}
+\item Ilustrasi Gambar
+\item No 13 \ref{teori13}
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/teori13.jpg}
+\caption{No 13 Roza}
+\label{teori13}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
+\item Plagiarisme Roza
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.6]{figures/plagairismerozac7.jpg}
+\caption{Plagiarisme Roza}
+\label{teori13}
+\end{figure}
+\par
+\end{itemize}
+\par
+\par
+
 
 \end{enumerate}
