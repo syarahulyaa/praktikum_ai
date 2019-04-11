@@ -454,6 +454,125 @@ Please tell more about conclusion and how to the next work of this study.
 \par
 \par
 
+\subsection{Praktek}
+\begin{enumerate}
+\item Jelaskan kode program pada blok \# In[1].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek1.py, label={lst:import}]{src/1164085/prak1-roza.py}
+\par Hasil \ref{in1roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak1roza.jpg}
+\caption{In 1 Roza}
+\label{in1roza}
+\end{figure}
+\par Baris 1: Mengimpoer file csv.
+\par Baris 2: Dari library PIL impor gambar sebagai pil\_image.
+\par Baris 3: Impor fungsi fungsi keras.processing.image
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[2].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek2.py, label={lst:import}]{src/1164085/prak2-roza.py}
+\par Hasil \ref{in2roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak2roza.jpg}
+\caption{In 2 Roza}
+\label{in2roza}
+\end{figure}
+\par Baris 1: Membuat variabel images tanpa parameter, karena di dalam kurung kosong tanpa ada parameter yang diisi.
+\par Baris 2: Membuat variabel class tanpa parameter juga karna tiada ada parameter di dalam kurung.
+\par Baris 3: Membuka file HASYv2/hasy-data-labels.csv sebagai csvfile.
+\par Baris 4: Membuat variabel csvreader yang memfungsikan pembacaan dari file csv yang dimasukkan
+\par Baris 5: Membuat variabel i dengan parameter 0
+\par Baris 6: Mengeksekusi data dari baris di pembacaan file csv.
+\par Baris 7: Menggunakan perintah "if" dengan ketentuan variabel i lebih besar dari  0.
+\par Baris 8: Membuat variabel img dengan nama keras.processing yang mengubah image menjadi bentuk array (bilangan) dari file HASYv2 yang dibuka dengan row berparameter 0.
+\par Baris 9: Membuat variabel img tidak sama dengan 255.0
+\par Baris 10: Mendefinisikan fungsi imgs.append dimana merupakan proses menggabungkan data dengan file lain  yang ditentukan dengan 3 parameter yaitu row[0], row[2] dan variabel img.
+\par Baris 11: Mendefinisikan fungsi append kembali dari variabel classes dengan parameternya row[2].
+\par Baris 12: Mendefinisikan fungsi dimana i variabel i akan ditambah nilainya sehingga akan bernilai 1 ( Contoh nilai i=0 dengan adanya penambahan maka hasilnya akan menjadi 1 )
+\end{itemize}
+\par
+
+
+\item Jelaskan kode program pada blok \# In[3].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek3.py, label={lst:import}]{src/1164085/prak3-roza.py}
+\par Hasil \ref{in3roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak3roza.jpg}
+\caption{In 3 Roza}
+\label{in3roza}
+\end{figure}
+\par Baris 1: Import modul random
+\par Baris 2: Melakukan pengocokan terhadap modul dengan parameter dimana variabelnya imgs
+\par Baris 3: Membagi dan memecah index dalam bentuk integer dengan mengkalikan nilai 0.8 dengan fungsi len yang mengembalikan jumlah item dari variabel imgs.
+\par Baris 4: Membuat variabel train yang mengeksekusi imgs dengan pemecahan index pada data awa.l
+\par Baris 5: Membuat variabel test yang mengeksekusi imgs dengan pemecahan index pada dataakhir.
+
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[4].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek4.py, label={lst:import}]{src/1164085/prak4-roza.py}
+\par Hasil \ref{in4roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak4roza.jpg}
+\caption{In 4 Roza}
+\label{in4roza}
+\end{figure}
+\par Baris 1: Import library numpy sebagai np.
+\par Baris 2: Membuat variabel train\_input dimana mengubah input menjadi sebuah array dari np dengan menggunakan fungsi list untuk mengkoleksikan data yang dipilih dan dapat diubah. Didalamnya diterapkan fungsi map untuk mengembalikan iterator dari datanya dengan memfungsikan lamda pada row dengan parameter [2] untuk membuat objek fungsi menjadi lebih kecil dan mudah dieksekusi dari variabel train.
+\par Baris 3:Membuat variabel test\_input dengan fungsi yang sama seperti train\_input yang membedakan hanya datanya / inputan yang diproses berasal dari variabel test
+\par Baris 4: Membuat variabel train\_output dimana mengubah keluaran menjadi sebuah array dari np dengan menggunakan fungsi list untuk mengkoleksikan data yang dipilih dan dapat diubah. Didalamnya diterapkan fungsi map untuk mengembalikan iterator dari datanya dengan memfungsikan lamda pada row dengan parameter[1] untuk membuat objek fungsi menjadi lebih kecil dan mudah dieksekusi dari variabel train.
+\par Baris 5: Membuat variabel test\_output dengan fungsi yang sama seperti train\_output yang membedakan hanya datanya / inputan yang diproses berasal dari variabel test
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[5].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek5.py, label={lst:import}]{src/1164085/prak5-roza.py}
+\par Hasil \ref{in5roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak5roza.jpg}
+\caption{In 5 Roza}
+\label{in5roza}
+\end{figure}
+\par Baris 1: Import labelEncoder dari sklearn.processing digunakan untuk menormalkan label dimana label encoder hanya didefinisikan dengan nilai antara 0 dan n\_classes-1.
+\par Baris 2: Memasukkan modul / fungsi OneHotEncoder dari sklearn.processing yang digunakan untuk mendefinisikan fitur input dimana mengambil nilai dalam kisaran [0, maks (nilai)).
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[6].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek5.py, label={lst:import}]{src/1164085/prak6-roza.py}
+\par Hasil \ref{in6roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak6roza.jpg}
+\caption{In 6 Roza}
+\label{in6roza}
+\end{figure}
+\par Baris 1: Membuat variabel label\_encoder dengan penerapan modul / fungsi dari LabelEncoder tanpa parameter
+\par Baris 2: Membuat variabel integer\_encoded dengan penerapan fungsi label\_encoder.fit\_transform (ekstrasi fitur object ) dari variabel classes dimana akan mengembalikan beberapa data yang diubah kembali dari variabel label\_encoder.
+\end{itemize}
+\par
+
+\end{enumerate}
+
 
 
 
