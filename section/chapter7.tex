@@ -751,3 +751,561 @@ Penjelasan Tugas Harian 12 ( No 1-11 ).
 \par
 \par
 \end{itemize}
+
+
+\par
+\par
+\par
+\par
+\subsection{Praktek}
+Penjelasan Tugas Harian 12 ( No 1-20 ).
+\begin{enumerate}
+\item Jelaskan Kode Program Pada Blok \# In[1]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-1-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-1-fadila.py, label={lst:chapter-7-1-fadila}]{src/1164072/praktek/chapter-7-1-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	: Memasukkan / Mengimport file csv
+\item Baris Code 2	: Memasukkan module image sebagai pil\_image dari library PIL dimana PIL dapat mendukung pembukaan, pemanipulasian, dan menyimpan banyak format file gambar yang berbeda
+\item Baris Code 3	: Memasukkan / mengimport fungsi keras.processing.image 
+\end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-1-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-1-fadila.jpg}
+\caption{Code Program Pada In [1] - fadila}
+\label{chapter-7-in-1-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[2]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-2-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-2-fadila.py, label={lst:chapter-7-2-fadila}]{src/1164072/praktek/chapter-7-2-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	: Membuat variabel imgs tanpa parameter
+\item Baris Code 2	: Membuat variabel classes tanpa parameter
+\item Baris Code 3	: Membuka file HASYv2/hasy-data-labels.csv sebagai csvfile
+\item Baris Code 4	: Membuat variabel csvreader yang memfungsikan pembacaan dari file csv yang dimasukkan
+\item Baris Code 5	: Membuat variabel i dengan parameter 0
+\item Baris Code 6	: Mengeksekusi baris dari pembacaan csv 
+\item Baris Code 7	: Mengaplikasikan perintah "if" dengan ketentuan variabel i lebih besar dari angka 0, maka akan dilanjutkan ke perintah berikutnya
+\item Baris Code 8	: Membuat variabel img yang mengubah image menjadi bentuk array (bilangan) dari file HASYv2 yang dibuka dengan row berparameter 0.
+\item Baris Code 9	: Membuat variabel img tidak sama dengan nilai 255.0
+\item Baris Code 10	: Mendefinisikan fungsi imgs.append dimana merupakan proses melampirkan atau menggabungkan data dengan file lain atau set data yang ditentukan dengan 3 parameter yaitu row[0], row[2] dan variabel img.
+\item Baris Code 11	: Mendefinisikan fungsi append kembali dari variabel classes dengan parameternya row[2].
+\item Baris Code 12	: Mendefinisikan fungsi dimana i variabel i akan ditambah nilainya sehingga akan bernilai 1 ( 0 dengan penambahan maka akan jadi 1 )
+\end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-2-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-2-fadila.jpg}
+\caption{Code Program Pada In [2] - fadila}
+\label{chapter-7-in-2-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[3]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-3-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-3-fadila.py, label={lst:chapter-7-3-fadila}]{src/1164072/praktek/chapter-7-3-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	: Memasukkan dan memfungsikan module random
+\item Baris Code 2	: Melakukan pengocokan pada module random dengan parameter variabelnya imgs
+\item Baris Code 3	: Membagi dan memecah index dalam bentuk integer dengan mengkalikannilai 0,8 dan fungsi len yang akan mengembalikan jumlah item dalam datanya dari variabel imgs
+\item Baris Code 4	: Membuat variabel train yang mengeksekusi imgs dengan pemecahan index awal pada data
+\item Baris Code 5	: Membuat variabel test yang mengeksekusi imgs dengan pemecahan index akhir pada data
+\end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-3-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-3-fadila.jpg}
+\caption{Code Program Pada In [3] - fadila}
+\label{chapter-7-in-3-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[4]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-4-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-4-fadila.py, label={lst:chapter-7-4-fadila}]{src/1164072/praktek/chapter-7-4-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	: Memasukkan / Mengimport library numpy sebagai np
+\item Baris Code 2	: Membuat variabel train\_input dimana mengubah input menjadi sebuah array dari np dengan menggunakan fungsi list untuk mengkoleksikan data yang dipilih dan dapat diubah. Didalamnya diterapkan fungsi map untuk mengembalikan iterator dari datanya dengan memfungsikan lamda pada row dengan parameter [2] untuk membuat objek fungsi menjadi lebih kecil dan mudah dieksekusi dari variabel train.
+\item Baris Code 3	: Membuat variabel test\_input dengan fungsi yang sama seperti train\_input yang membedakan hanya datanya / inputan yang diproses berasal dari variabel test
+\item Baris Code 4	: Membuat variabel train\_output dimana mengubah keluaran menjadi sebuah array dari np dengan menggunakan fungsi list untuk mengkoleksikan data yang dipilih dan dapat diubah. Didalamnya diterapkan fungsi map untuk mengembalikan iterator dari datanya dengan memfungsikan lamda pada row dengan parameter[1] untuk membuat objek fungsi menjadi lebih kecil dan mudah dieksekusi dari variabel train.
+\item Baris Code 5	: Membuat variabel test\_output dengan fungsi yang sama seperti train\_output yang membedakan hanya datanya / inputan yang diproses berasal dari variabel test
+\end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-4-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-4-fadila.jpg}
+\caption{Code Program Pada In [4] - fadila}
+\label{chapter-7-in-4-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[5]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-5-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-5-fadila.py, label={lst:chapter-7-5-fadila}]{src/1164072/praktek/chapter-7-5-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	: Memasukkan modul / fungsi LabelEncoder dari sklearn.processing yang digunakan untuk dapat  menormalkan label dimana label encoder hanya didefinisikan dengan nilai antara 0 dan -1.
+\item Baris Code 2	: Memasukkan modul / fungsi OneHotEncoder dari sklearn.processing yang digunakan untuk mendefinisikan fitur input dimana mengambil nilai dalam kisaran [0, maks (nilai)).
+\end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-5-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-5-fadila.jpg}
+\caption{Code Program Pada In [5] - fadila}
+\label{chapter-7-in-5-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[6]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-6-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-6-fadila.py, label={lst:chapter-7-6-fadila}]{src/1164072/praktek/chapter-7-6-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	: Membuat variabel label\_encoder dengan penerapan modul / fungsi dari LabelEncoder tanpa parameter
+\item Baris Code 2	: Membuat variabel integer\_encoded dengan penerapan fungsi label\_encoder.fit\_transform (ekstrasi fitur object ) dari variabel classes yang akan mengembalikan beberapa data yang diubah kembali.
+\end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-6-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-6-fadila.jpg}
+\caption{Code Program Pada In [6] - fadila}
+\label{chapter-7-in-6-fadila}
+\end{figure}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[7]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-7-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-7-fadila.py, label={lst:chapter-7-7-fadila}]{src/1164072/praktek/chapter-7-7-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[8]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-8-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-8-fadila.py, label={lst:chapter-7-8-fadila}]{src/1164072/praktek/chapter-7-8-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[9]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-9-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-9-fadila.py, label={lst:chapter-7-9-fadila}]{src/1164072/praktek/chapter-7-9-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[10]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-10-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-10-fadila.py, label={lst:chapter-7-10-fadila}]{src/1164072/praktek/chapter-7-10-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[11]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-11-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-11-fadila.py, label={lst:chapter-7-11-fadila}]{src/1164072/praktek/chapter-7-11-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[12]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-12-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-12-fadila.py, label={lst:chapter-7-12-fadila}]{src/1164072/praktek/chapter-7-12-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[13]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-13-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-13-fadila.py, label={lst:chapter-7-13-fadila}]{src/1164072/praktek/chapter-7-13-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[14]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-14-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-14-fadila.py, label={lst:chapter-7-14-fadila}]{src/1164072/praktek/chapter-7-14-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[15]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-15-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-15-fadila.py, label={lst:chapter-7-15-fadila}]{src/1164072/praktek/chapter-7-15-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[16]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-16-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-16-fadila.py, label={lst:chapter-7-16-fadila}]{src/1164072/praktek/chapter-7-16-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[17]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-17-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-17-fadila.py, label={lst:chapter-7-17-fadila}]{src/1164072/praktek/chapter-7-17-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[18]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-18-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-18-fadila.py, label={lst:chapter-7-18-fadila}]{src/1164072/praktek/chapter-7-18-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[19]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-19-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-19-fadila.py, label={lst:chapter-7-19-fadila}]{src/1164072/praktek/chapter-7-19-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\par
+\end{itemize}
+\par
+\par
+\par
+\item Jelaskan Kode Program Pada Blok \# In[20]. Jelaskan Arti Dari Setiap Baris Kode Yang Dibuat Dan Hasil Keluarannya Dari Komputer Sendiri.
+\begin{itemize}
+\item Code Yang Digunakan : \ref{lst:chapter-7-20-fadila}.
+\lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-20-fadila.py, label={lst:chapter-7-20-fadila}]{src/1164072/praktek/chapter-7-20-fadila.py}
+\par
+\par
+\item Penjelasan Code Perbaris	: 
+\begin{enumerate}
+\item Baris Code 1	:
+\item Baris Code 2	:
+\item Baris Code 3	:
+\item Baris Code 4	:
+\item Baris Code 5	:
+\item Baris Code 6	:
+\item Baris Code 7	:
+\end{enumerate}
+\par
+\end{itemize}
+\par
+\par
+\par
+\end{enumerate}
+
+
+\subsection{Penanganan Error}
+Penjelasan Tugas Harian 12 ( No 1-20 ).
+\begin{enumerate}
+\item Error 1	:
+\begin{itemize}
+\item Screenshoot Error 	: \ref{chapter-7-error-1-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/chapter-7-error-1-fadila.jpg}
+\caption{Error 1 - fadila}
+\label{chapter-7-error-1-fadila}
+\end{figure}
+\par
+\item Code Error		:
+\begin{lstlisting}
+ModuleNotFoundError: No module named 'tensorflow'
+\end{lstlisting}
+\item Penanganan Error	:
+\begin{enumerate}
+\item Pertama-tama pastikan salahnya seperti apa ( model dan jenis errornya )
+\item Kemudian, silahkan proses error tersebut dengan cara yang sesuai
+\item Berdasarkan error maka penyelesaiannya ialah melakukan instalasi terhadap module 'tensorflow' sehingga code dapat dijalankan
+\item Buka Anaconda Prompt kemudian lakukan perintah seperti pada gambar berikut ( conda install -c conda-forge tensorflow ) : \ref{chapter-7-penanganan-error-1-fadila}
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/chapter-7-penanganan-error-1-fadila.jpg}
+\caption{Penanganan Error 1 - fadila}
+\label{chapter-7-penanganan-error-1-fadila}
+\end{figure}
+\par
+\item Setelah melakukan perintah berikut maka silahkan jalankan kembali code maka tidak akan terjadi lagi error tersebut.
+\end{enumerate}
+\end{itemize}
+\par
+\par
+\item Error 2 :
+\begin{itemize}
+\item Screenshoot Error 	: \ref{chapter-7-error-2-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/chapter-7-error-2-fadila.jpg}
+\caption{Error 2 - fadila}
+\label{chapter-7-error-2-fadila}
+\end{figure}
+\par
+\item Code Error		:
+\begin{lstlisting}
+NameError: name 'model' is not defined
+\end{lstlisting}
+\item Penanganan Error	:
+\begin{enumerate}
+\item Pertama-tama pastikan salahnya seperti apa ( model dan jenis errornya )
+\item Kemudian, silahkan proses error tersebut dengan cara yang sesuai
+\item Berdasarkan error maka penyelesaiannya ialah melakukan pendefinisian variabel model sehingga code dapat dijalankan
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.2]{figures/chapter-7-penanganan-error-2-fadila.jpg}
+\caption{Penanganan Error 2 - fadila}
+\label{chapter-7-penanganan-error-2-fadila}
+\end{figure}
+\par
+\item Setelah melakukan pendefinisian variabel tersebut maka silahkan jalankan kembali code maka tidak akan terjadi lagi error tersebut.
+\end{enumerate}
+\end{itemize}
+\end{enumerate}
