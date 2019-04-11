@@ -239,6 +239,166 @@ Please tell more about conclusion and how to the next work of this study.
 
 \end{enumerate}
 
+\subsection{Praktek}
+\begin{enumerate}
+\item Jelaskan kode program pada blok \# In[1]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 1, label={71}]{src/1164080/7B1.py}
+	\par Dari kode listing pada kode program 1, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Melakukan pengimportan file csv
+	\item Baris 2	: Melakukan pemanggilan atau memasukkan module image sebagai pil\_image dari library PIL
+	\item Baris 3	: Melakukan pengimportan fungsi keras.processing.image 
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B1}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w1.jpg}
+		\caption{Lusia-Hasil Kode Program 1}
+		\label{7B1}
+		\end{figure}
+	
+\item Jelaskan kode program pada blok \# In[2]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 2, label={72}]{src/1164080/7B2.py}
+	\par Dari kode listing pada kode program 2, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Membuat variabel imgs tanpa ada parameter di dalamnya
+	\item Baris 2	: Membuat variabel classes tanpa ada parameter didalamnya
+	\item Baris 3	: Membuka file csv dari HASYv2/hasy-data-labels.csv sebagai csvfile
+	\item Baris 4	: Membuat variabel csvreader yang difungsikan untuk membaca dari file csv yang dimasukkan
+	\item Baris 5	: Membuat variabel i dengan parameter 0 atau nilai 0
+	\item Baris 6	: Digunakan untuk melakukan eksekusi baris dari pembacaan csv 
+	\item Baris 7	: Mengaplikasikan atau menggunakan perintah "if" dengan variabel i lebih besar dari 0, yang selanjutnya akan dilanjutkan ke perintah berikutnya
+	\item Baris 8	: Membuat variabel img yang berfungsi untuk mengubah image atau gambar menjadi bentuk array (bilangan) dari file HASYv2 yang dibuka dengan row berparameter 0.
+	\item Baris 9	: Membuat variabel img dengan nilai bukan sama dengan 255.0
+	\item Baris 10	: Mendefinisikan fungsi imgs.append yang digunakan untuk melakukan proses penggabungan data dengan file lain atau dataset lain yang telah ditentukan dengan 3 parameter yaitu row[0], row[2] dan variabel img.
+	\item Baris 11	: Mendefinisikan fungsi append dari variabel classes dengan menggunakan parameter row[2].
+	\item Baris 12	: Mengartikan i=i+1 yang dimana nilai sari variabel i akan ditambah 1 sehingga akan bernilai 1.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B2}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w2.jpg}
+		\caption{Lusia-Hasil Kode Program 2}
+		\label{7B2}
+		\end{figure}
+	
+\item Jelaskan kode program pada blok \# In[3]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 3, label={73}]{src/1164080/7B3.py}
+	\par Dari kode listing pada kode program 3, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Memanggil dan menggunakan module random
+	\item Baris 2	: Melakukan pengocokan menggunakan module random pada parameter variabel imgs
+	\item Baris 3	: Membagi index data kedalam bentuk integer dengan mengalikan 0,8 dan len yang berfungsi mengembalikan jumlah item dalam datanya dari variabel imgs
+	\item Baris 4	: Membuat variabel train yang digunakan untuk mengeksekusi imgs serta pemecahan index awal pada data untuk digunakan sebagai data training
+	\item Baris 5	: Membuat variabel test yang digunakan untuk mengeksekusi imgs serta pemecahan index akhir pada data untuk digunakan sebagai data testing
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B3}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w3.jpg}
+		\caption{Lusia-Hasil Kode Program 3}
+		\label{7B3}
+		\end{figure}
+	
+\item Jelaskan kode program pada blok \# In[4]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 4, label={74}]{src/1164080/7B4.py}
+	\par Dari kode listing pada kode program 4, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Melakukan import library numpy sebagai np
+	\item Baris 2	: Membuat variabel train\_input untuk mengubah inputan menjadi array menggunakan fungsi np.asarray dan  fungsi list untuk mengkoleksi data yang dipilih serta data dapat diubah. Dan didalamnya melakukan penerapan fungsi map yang berfungsi untuk mengembalikan iterator dari data yang digunakan dan fungsi lamda pada row berparameter [2] difungsikan untuk membuat objek menjadi lebih kecil sehingga mudah dieksekusi dari variabel train.
+	\item Baris 3	: Membuat variabel test\_input untuk mengubah inputan menjadi array menggunakan fungsi np.asarray dan  fungsi list untuk mengkoleksi data yang dipilih serta data dapat diubah. Dan didalamnya melakukan penerapan fungsi map yang berfungsi untuk mengembalikan iterator dari data yang digunakan dan fungsi lamda pada row berparameter [2] difungsikan untuk membuat objek menjadi lebih kecil sehingga mudah dieksekusi dari variabel test.
+	\item Baris 4	: Membuat variabel train\_input untuk mengubah inputan menjadi array menggunakan fungsi np.asarray dan  fungsi list untuk mengkoleksi data yang dipilih serta data dapat diubah. Dan didalamnya melakukan penerapan fungsi map yang berfungsi untuk mengembalikan iterator dari data yang digunakan dan fungsi lamda pada row berparameter [1] difungsikan untuk membuat objek menjadi lebih kecil sehingga mudah dieksekusi dari variabel train.
+	\item Baris 5	: Membuat variabel test\_input untuk mengubah inputan menjadi array menggunakan fungsi np.asarray dan  fungsi list untuk mengkoleksi data yang dipilih serta data dapat diubah. Dan didalamnya melakukan penerapan fungsi map yang berfungsi untuk mengembalikan iterator dari data yang digunakan dan fungsi lamda pada row berparameter [1] difungsikan untuk membuat objek menjadi lebih kecil sehingga mudah dieksekusi dari variabel test.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B4}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w4.jpg}
+		\caption{Lusia-Hasil Kode Program 4}
+		\label{7B4}
+		\end{figure}
+	
+\item Jelaskan kode program pada blok \# In[5]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 5, label={75}]{src/1164080/7B5.py}
+	\par Dari kode listing pada kode program 5, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Menggunakan fungsi LabelEncoder dari sklearn.processing yang berfungsi untuk menormalkan label dimana label encoder hanya didefinisikan dengan nilai antara 0 dan -1.
+	\item Baris 2	: Menggunakan fungsi OneHotEncoder dari sklearn.processing yang berfungsi untuk mendefinisikan fitur input yang dimana mengambil nilai dalam kisaran [0, nilai maksimal].
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B5}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w5.jpg}
+		\caption{Lusia-Hasil Kode Program 5}
+		\label{7B5}
+		\end{figure}
+	
+\item Jelaskan kode program pada blok \# In[6]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 6, label={75}]{src/1164080/7B6.py}
+	\par Dari kode listing pada kode program 6, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Membuat variabel label\_encoder dengan penerapan modul / fungsi LabelEncoder tanpa parameter
+	\item Baris 2	: Membuat variabel integer\_encoded dengan penerapan fungsi label\_encoder.fit\_transform yang berfungsi untuk melakukan ekstrasi fitur object dari variabel classes yang akan mengembalikan beberapa data yang diubah kembali.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B6}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w6.jpg}
+		\caption{Lusia-Hasil Kode Program 6}
+		\label{7B6}
+		\end{figure}
+
+\end{enumerate}
+
+\subsection{Penanganan Error}
+\begin{enumerate}
+	\item skrinsut error 
+		\begin{enumerate}
+		\item Error 1 : gambar \ref{7C1}
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/x1.jpg}
+		\caption{Lusia-skrinsut error 1}
+		\label{7C1}
+		\end{figure}
+		\item Error 2 : gambar \ref{7C2}
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/x2.jpg}
+		\caption{Lusia-skrinsut error 2}
+		\label{7C2}
+		\end{figure}
+		\end{enumerate}
+	\item Tuliskan kode eror dan jenis errornya
+		\begin{enumerate}
+		\item Error 1
+			\par Berdasarkan gambar \ref{7C1} berikut adalah kode eror dan jenis errornya :
+			\begin{itemize}
+			\item Kode error : ModuleNotFoundError: No module named 'tensorflow'
+			\item Jenis error : Module Not Found Error
+			\end{itemize}
+		\item Error 2
+			\par Berdasarkan gambar \ref{7C2} berikut adalah kode eror dan jenis errornya :
+			\begin{itemize}
+			\item Kode error : FileNotFoundError: [Errno 2] No such file or directory: 'HASYv2/hasy-data-labels.csv'
+			\item Jenis error : File Not Found Error
+			\end{itemize}
+		\end{enumerate}
+	\item Solusi pemecahan masalah error tersebut
+		\begin{enumerate}
+		\item Error 1
+			\par Berdasarkan gambar \ref{7C1} error yang terjadi akibat modul tensorflow belum diinstal, maka penyelesaiannya adalah dengan menginstal terlebih dahulu modul yang akan digunakan.
+		\item Error 2
+			\par Berdasarkan gambar \ref{7C2} error yang terjadi akibat direktori file yang akan digunakan tidak sesuai, maka solusinya dengan menyesuaikan direktori dari file yang akan digunakan.
+		\end{enumerate}
+\end{enumerate}
+
 \subsection{Cek Plagiarisme}
 \par Dari hasil kerja pada chapter 7, jika dicek plagiarisme menghasilkan seperti gambar \ref{7D1}.
 		\begin{figure}[!hbtp]
