@@ -354,6 +354,247 @@ Please tell more about conclusion and how to the next work of this study.
 		\label{7B6}
 		\end{figure}
 
+\item Jelaskan kode program pada blok \# In[7]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 7, label={77}]{src/1164080/7B7.py}
+	\par Dari kode listing pada kode program 7, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Membuat variabel onehot\_encoder yang memanggil fungsi OneHotEncoder tanpa mengembalikan matriks karena sparse=false.
+	\item Baris 2	: Membuat variabel integer\_encoded memanggil variabel integer\_encoded pada kode program 6 untuk dieksekusi memberikan bentuk baru ke array tanpa mengubah datanya dari mengembalikan panjang nilai dari integer\_encoded.
+	\item Baris 3	: Onehotencoding melakukan fitting pada integer\_encoded.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B7}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w7.jpg}
+		\caption{Lusia-Hasil Kode Program 7}
+		\label{7B7}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[8]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 8, label={78}]{src/1164080/7B8.py}
+	\par Dari kode listing pada kode program 8, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Membuat variabel train\_output\_int yang mengeksekusi label\_encoder dengan mengubah nilai dari parameter variabel train\_output.
+	\item Baris 2	: Membuat variabel train\_output yang mengeksekusi variabel onehot\_encoder dari kode program 7 dengan mengubah nilai dari variabel parameter train\_output\_int yang datanya sudah diubah kedalam bentuk array dan panjang nilai dari train\_output\_int telah dikembalikan.
+	\item Baris 3	: Membuat variabel test\_output\_int yang mengeksekusi label\_encoder dengan mengubah nilai dari parameter variabel test\_output.
+	\item Baris 4	: Membuat variabel test\_output yang mengeksekusi variabel onehot\_encoder dari kode program 7 dengan mengubah nilai dari variabel parameter test\_output\_int yang datanya sudah diubah kedalam bentuk array dan panjang nilai dari test\_output\_int telah dikembalikan.
+	\item Baris 5	: Membuat variabel num\_classes untuk mengetahui jumlah class dari lebel\_encoder
+	\item Baris 6	: Perintah print digunakan untuk memunculkan hasil dari variabel num\_classes
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B8}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w8.jpg}
+		\caption{Lusia-Hasil Kode Program 8}
+		\label{7B8}
+		\end{figure}
+		
+\item Jelaskan kode program pada blok \# In[9]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 9, label={79}]{src/1164080/7B9.py}
+	\par Dari kode listing pada kode program 9, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Memanggil atau melakukan importing fungsi model sequential dari library keras.
+	\item Baris 2	: Memanggil atau melakukan importing fungsi layer dense, dropout, dan flatten dari library keras.
+	\item Baris 3	: Memanggil atau melakukan importing fungsi layer Conv2D dan MaxPooling2D dari library keras.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B9}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w9.jpg}
+		\caption{Lusia-Hasil Kode Program 9}
+		\label{7B9}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[10]
+\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 10, label={710}]{src/1164080/7B10.py}
+	\par Dari kode listing pada kode program 10, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: 
+	\item Baris 2	: 
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B10}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w10.jpg}
+		\caption{Lusia-Hasil Kode Program 10}
+		\label{7B10}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[11]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 11, label={711}]{src/1164080/7B11.py}
+	\par Dari kode listing pada kode program 11, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Melakukan importing library keras.callbacks yang memiliki fungsi penulisan log untuk TensorBoard, yang memungkinkan untuk memvisualisasikan grafik dinamis dari training dan metrik pengujian.
+	\item Baris 2	: Membuat variabel tenserboard yang menggunakan fungsi TensorBoard dari keras.callbacks yang berfungsi sebagai alat visualisasi yang telah disediakan oleh TensorFlow. Kemudian untuk fungsi log\_dir memanggil data yaitu './logs/mnist-style' dari direktori.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B11}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w11.jpg}
+		\caption{Lusia-Hasil Kode Program 11}
+		\label{7B11}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[12]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 12, label={712}]{src/1164080/7B12.py}
+	\par Dari kode listing pada kode program 12, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Menerapkan fungsi model.fit yang didalamnya memproses train\_input, train\_output dengan batch\_size, epochs, verbose, validation\_split, dan callbacks.
+		\begin{itemize}
+		\item Batch\_size merupakan jumlah sampel per pembaharuan sampel dari data yang diolah, sehingga apabila batch\_sizenya tidak ditemukan maka otomatis akan dijadikan nilai 32.
+		\item Epochs berfungsi untuk melakukan perulangan dimana perulangan dari berapa kali nilai yang digunakan untuk data, dan jumlahnya ialah 10.
+		\item Verbose digunakan sebagai opsi untuk menghasilkan informasi logging dari data yang ditentukan dengan nilai 2.
+		\item Validation\_split berfungsi untuk memecah nilai dari perhitungan dengan validasinya sebesar 0,2. (Fraksi data pelatihan untuk digunakan sebagai data validasi).
+		\item Callsbacks mengeksekusi tensorboard yang berfungsi untuk memvisualisasikan parameter training, metrik, hiperparameter pada nilai/data yang diproses.
+		\end{itemize}	
+	\item Baris 2	: Membuat variabel score dengan menggunakan fungsi evaluate dari model yang ada dengan variabel parameter test\_input, tst\_output dan verbose=2 yang berfungsi memprediksi output untuk input yang diberikan dan kemudian menghitung fungsi metrik yang ditentukan dalam modelnya.
+	\item Baris 3	: Mencetak variabel score optimasi dari test dengan ketentuan nilai parameter 0
+	\item Baris 4	: Mencetak variabel score akurasi dari test dengan ketentuan nilai parameter 1
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B12}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w12.jpg}
+		\caption{Lusia-Hasil Kode Program 12}
+		\label{7B12}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[13]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 13, label={713}]{src/1164080/7B13.py}
+	\par Dari kode listing pada kode program 13, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: 
+	\item Baris 2	: 
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B13}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w13.jpg}
+		\caption{Lusia-Hasil Kode Program 13}
+		\label{7B13}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[14]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 14, label={714}]{src/1164080/7B14.py}
+	\par Dari kode listing pada kode program 14, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: 
+	\item Baris 2	: 
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B14}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w14.jpg}
+		\caption{Lusia-Hasil Kode Program 14}
+		\label{7B14}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[15]
+\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 15, label={715}]{src/1164080/7B15.py}
+	\par Dari kode listing pada kode program 15, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: 
+	\item Baris 2	: 
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B15}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w15.jpg}
+		\caption{Lusia-Hasil Kode Program 15}
+		\label{7B15}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[16]
+\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 16, label={716}]{src/1164080/7B16.py}
+	\par Dari kode listing pada kode program 16, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Menyimpan model sebagai mathsymbols.model
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B16}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w16.jpg}
+		\caption{Lusia-Hasil Kode Program 16}
+		\label{7B16}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[17]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 17, label={717}]{src/1164080/7B17.py}
+	\par Dari kode listing pada kode program 17, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Menyimpan array dari label\_encoder.classes\_ ke file biner dalam format NumPy .npy.
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B17}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w17.jpg}
+		\caption{Lusia-Hasil Kode Program 17}
+		\label{7B17}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[18]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 18, label={718}]{src/1164080/7B18.py}
+	\par Dari kode listing pada kode program 18, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Melakukan importing modul models dari library keras
+	\item Baris 2	: Membuat variabel model2 untuk memanggil dan membaca file mathsymbols.model
+	\item Baris 3	: Berfungsi untuk menampilkan dan memeriksa hasil dari variabel parameter model2
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B18}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w18.jpg}
+		\caption{Lusia-Hasil Kode Program 18}
+		\label{7B18}
+		\end{figure}
+
+\item Jelaskan kode program pada blok \# In[19]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 19, label={719}]{src/1164080/7B19.py}
+	\par Dari kode listing pada kode program 19, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: 
+	\item Baris 2	: 
+	\item Baris 3	: 
+	\item Baris 4	: 
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B19}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w19.jpg}
+		\caption{Lusia-Hasil Kode Program 19}
+		\label{7B19}
+		\end{figure}
+		
+\item Jelaskan kode program pada blok \# In[20]
+	\par Berikut adalah kode program yang digunakan :
+	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 20, label={720}]{src/1164080/7B20.py}
+	\par Dari kode listing pada kode program 20, dapat dijelaskan seperti berikut :
+	\begin{itemize}
+	\item Baris 1	: Melakukan prediksi terhadap file v2-00010.png yang diambil dari direktori
+	\item Baris 2	: Melakukan prediksi terhadap file v2-00500.png yang diambil dari direktori
+	\item Baris 3	: Melakukan prediksi terhadap file v2-00700.png yang diambil dari direktori
+	\end{itemize}
+	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B20}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.5]{figures/w20.jpg}
+		\caption{Lusia-Hasil Kode Program 20}
+		\label{7B20}
+		\end{figure}
+
 \end{enumerate}
 
 \subsection{Penanganan Error}
