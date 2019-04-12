@@ -1337,14 +1337,21 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Membuat variabel onehot\_encoder yang memanggil fungsi OneHotEncoder tanpa mengembalikan matriks karena sparse=false.
+\item Baris Code 2	: Membuat variabel integer\_encoded memanggil variabel integer\_encoded pada kode program 6 untuk dieksekusi memberikan bentuk baru ke array tanpa mengubah datanya dari mengembalikan panjang nilai dari integer\_encoded.
+\item Baris Code 3	: Onehotencoding melakukan fitting pada integer\_encoded.
 \end{enumerate}
+\item Hasil : \ref{chapter-7-in-7-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-7-fadila.jpg}
+\caption{Code Program Pada In [7] - fadila}
+\label{chapter-7-in-7-fadila}
+\end{figure}
+\par
+\par
 \end{itemize}
 \par
 \par
@@ -1357,14 +1364,24 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Mendefinisikan dan Membuat variabel train\_output\_int yang mengeksekusi label\_encoder dengan mengubah nilai dari parameter variabel train\_output.
+\item Baris Code 2	: Mendefinisikan dan Membuat variabel train\_output yang mengeksekusi variabel onehot\_encoder dari kode program 7 dengan mengubah nilai dari variabel parameter train\_output\_int yang datanya sudah diubah kedalam bentuk array dan panjang nilai dari train\_output\_int telah dikembalikan.
+\item Baris Code 3	: Mendefinisikan dan Membuat variabel test\_output\_int yang mengeksekusi label\_encoder dengan mengubah nilai dari parameter variabel test\_output.
+\item Baris Code 4	: Mendefinisikan dan Membuat variabel test\_output yang mengeksekusi variabel onehot\_encoder dari kode program 7 dengan mengubah nilai dari variabel parameter test\_output\_int yang datanya sudah diubah kedalam bentuk array dan panjang nilai dari test\_output\_int telah dikembalikan
+\item Baris Code 5	: Mendefinisikan dan Membuat variabel num\_classes untuk mengetahui jumlah class dari lebel\_encoder
+\item Baris Code 6	: Mencetak dan menampilkan hasil dari variabel num\_classes menggunakan perintah print
 \end{enumerate}
+\item Hasil : \ref{chapter-7-in-8-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-8-fadila.jpg}
+\caption{Code Program Pada In [8] - fadila}
+\label{chapter-7-in-8-fadila}
+\end{figure}
+\par
+\par
 \end{itemize}
 \par
 \par
@@ -1377,14 +1394,21 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Difungsikan pemanggilan untuk melakukan importing fungsi model sequential dari library keras.
+\item Baris Code 2	: Difungsikan pemanggilan untuk melakukan importing fungsi layer dense, dropout, dan flatten dari library keras.
+\item Baris Code 3	: Difungsikan pemanggilan untuk  melakukan importing fungsi layer Conv2D dan MaxPooling2D dari library keras.
 \end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-9-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-9-fadila.jpg}
+\caption{Code Program Pada In [9] - fadila}
+\label{chapter-7-in-9-fadila}
+\end{figure}
+\par
 \par
 \end{itemize}
 \par
@@ -1407,6 +1431,17 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \item Baris Code 7	:
 \end{enumerate}
 \par
+\item Hasil : \ref{chapter-7-in-10-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-10-fadila.jpg}
+\caption{Code Program Pada In [10] - fadila}
+\label{chapter-7-in-10-fadila}
+\end{figure}
+\par
+\par
 \end{itemize}
 \par
 \par
@@ -1419,14 +1454,20 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Memasukkan / Mengimport library keras.callbacks dimana digunakan dalam penulisan log untuk TensorBoard, yang memungkinkan untuk memvisualisasikan grafik dinamis dari pelatihan dan metrik pengujian.
+\item Baris Code 2	: Membuat variabel tenserboard yang mendefinisikan fungsi TensorBoard pada keras.callbacks yang digunakan sebagai alat visualisasi yang disediakan dengan TensorFlow. Kemudian untuk fungsi log\_dir (jalur direktori tempat menyimpan file log yang akan diuraikan oleh TensorBoard) memanggil data yaitu './logs/mnist-style'
 \end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-11-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-11-fadila.jpg}
+\caption{Code Program Pada In [11] - fadila}
+\label{chapter-7-in-11-fadila}
+\end{figure}
+\par
 \par
 \end{itemize}
 \par
@@ -1440,14 +1481,27 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Menerapkan fungsi model.fit yang didalamnya memproses train\_input, train\_output
+\item Baris Code 2	: Selanjutnya pada penerapan fungsi yang sama difungsikan batch\_size ( jumlah sampel per pembaharuan sampel dari data yang diolah) apabila batch\_sizenya tidak ditemukan maka otomatis akan dijadikan nilai 32
+\item Baris Code 3	: Pada penerapan fungsi yang sama, difungsikan epochs dimana perulangan dari berapa kali nilai yang digunakan untuk data, dan jumlahnya ialah 10
+\item Baris Code 4	: Mendefinisikan fungsi verbose dimana digunakan sebagai opsi untuk menghasilkan informasi logging dari data yang ditentukan dengan nilai 2
+\item Baris Code 5	: Mendefinisikan fungsi validation\_split untuk memecah nilai dari perhitungan validasinya sebesar 0,2. (Fraksi data pelatihan untuk digunakan sebagai data validasi)
+\item Baris Code 6	: Mendefinisikan fungsi callsbacks dengan parameternya yang mengeksekusi tensorboard dimana digunakan untuk Visualisasikan parameter training, metrik, hiperparameter pada nilai/data yang diproses.
+\item Baris Code 7	: Mendefinisikan variabel score dengan fungsi evaluate dari model yang ada dengan parameter test\_input, tst\_output dan verbose=2 dimana memprediksi output untuk input yang diberikan dan kemudian menghitung fungsi metrik yang ditentukan dalam modelnya
+\item Baris Code 8	: Mencetak score optimasi dari test dengan ketentuan nilai parameter 0
+\item Baris Code 9	: Mencetak score akurasi dari test dengan ketentuan nilai parameter 1
 \end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-12-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-12-fadila.jpg}
+\caption{Code Program Pada In [12] - fadila}
+\label{chapter-7-in-12-fadila}
+\end{figure}
+\par
 \par
 \end{itemize}
 \par
@@ -1469,6 +1523,8 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \item Baris Code 6	:
 \item Baris Code 7	:
 \end{enumerate}
+\par
+\par
 \par
 \end{itemize}
 \par
@@ -1699,3 +1755,5 @@ NameError: name 'model' is not defined
 \end{enumerate}
 \end{itemize}
 \end{enumerate}
+\par
+\par
