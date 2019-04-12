@@ -731,6 +731,117 @@ Please tell more about conclusion and how to the next work of this study.
 \end{itemize}
 \par
 
+\item Jelaskan kode program pada blok \# In[7].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek7.py, label={lst:import}]{src/1164085/prak7-roza.py}
+\par Hasil \ref{in7roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak7roza.png}
+\caption{In 7 Roza}
+\label{in6roza}
+\end{figure}
+\par Baris 1: Membuat variabel onehot\_encoder yang memanggil fungsi OneHotEncoder tanpa mengembalikan matriks karena sparse=false.
+\par Baris 2: Membuat variabel integer\_encoded memanggil variabel integer\_encoded pada kode program 6 untuk dieksekusi memberikan bentuk baru ke array tanpa mengubah datanya dari mengembalikan panjang nilai dari integer\_encoded.
+\par Baris 3: Onehotencoding melakukan fitting pada integer\_encoded.
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[8].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek8.py, label={lst:import}]{src/1164085/prak8-roza.py}
+\par Hasil \ref{in8roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak8roza.png}
+\caption{In 8 Roza}
+\label{in8roza}
+\end{figure}
+\par Baris 1: Membuat variabel train\_output\_int yang mengeksekusi label\_encoder dengan mengubah nilai dari parameter variabel train\_output.
+\par Baris 2: Membuat variabel train\_output yang mengeksekusi variabel onehot\_encoder dari kode program 7 dengan mengubah nilai dari variabel parameter train\_output\_int yang datanya sudah diubah kedalam bentuk array dan panjang nilai dari train\_output\_int telah dikembalikan.
+\par Baris 3: Membuat variabel test\_output\_int yang mengeksekusi label\_encoder dengan mengubah nilai dari parameter variabel test\_output.
+\par Baris 4: Membuat variabel test\_output yang mengeksekusi variabel onehot\_encoder dari kode program 7 dengan mengubah nilai dari variabel parameter test\_output\_int yang datanya sudah diubah kedalam bentuk array dan panjang nilai dari test\_output\_int telah dikembalikan.
+\par Baris 5: Membuat variabel num\_classes untuk mengetahui jumlah class dari lebel\_encoder
+\par Baris 6: Perintah print digunakan untuk memunculkan hasil dari variabel num\_classes
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[9].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek9.py, label={lst:import}]{src/1164085/prak9-roza.py}
+\par Hasil \ref{in9roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak9roza.png}
+\caption{In 9 Roza}
+\label{in9roza}
+\end{figure}
+\par Baris 1: Memanggil atau melakukan importing fungsi model sequential dari library keras.
+\par Baris 2: Memanggil atau melakukan importing fungsi layer dense, dropout, dan flatten dari library keras.
+\par Baris 3: Memanggil atau melakukan importing fungsi layer Conv2D dan MaxPooling2D dari library keras.
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[10].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek10.py, label={lst:import}]{src/1164085/prak10-roza.py}
+\par Hasil \ref{in10roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak10roza.png}
+\caption{In 10 Roza}
+\label{in10roza}
+\end{figure}
+\par Baris 1: 
+\par Baris 2:
+\par Baris 3:
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[11].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek11.py, label={lst:import}]{src/1164085/prak11-roza.py}
+\par Hasil \ref{in11roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak11roza.png}
+\caption{In 11 Roza}
+\label{in11roza}
+\end{figure}
+\par Baris 1: Memasukkan / Mengimport library keras.callbacks dimana digunakan dalam penulisan log untuk TensorBoard, yang memungkinkan untuk memvisualisasikan grafik dinamis dari pelatihan dan metrik pengujian.
+\par Baris 2: Membuat variabel tenserboard yang mendefinisikan fungsi TensorBoard pada keras.callbacks yang digunakan sebagai alat visualisasi yang disediakan dengan TensorFlow. Kemudian untuk fungsi log\_dir (jalur direktori tempat menyimpan file log yang akan diuraikan oleh TensorBoard) memanggil data yaitu './logs/mnist-style'
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[12].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek12.py, label={lst:import}]{src/1164085/prak12-roza.py}
+\par Hasil \ref{in12roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak12roza.png}
+\caption{In 12 Roza}
+\label{in12roza}
+\end{figure}
+\par Baris 1: Menerapkan fungsi model.fit yang didalamnya memproses train\_input, train\_output
+\par Baris 2: Selanjutnya pada penerapan fungsi yang sama difungsikan batch\_size ( jumlah sampel per pembaharuan sampel dari data yang diolah) apabila batch\_sizenya tidak ditemukan maka otomatis akan dijadikan nilai 32	
+\par BAris 3: Pada penerapan fungsi yang sama, difungsikan epochs dimana perulangan dari berapa kali nilai yang digunakan untuk data, dan jumlahnya ialah 10
+\par Baris 4: Mendefinisikan fungsi verbose dimana digunakan sebagai opsi untuk menghasilkan informasi logging dari data yang ditentukan dengan nilai 2
+\par Baris 5: Mendefinisikan fungsi validation\_split untuk memecah nilai dari perhitungan validasinya sebesar 0,2. (Fraksi data pelatihan untuk digunakan sebagai data validasi)
+\par Baris 6: Mendefinisikan fungsi callsbacks dengan parameternya yang mengeksekusi tensorboard dimana digunakan untuk visualisasikan parameter training, metrik, hiperparameter pada nilai/data yang diproses
+\par Baris 7: Mendefinisikan variabel score dengan fungsi evaluate dari model yang ada dengan parameter test\_input, tst\_output dan verbose=2 dimana memprediksi output untuk input yang diberikan dan kemudian menghitung fungsi metrik yang ditentukan dalam modelnya
+\item Baris 8: Mencetak score optimasi dari test dengan ketentuan nilai parameter 0
+\item Baris 9: Mencetak score akurasi dari test dengan ketentuan nilai parameter 1
+
+\end{itemize}
+\par
+
 \end{enumerate}
 
 
