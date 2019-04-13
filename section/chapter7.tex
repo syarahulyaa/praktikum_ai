@@ -1836,13 +1836,18 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Merealisasikan dan Mengfungsikan pemodelan Sequential
+\item Baris Code 2	: Menambahkan fungsi konvolusi 2D dengan 32 filter konvolusi masing-masing berukuran 3x3 dengan algoritam activation relu sesuai dengan ketentuan
+\item Baris Code 3	: Dilanjutkan dengan data dari train\_input mulai dari baris nol dari fungsi input\_shape
+\item Baris Code 4	: Melakukan penambahan fungsi max pooling dengan matriks 2x2 terhadap data
+\item Baris Code 5	: Dilakukan lagi penambahkan Konvolusi 2D dengan 32 filter konvolusi masing-masing berukuran 3x3 dengan algoritam activation relu.
+\item Baris Code 6	: Memfungsikan / Menambahkan kembali fungsi max pooling dengan matriks 2x2
+\item Baris Code 7	: Memfungsikan flatten untuk mengembalikan salinan array asli dari data
+\item Baris Code 8	: Mendefinisikan inputan dengan 1024 neuron dan menggunakan algoritma tanh untuk aktivasinya ( activation )
+\item Baris Code 9	: Mendefinisikan fungsi Dropout dimana terdiri dari pengaturan secara acak tingkat pecahan unit input ke 0 pada setiap pembaruan selama waktu pelatihan, yang membantu mencegah overfitting sebesar 50\%  yang dituliskan dengan nilai 0,5.
+\item Baris Code 10	: Untuk output layer menggunakan data dari variabel num\_classes dengan fugsi activationnya softmax.
+\item Baris Code 11	: Melakukan konfigurasi dari proses pembelajaran, yang dilakukan melalui metode compile,sebelum melatih suatu model.
+\item Baris Code 12	: Mencetak dan menampilkan representasi ringkasan model yang telah dibuat berdasrkan fungsi-fungsi yang diterapkan
 \end{enumerate}
 \par
 \item Hasil : \ref{chapter-7-in-10-fadila}
@@ -1929,14 +1934,37 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Melakukan impor modul time dari python anaconda
+\item Baris Code 2	: Membuat variabel result berisikan array kosong.
+\item Baris Code 3	: Menggunakan convolution 2D yang dimana akan memiliki 1 atau 2 layer.
+\item Baris Code 4	: Mendefinisikan dan memfungsikan dense\_size dengan ukuran 128, 256, 512, 1024, 2048
+\item Baris Code 5	: Mendefinsikan dan memfungsikan drop\_out dengan 0, 25\%, 50\%, dan 75\%
+\item Baris Code 6	: Menerapkan dan Melakukan pemodelan Sequential
+\item Baris Code 7	: Perlu memasukkan bentuk input apabila data tersebut merupakan layer pertama
+\item Baris Code 8	: Apabila tidak maka hanya menambahkan layer
+\item Baris Code 9	: Selanjutnya, ketika penambahan layer konvolusi selesai, maka dilakukan hal yang sama dengan max pooling.
+\item Baris Code 10	: Kemudian meratakan atau flatten pada data dan menambahkan dense size ukuran apa pun yang berasal dari dense\_size, dimana menggunakan algoritma tanh
+\item Baris Code 11	: Apabila dropout digunakan, dilakukan penambahan layer dropout. Untuk droupout berikut katakanlah 50\%, bahwa setiap kali ia memperbarui bobot setelah setiap batch, ada peluang 50\% untuk setiap bobot yang tidak akan diperbarui pada data tersebut
+\item Baris Code 12	: Melakukan penempatan hasil drouput  di antara dua lapisan padat untuk dihidupkan dari melindunginya dari overfitting.
+\item Baris Code 13	: Lapisan terakhir akan selalu menjadi jumlah kelas karena itu harus, dan menggunakan softmax. Itu dikompilasi dengan cara yang sama.
+\item Baris Code 14	: Mengatur direktori log yang berbeda untuk TensorBoard sehingga dapat membedakan konfigurasi yang berbeda.
+\item Baris Code 15	: Membuat variabel start yang akan memanggil modul time atau waktu
+\item Baris Code 16	: Melakukan dan memfungsikan fit atau compile 
+\item Baris Code 17	: Melakukan dan memfungsikan scoring dengan .evaluate yang akan menampilkan data loss dan accuracy dari model
+\item Baris Code 18	: Untuk end merupakan variabel untuk melihat waktu akhir pada saat pemodelan berhasil dilakukan.
+\item Baris Code 19	: Mencetak dan Menampilkan hasil dari run skrip berdasarkan fungsi-fungsi yang telah diterapkan diatas
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-13-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-13-fadila.png}
+\caption{Code Program Pada In [13] - fadila}
+\label{chapter-7-in-13-fadila}
+\end{figure}
 \par
 \par
 \par
@@ -1952,14 +1980,29 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Memfungsikan dan melakukan pemodelan Sequential pada code
+\item Baris Code 2	: Memfungsikan dan menambahkan Convolution 2D dengan dmensi 32 untuk layer pertama,dan ukuran matriks 3x3 dengan function aktivasi yang digunakan yaitu relu dan menampilkan input\_shape
+\item Baris Code 3	: Memfungsikan max pooling 2D dengan ukuran matriks 2x2
+\item Baris Code 4	: Melakukan Convolusi lagi dengan kriteria yang sama tanpa menambahkan input untuk di layer kedua, hal ini dilakukan untuk mendapatkan data yang terbaik dari yang telah diproses
+\item Baris Code 5	: Menambahkan fungsi Max pooling 2D dengan ukuran poolnya yaitu 2x2.
+\item Baris Code 6	: Mendefinisikan fungsi flatten dimana diugnakan untuk meratakan inputan yang ada dan mengembalikan salinan bilangan / array data
+\item Baris Code 7	: Menambahkan dense input sebanyak 128 neuron dengan menggunakan function aktivasi tanh.
+\item Baris Code 8	: Menambahkan fungsi dropout sebanyak 50\% untuk menghindari overfitting pada data yang diproses
+\item Baris Code 9	: Memfungsikan dense pada model untuk output, yang dimana layer berikut akan menjadi jumlah dari class yang ada.
+\item Baris Code 10	: Melakukan compile / Mengcompile model yang telah dibuat dan didefinisikan sebelumnya ( diatas )
+\item Baris Code 11	: Menampilkan dan mencetak ringkasan dari pemodelan yang dilakukan dari berbagai fungsi yang diterapkan.
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-14-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-14-fadila.png}
+\caption{Code Program Pada In [14] - fadila}
+\label{chapter-7-in-14-fadila}
+\end{figure}
 \par
 \par
 \end{itemize}
@@ -1972,16 +2015,24 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \lstinputlisting[firstline=1, lastline=19,caption=File chapter-7-15-fadila.py, label={lst:chapter-7-15-fadila}]{src/1164072/praktek/chapter-7-15-fadila.py}
 \par
 \par
-\item Penjelasan Code Perbaris	: 
+\item Penjelasan Code Perbaris	: ( Cuman ada 1 perintah namun pada penulisannya ada 3 baris )
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Memfungsikan dan Melakukan fit ( pencocokan data ) dengan join data train\_input dan test\_input agar dapat dilakukan pelatihan untuk jaringan pada smua data yang dimiliki.
+\item Baris Code 2	: Memfungsikan kembali np.concenate ( join data ) dengan data dari train\_output dan test\_output
+\item Baris Code 3	: Dilanjutkan dengan penerapan batch\_size sebesar 32, perulangan data 10 kali (epochs) dan verbose yang digunakan sebagai opsi untuk menghasilkan informasi logging dari data yang ditentukan dengan nilai 2
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-15-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-15-fadila.png}
+\caption{Code Program Pada In [15] - fadila}
+\label{chapter-7-in-15-fadila}
+\end{figure}
+\par
 \par
 \end{itemize}
 \par
@@ -1995,14 +2046,20 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Melakukan penyimpanan atau save model yang telah di latih dengan nama mathsymbols.model 
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-16-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-16-fadila.jpg}
+\caption{Code Program Pada In [16] - fadila}
+\label{chapter-7-in-16-fadila}
+\end{figure}
+\par
 \par
 \end{itemize}
 \par
@@ -2016,14 +2073,19 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Melakukan penyimpanan terhadap label enkoder (untuk membalikkan one-hot encoder) dengan nama classes.npy
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-17-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-17-fadila.jpg}
+\caption{Code Program Pada In [17] - fadila}
+\label{chapter-7-in-17-fadila}
+\end{figure}
 \par
 \par
 \end{itemize}
@@ -2038,14 +2100,21 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Memasukkan / mengimpor models dari librari Keras ( keras.models )
+\item Baris Code 2	: Membuat variabel model2 yang akan difungsikan untuk memanggil model yang telah disave sebelumnya yaitu "mathsymbols.model"
+\item Baris Code 3	: Menampilkan dan mencetak ringkasan dari hasil pemodelan pada variabel model2
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-18-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-18-fadila.jpg}
+\caption{Code Program Pada In [18] - fadila}
+\label{chapter-7-in-18-fadila}
+\end{figure}
 \par
 \par
 \end{itemize}
@@ -2060,14 +2129,26 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Melakukan pemanggilan fungsi LabelEncoder
+\item Baris Code 2	: Membuat variabel label\_encoder akan memanggil class yang disave sebelumnya yaitu "classes.npy"
+\item Baris Code 3	: Menerapkan function predict yang akan mengubah gambar kedalam bentuk array
+\item Baris Code 4 	: Pada fungsi prediksi dibuat variabel newing yang akan memproses perubahan format gambar menjadi array (bilangan)
+\item Baris Code 5	: Untuk Variabel newing didefinisikan tidak sama dengan nilai 255.0
+\item Baris Code 5	: Kemudian untuk variabel prediction akan melakukan prediksi untuk model2 dengan reshape variabel newimg dengan bentuk array 4D yaitu ( 1, 32, 32 dan 3 ).
+\item Baris Code 5	: Membuat variabel inverted yang akan mencari nilai tertinggi output dari hasil prediksi yang dilakukan sebelumnya
+\item Baris Code 6	: Menampilkan dan mencetak hasil dari variabel prediction dan inverted
 \end{enumerate}
+\par
+\par
+\item Hasil : \ref{chapter-7-in-19-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-19-fadila.jpg}
+\caption{Code Program Pada In [19] - fadila}
+\label{chapter-7-in-19-fadila}
+\end{figure}
 \par
 \par
 \end{itemize}
@@ -2082,14 +2163,21 @@ Penjelasan Tugas Harian 12 ( No 1-20 ).
 \par
 \item Penjelasan Code Perbaris	: 
 \begin{enumerate}
-\item Baris Code 1	:
-\item Baris Code 2	:
-\item Baris Code 3	:
-\item Baris Code 4	:
-\item Baris Code 5	:
-\item Baris Code 6	:
-\item Baris Code 7	:
+\item Baris Code 1	: Menerapkan dan Melakukan prediksi dari pelatihan dari gambar v2-00010.png
+\item Baris Code 2	: Menerapkan dan Melakukan prediksi dari pelatihan dari gambar v2-00500.png
+\item Baris Code 3	: Menerapkan dan Melakukan prediksi dari pelatihan dari gambar v2-00700.png
 \end{enumerate}
+\par
+\item Hasil : \ref{chapter-7-in-20-fadila}
+\par
+\par
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.4]{figures/chapter-7-in-20-fadila.jpg}
+\caption{Code Program Pada In [20] - fadila}
+\label{chapter-7-in-20-fadila}
+\end{figure}
+\par
 \par
 \end{itemize}
 \par
@@ -2156,7 +2244,7 @@ NameError: name 'model' is not defined
 \begin{enumerate}
 \item Pertama-tama pastikan salahnya seperti apa ( model dan jenis errornya )
 \item Kemudian, silahkan proses error tersebut dengan cara yang sesuai
-\item Berdasarkan error maka penyelesaiannya ialah melakukan pendefinisian variabel model sehingga code dapat dijalankan
+\item Berdasarkan error maka penyelesaiannya ialah melakukan pendefinisian variabel model sehingga code dapat dijalankan 
 \par
 \begin{figure}[!hbtp]
 \centering
