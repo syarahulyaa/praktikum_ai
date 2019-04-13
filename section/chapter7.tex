@@ -1079,10 +1079,183 @@ Please tell more about conclusion and how to the next work of this study.
 \par Baris 7: Mendefinisikan variabel score dengan fungsi evaluate dari model yang ada dengan parameter test\_input, tst\_output dan verbose=2 dimana memprediksi output untuk input yang diberikan dan kemudian menghitung fungsi metrik yang ditentukan dalam modelnya
 \item Baris 8: Mencetak score optimasi dari test dengan ketentuan nilai parameter 0
 \item Baris 9: Mencetak score akurasi dari test dengan ketentuan nilai parameter 1
-
 \end{itemize}
 \par
 
+\item Jelaskan kode program pada blok \# In[13].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek13.py, label={lst:import}]{src/1164085/prak13-roza.py}
+\par Hasil \ref{in13roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak13roza.png}
+\caption{In 13 Roza}
+\label{in13roza}
+\end{figure}
+\par Baris 1: impor modul time dari python anaconda
+\par Baris 2: Variabel result berisikan array kosong.
+\par Baris 3: Menggunakan convolution 2D yang dimana akan memiliki 1 atau 2 layer.
+\par Baris 4: Mendefinisikan dense\_size dengan ukuran 128, 256, 512, 1024, 2048
+\par Baris 5: Mendefinsikan drop\_out dengan 0, 25\%, 50\%, dan 75\%
+\par Baris 6:  Melakukan pemodelan Sequential
+\par Baris 7: Jika ini adalah layer pertama, kita perlu memasukkan bentuk input.
+\par Baris 8: Kalau tidak kita hanya akan menambahkan layer.
+\par Baris 9: Kemudian, setelah menambahkan layer konvolusi, kita akan melakukan hal yang sama dengan max pooling.
+\par Baris 10: Lalu, kita akan meratakan atau flatten dan menambahkandense size ukuran apa pun yang berasal dari dense\_size. Dimana akan selalu menggunakan algoritma tanh
+\par Baris 11: Jika dropout digunakan, kita akan menambahkan layer dropout. Menyebut dropout ini berarti, katakanlah 50\%, bahwa setiap kali ia memperbarui bobot setelah setiap batch, ada peluang 50\% untuk setiap bobot yang tidak akan diperbarui
+\par Baris 12: menempatkan ini di antara dua lapisan padat untuk dihidupkan dari melindunginya dari overfitting.
+\par Lapisan terakhir akan selalu menjadi jumlah kelas karena itu harus, dan menggunakan softmax. Itu dikompilasi dengan cara yang sama.
+\par Baris 13: Atur direktori log yang berbeda untuk TensorBoard sehingga dapat membedakan konfigurasi yang berbeda.
+\par Baris 14: Variabel start akan memanggil modul time atau waktu
+\par Baris 15: Melakukan fit atau compile 
+\par Baris 16: Melakukan scoring dengan .evaluate yang akan menampilkan data loss dan accuracy dari model
+\par Baris 17:  end merupakan variabel untuk melihat waktu akhir pada saat pemodelan berhasil dilakukan.
+\par Baris 18:  Menampilkan hasil dari run skrip diatas 
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[14].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek14.py, label={lst:import}]{src/1164085/prak14-roza.py}
+\par Hasil \ref{in14roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak14roza.png}
+\caption{In 14 Roza}
+\label{in14roza}
+\end{figure}
+\par Baris 1: Melakukan pemodelan Sequential
+\par Baris 2: Untuk layer pertama, Menambahkan Convolutio 2D dengan dmensi 32, dan ukuran matriks 3x3 dengan function aktivasi yang digunakan yaitu relu dan menampilkan input\_shape
+\par Baris 3: Dilakukan Max Pooling 2D dengan ukuran matriks 2x2
+\par Baris 4:Untuk layer kedua, melakukan Convolusi lagi dengan kriteria yang sama tanpa menambahkan input, ini dilakukan untuk mendapatkan data yang terbaik
+\par Baris 5:  Flatten digubakan ntuk meratakan inputan
+\par Baris 6: Menambahkan dense input sebanyak 128 neuron dengan menggunakan function aktivasi tanh.
+\par Baris 7: Dropout sebanyak 50\% untuk menghindari overfitting
+\par Baris 8: Menambahkan dense pada model untuk output dimana layer ini akan menjadi jumlah dari class yang ada.
+\par Baris 9: Mengcompile model yang didefinisikan diatas
+\par Baris 10: Menampilkan ringkasan dari pemodelan yang dilakukan
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[15].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek15.py, label={lst:import}]{src/1164085/prak15-roza.py}
+\par Hasil \ref{in15roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak15roza.png}
+\caption{In 15 Roza}
+\label{in15roza}
+\end{figure}
+\par Baris 1: Melakukan fit dengan join data train dan test agar dapat dilakukan pelatihan untuk jaringan pada smeua data yang dimiliki.
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[16].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek1.py, label={lst:import}]{src/1164085/prak16-roza.py}
+\par Hasil \ref{in16roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak16roza.png}
+\caption{In 16 Roza}
+\label{in16roza}
+\end{figure}
+\par Baris 1: Menyimpan atau save model yang telah di latih dengan nama mathsymbols.model 
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[17].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek1.py, label={lst:import}]{src/1164085/prak17-roza.py}
+\par Hasil \ref{in17roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak17roza.png}
+\caption{In 17 Roza}
+\label{in17roza}
+\end{figure}
+\par Baris 1: Simpan label enkoder (untuk membalikkan one-hot encoder) dengan nama classes.npy
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[18].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek18.py, label={lst:import}]{src/1164085/prak18-roza.py}
+\par Hasil \ref{in18roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak18roza.png}
+\caption{In 18 Roza}
+\label{in18roza}
+\end{figure}
+\par Baris 1: Impor models dari librari Keras
+\par Baris 2: Variabel model2 akan memanggil model yang telah disave tadi 
+\par Baris 3:  Menampilkan ringkasan dari hasil pemodelan
+\end{itemize}
+\par
+
+
+\item Jelaskan kode program pada blok \# In[19].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek19.py, label={lst:import}]{src/1164085/prak19-roza.py}
+\par Hasil \ref{in19roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak19roza.png}
+\caption{In 19 Roza}
+\label{in19roza}
+\end{figure}
+\item Menampilkan hasil dari variabel prediction dan inverted
+\par Baris 1: Memanggil fungsi LabelEncoder
+\par Baris 2: Variabel label\_encoder akan memanggil class yang disave sebelumnya.
+\par Baris 3: Function Predict akan mengubah gambar kedalam bentuk array
+\par Baris 4: Variabel prediction akan melakukan prediksi untuk model2 dengan reshape variabel newimg dengan bentukarray 4D.
+\par Baris 5: Variabel inverted akan mencari nilai tertinggi output dari hasil prediksi tadi
+\end{itemize}
+\par
+
+\item Jelaskan kode program pada blok \# In[20].
+\begin{itemize}
+\item Kode Program:
+\lstinputlisting[firstline=1, lastline=19, caption=Praktek20.py, label={lst:import}]{src/1164085/prak20-roza.py}
+\par Hasil \ref{in20roza} :
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[scale=0.7]{figures/prak20roza.png}
+\caption{In 20 Roza}
+\label{in20roza}
+\end{figure}
+\par Baris 1: Melakukan prediksi dari pelatihan dari gambar v2-00010.png
+\par Baris 2: Melakukan prediksi dari pelatihan dari gambar v2-00500.png
+\par Baris 3: Melakukan prediksi dari pelatihan dari gambar v2-00700.png 
+\end{itemize}
+\par
+
+\subsection{Penanganan Error}
+\begin{enumerate}
+\lstinputlisting[firstline=1, lastline=19, caption=Eror Capter7 Roza.py, label={lst:import}]{src/1164085/erorchap7roza.py}
+\item Skrinsut Error
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/erorchap7roza.jpg}
+\caption{ Error Roza}
+\label{6}
+\end{figure}
+\item Kode Error dan Jenis Errornya
+\par Kode Error: "Name Error" name 'imgs'  is not defined
+\par Jenis Error: Images tidak terdefinisi
+\item Penanganan
+\par Menentukan atau memebuka file explorer dari file yang ditempatkan atau disesuaikan dengan letak filenya.
+
+\end{enumerate}
 \end{enumerate}
 
 
