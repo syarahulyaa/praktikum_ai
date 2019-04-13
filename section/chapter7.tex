@@ -413,8 +413,17 @@ Please tell more about conclusion and how to the next work of this study.
 	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 10, label={710}]{src/1164080/7B10.py}
 	\par Dari kode listing pada kode program 10, dapat dijelaskan seperti berikut :
 	\begin{itemize}
-	\item Baris 1	: 
-	\item Baris 2	: 
+	\item Baris 1	: Melakukan pemodelan Sequential.
+	\item Baris 2	: Menambahkan Konvolusi 2D dengan 32 filter konvolusi menggunakan matriks kernel berukuran 3x3 dengan algoritma activation adalah relu, dimana data diambil dari train\_input yang dimulai dari baris ke-nol.
+	\item Baris 3	: Menambahkan Max Pooling dengan matriks 2x2.
+	\item Baris 4	: Melakukan penambahkan konvolusi 2D lagi dengan 32 filter konvolusi menggunakan matrik kernel masing-masing berukuran 3x3 dengan algoritam activation relu.
+	\item Baris 5	: Melakukan penambahan lagi Max Pooling dengan matriks 2x2.
+	\item Baris 6	: Melakukan perataan pada inputan model.
+	\item Baris 7	: Mendefinisikan inputan dengan 1024 neuron dan melakukan aktivasi menggunakan algoritma tanh.
+	\item Baris 8	: Dropout dilakukan untuk melakukan pemotongan pada cabang yang terdiri dari pengaturan secara acak tingkat pecahan unit input ke 0 pada setiap pembaruan selama waktu pelatihan, yang membantu mencegah overfitting sebesar 50\%.
+	\item Baris 9	: Pada output layer menggunakan data dari variabel num\_classes dan menggunakan fungsi aktivasi softmax.
+	\item Baris 10 	: Melkukan konfigurasi proses pembelajaran, yang dilakukan melalui metode compile, sebelum melatih suatu model.
+	\item Baris 11	: Menampilkan hasil representasi ringkasan dari model yang telah dibuat.
 	\end{itemize}
 	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B10}.
 		\begin{figure}[!hbtp]
@@ -470,8 +479,25 @@ Please tell more about conclusion and how to the next work of this study.
 	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 13, label={713}]{src/1164080/7B13.py}
 	\par Dari kode listing pada kode program 13, dapat dijelaskan seperti berikut :
 	\begin{itemize}
-	\item Baris 1	: 
-	\item Baris 2	: 
+	\item Baris 1	: Melakukan importing modul time.
+	\item Baris 2	: Membuat variabel result berisikan array kosong.
+	\item Baris 3	: Menggunakan convolution 2D yang dimana akan memiliki 1 atau 2 layer
+	\item Baris 4	: Mendefinisikan dense\_size dengan ukuran 128, 256, 512, 1024, 2048
+	\item Baris 5	: Mendefinsikan drop\_out dengan 0, 25\%, 50\%, dan 75\%
+	\item Baris 6	: Melakukan pemodelan Sequential
+	\item Baris 7	: Untuk i dalam cakupan conv2d\_count
+	\item Baris 8	: Jika ini adalah layer pertama, kita perlu memasukkan bentuk input.
+	\item Baris 9	: Kalau tidak kita hanya akan menambahkan layer.
+	\item Baris 10	: Kemudian, setelah menambahkan layer konvolusi, akan dilakukan hal yang sama dengan max pooling.
+	\item Baris 11	: Lalu, melakukan perataan atau flatten dan menambahkan dense size ukuran apa pun yang berasal dari dense\_size. Dimana akan selalu menggunakan algoritma tanh.
+	\item Baris 12	: Jika dropout digunakan, maka akan menambahkan layer dropout. Katakanlah 50\% dilakukan dropout, bahwa setiap kali ia memperbarui bobot setelah setiap batch, ada peluang 50\% untuk setiap bobot yang tidak akan diperbarui dan menempatkannya di antara dua lapisan padat untuk diaktivasi serta melindunginya dari overfitting.
+	\item Baris 13	:  Lapisan terakhir akan selalu menjadi jumlah kelas karena itu harus, dan menggunakan softmax. Dan dikompilasi dengan cara yang sama.
+	\item Baris 14	:  Mengatur direktori log yang berbeda untuk TensorBoard sehingga dapat membedakan konfigurasi yang berbeda.
+	\item Baris 15	: Variabel start akan memanggil modul time atau waktu
+	\item Baris 16	: Melakukan fit atau compile 
+	\item Baris 17	: Melakukan scoring dengan .evaluate yang berfungsi menampilkan data loss dan accuracy dari model
+	\item Baris 18	: end merupakan variabel untuk melihat waktu akhir pada saat pemodelan berhasil dilakukan.
+	\item Baris 19	: Menampilkan hasil dari run skrip
 	\end{itemize}
 	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B13}.
 		\begin{figure}[!hbtp]
@@ -486,8 +512,16 @@ Please tell more about conclusion and how to the next work of this study.
 	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 14, label={714}]{src/1164080/7B14.py}
 	\par Dari kode listing pada kode program 14, dapat dijelaskan seperti berikut :
 	\begin{itemize}
-	\item Baris 1	: 
-	\item Baris 2	: 
+	\item Baris 1: Membuat model dengan menggunakan pemodelan Sequential
+	\item Baris 2: Pada layer pertama melakukan penambahan Convolutio 2D dengan dimensi 32, dan ukuran matriks kernel 3x3 dengan menggunkan fungsi aktivasi relu dan menampilkan input\_shape
+	\item Baris 3: Melakukan Max Pooling 2D dengan ukuran matriks 2x2
+	\item Baris 4: Pada layer kedua, dilakukan convolusi lagi dengan kriteria yang sama tanpa ada penambahan input, hal ini dilakukan untuk mendapatkan data terbaik
+	\item Baris 5: Melakukan Flatten untuk meratakan inputan
+	\item Baris 6: Menambahkan dense input sebanyak 128 neuron dengan menggunakan fungsi aktivasi tanh.
+	\item Baris 7: Melakukan Dropout sebanyak 50\% untuk menghindari overfitting
+	\item Baris 8: Menambahkan dense pada model untuk output dimana layer ini akan menjadi jumlah dari class yang ada.
+	\item Baris 9: Melakukan compiling dari model yang telah didefinisikan 
+	\item Baris 10: Menampilkan ringkasan dari pemodelan yang dilakukan 
 	\end{itemize}
 	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B14}.
 		\begin{figure}[!hbtp]
@@ -502,8 +536,7 @@ Please tell more about conclusion and how to the next work of this study.
 	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 15, label={715}]{src/1164080/7B15.py}
 	\par Dari kode listing pada kode program 15, dapat dijelaskan seperti berikut :
 	\begin{itemize}
-	\item Baris 1	: 
-	\item Baris 2	: 
+	\item Baris 1: Melakukan fit atau fitting (pencocokan data) dengan penggabungan dari data train dan test agar dapat dilakukan pelatihan untuk jaringan pada smeua data yang dimiliki.
 	\end{itemize}
 	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B15}.
 		\begin{figure}[!hbtp]
@@ -565,10 +598,11 @@ Please tell more about conclusion and how to the next work of this study.
 	\lstinputlisting[firstline=1, lastline=19, caption=Kode Program 19, label={719}]{src/1164080/7B19.py}
 	\par Dari kode listing pada kode program 19, dapat dijelaskan seperti berikut :
 	\begin{itemize}
-	\item Baris 1	: 
-	\item Baris 2	: 
-	\item Baris 3	: 
-	\item Baris 4	: 
+	\item Baris 1	: Membuat variabel label\_encoder2 yang melakukan pemanggilan fungsi LabelEncoder untuk melakukan penyandian pada label dengan nilai antara 1 dan 0
+	\item Baris 2	: Variabel label\_encoder akan memanggil class yang telah disimpan sebelumnya.
+	\item Baris 3	: Function Predict akan mengubah gambar kedalam bentuk array
+	\item Baris 4	: Variabel prediction akan melakukan prediksi untuk model2 dengan Memberikan bentuk baru tanpa mengubah data dari variabel newimg dengan bentuk array 4D.
+	\item Baris 5	: Variabel inverted akan mencari nilai tertinggi output dari hasil prediksi.
 	\end{itemize}
 	\par Sehingga dari kode program tersebut bila dijalankan, maka menghasilkan seperti pada gambar \ref{7B19}.
 		\begin{figure}[!hbtp]
